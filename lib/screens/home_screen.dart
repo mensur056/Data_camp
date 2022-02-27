@@ -15,10 +15,115 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: kPrColor,
         actions: [
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Image.asset('images/666.png',),
-          ),
+          Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: Image.asset(
+                    'images/666.png',
+                  ),
+                ),
+                const SizedBox(
+                  width: 70,
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: Row(
+                    children: const [
+                      Text(
+                        'Products',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Icon(
+                        Icons.arrow_back_ios,
+                        color: Colors.white,
+                        size: 12,
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  width: 15,
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: Row(
+                    children: const [
+                      Text(
+                        'For Business',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Icon(
+                        Icons.arrow_back_ios,
+                        color: Colors.white,
+                        size: 12,
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  width: 15,
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: Row(
+                    children: const [
+                      Text(
+                        'Pricing',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Icon(
+                        Icons.arrow_back_ios,
+                        color: Colors.white,
+                        size: 12,
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  width: 15,
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: Row(
+                    children: const [
+                      Text(
+                        'Resource',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Icon(
+                        Icons.arrow_back_ios,
+                        color: Colors.white,
+                        size: 12,
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  width: 50,
+                ),
+                const Icon(
+                  Icons.search_outlined,
+                  size: 25,
+                  color: Colors.white,
+                )
+              ],
+            ),
+          )
         ],
       ),
     );
