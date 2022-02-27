@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                   child: Row(
                     children: const [
                       Text(
-                        'Resource',
+                        'Resources',
                         style: TextStyle(color: Colors.white),
                       ),
                       SizedBox(
@@ -114,12 +114,18 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 const SizedBox(
-                  width: 50,
+                  width: 70,
                 ),
                 const Icon(
                   Icons.search_outlined,
                   size: 25,
                   color: Colors.white,
+                ),
+                Container(
+                  height: 35,
+                  width: 90,
+                  decoration: const BoxDecoration(color: Colors.red,
+                      borderRadius: BorderRadius.all(Radius.circular(5))),
                 )
               ],
             ),
