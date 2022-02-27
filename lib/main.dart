@@ -1,3 +1,4 @@
+import 'package:data_camp/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,30 +8,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: HomePage(title: 'Data Camp'),
-    );
-  }
-}
-
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key, required String title}) : super(key: key);
-
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-        ),
-
     );
   }
 }
