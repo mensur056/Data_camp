@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
                     children: const [
                       Text(
                         'Products',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.white,fontSize: 16),
                       ),
                       SizedBox(
                         width: 5,
@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
                     children: const [
                       Text(
                         'For Business',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.white,fontSize: 16),
                       ),
                       SizedBox(
                         width: 5,
@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage> {
                     children: const [
                       Text(
                         'Pricing',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.white,fontSize: 16),
                       ),
                       SizedBox(
                         width: 5,
@@ -100,7 +100,7 @@ class _HomePageState extends State<HomePage> {
                     children: const [
                       Text(
                         'Resources',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.white,fontSize: 16),
                       ),
                       SizedBox(
                         width: 5,
@@ -116,36 +116,52 @@ class _HomePageState extends State<HomePage> {
                 const SizedBox(
                   width: 70,
                 ),
-                const Icon(
-                  Icons.search_outlined,
-                  size: 25,
-                  color: Colors.white,
-                ), const SizedBox(
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.search_outlined,
+                    size: 25,
+                    color: Colors.white,
+                  ),
+                ),
+                const SizedBox(
                   width: 10,
                 ),
-                Stack(children: [
-                  Center(
-                    child: Container(
-                      height: 40,
-                      width: 95,
-                      decoration: const BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.all(Radius.circular(5))),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 2.0),
-                    child: Center(
+                TextButton(
+                  onPressed: () {},
+                  child: Stack(children: [
+                    Center(
                       child: Container(
-                        height: 35,
-                        width: 90,
+                        height: 38,
+                        width: 93,
                         decoration: const BoxDecoration(
-                            color: kPrColor,
+                            color: Colors.white,
                             borderRadius: BorderRadius.all(Radius.circular(5))),
                       ),
                     ),
-                  ),
-                ])
+                    Padding(
+                      padding: const EdgeInsets.only(left: 1.0),
+                      child: Center(
+                        child: Container(
+                          height: 35,
+                          width: 90,
+                          decoration: const BoxDecoration(
+                              color: kPrColor,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(5))),
+                          child: const Center(
+                            child: Text(
+                              'Sing in',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ]),
+                )
               ],
             ),
           )
