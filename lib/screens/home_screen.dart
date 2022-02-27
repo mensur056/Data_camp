@@ -14,6 +14,12 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: kPrColor,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Image.asset('images/666.png',),
+          ),
+        ],
       ),
     );
   }
