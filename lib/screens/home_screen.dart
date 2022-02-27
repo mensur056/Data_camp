@@ -127,64 +127,44 @@ class _HomePageState extends State<HomePage> {
                 const SizedBox(
                   width: 10,
                 ),
-                TextButton(
-                  onPressed: () {},
-                  child: Stack(
-                    children: [
-                      Center(
-                        child: Container(
-                          height: 38,
-                          width: 93,
-                          decoration: const BoxDecoration(
-                              color: Colors.white,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(5))),
+                Center(
+                  child: OutlineButton(
+                    borderSide: const BorderSide(
+                      color: Colors.white,
+                    ),
+                    highlightedBorderColor: Colors.green,
+                    onPressed: () {},
+                    child: Container(
+                      height: 35,
+                      width: 90,
+                      decoration: const BoxDecoration(
+                          color: kPrColor,
+                          borderRadius: BorderRadius.all(Radius.circular(5))),
+                      child: const Center(
+                        child: Text(
+                          'Sing in',
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 1.0),
-                        child: Center(
-                          child: Container(
-                            height: 35,
-                            width: 90,
-                            decoration: const BoxDecoration(
-                                color: kPrColor,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5))),
-                            child: const Center(
-                              child: Text(
-                                'Sing in',
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-
+                const SizedBox(
+                  width: 10,
+                ),
                 TextButton(
-                  onPressed: () {},
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(5),
-                      ),
-                    ),
-                    height: 38,
-                    width: 130,
-                    child: const Center(
-                      child: Text(
-                        'Get Started',
-                        style: TextStyle(
-                            color: kPrColor, fontWeight: FontWeight.bold,fontSize: 17),
-                      ),
-                    ),
+                  style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.resolveWith<Color>(
+                            (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.hovered))
+                            return Colors.green;
+
+                          return Colors.yellow; // null throus error in flutter 2.2+.
+                        }),
                   ),
+                  onPressed: () { },
+                  child: Container(child: const Text('TextButton')),
                 )
               ],
             ),
