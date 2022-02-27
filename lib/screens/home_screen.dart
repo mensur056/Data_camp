@@ -120,13 +120,32 @@ class _HomePageState extends State<HomePage> {
                   Icons.search_outlined,
                   size: 25,
                   color: Colors.white,
+                ), const SizedBox(
+                  width: 10,
                 ),
-                Container(
-                  height: 35,
-                  width: 90,
-                  decoration: const BoxDecoration(color: Colors.red,
-                      borderRadius: BorderRadius.all(Radius.circular(5))),
-                )
+                Stack(children: [
+                  Center(
+                    child: Container(
+                      height: 40,
+                      width: 95,
+                      decoration: const BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.all(Radius.circular(5))),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 2.0),
+                    child: Center(
+                      child: Container(
+                        height: 35,
+                        width: 90,
+                        decoration: const BoxDecoration(
+                            color: kPrColor,
+                            borderRadius: BorderRadius.all(Radius.circular(5))),
+                      ),
+                    ),
+                  ),
+                ])
               ],
             ),
           )
