@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
                     children: const [
                       Text(
                         'Products',
-                        style: TextStyle(color: Colors.white,fontSize: 16),
+                        style: TextStyle(color: Colors.white, fontSize: 16),
                       ),
                       SizedBox(
                         width: 5,
@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
                     children: const [
                       Text(
                         'For Business',
-                        style: TextStyle(color: Colors.white,fontSize: 16),
+                        style: TextStyle(color: Colors.white, fontSize: 16),
                       ),
                       SizedBox(
                         width: 5,
@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage> {
                     children: const [
                       Text(
                         'Pricing',
-                        style: TextStyle(color: Colors.white,fontSize: 16),
+                        style: TextStyle(color: Colors.white, fontSize: 16),
                       ),
                       SizedBox(
                         width: 5,
@@ -100,7 +100,7 @@ class _HomePageState extends State<HomePage> {
                     children: const [
                       Text(
                         'Resources',
-                        style: TextStyle(color: Colors.white,fontSize: 16),
+                        style: TextStyle(color: Colors.white, fontSize: 16),
                       ),
                       SizedBox(
                         width: 5,
@@ -129,38 +129,62 @@ class _HomePageState extends State<HomePage> {
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Stack(children: [
-                    Center(
-                      child: Container(
-                        height: 38,
-                        width: 93,
-                        decoration: const BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.all(Radius.circular(5))),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 1.0),
-                      child: Center(
+                  child: Stack(
+                    children: [
+                      Center(
                         child: Container(
-                          height: 35,
-                          width: 90,
+                          height: 38,
+                          width: 93,
                           decoration: const BoxDecoration(
-                              color: kPrColor,
+                              color: Colors.white,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(5))),
-                          child: const Center(
-                            child: Text(
-                              'Sing in',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 1.0),
+                        child: Center(
+                          child: Container(
+                            height: 35,
+                            width: 90,
+                            decoration: const BoxDecoration(
+                                color: kPrColor,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(5))),
+                            child: const Center(
+                              child: Text(
+                                'Sing in',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
                             ),
                           ),
                         ),
                       ),
+                    ],
+                  ),
+                ),
+
+                TextButton(
+                  onPressed: () {},
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(5),
+                      ),
                     ),
-                  ]),
+                    height: 38,
+                    width: 130,
+                    child: const Center(
+                      child: Text(
+                        'Get Started',
+                        style: TextStyle(
+                            color: kPrColor, fontWeight: FontWeight.bold,fontSize: 17),
+                      ),
+                    ),
+                  ),
                 )
               ],
             ),
