@@ -29,89 +29,70 @@ class _HomePageState extends State<HomePage> {
                   width: 70,
                 ),
                 TextButton(
-                  onPressed: () {},
-                  child: Row(
-                    children: const [
-                      Text(
-                        'Products',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Icon(
-                        Icons.arrow_back_ios,
-                        color: Colors.white,
-                        size: 12,
-                      )
-                    ],
+                  style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.resolveWith<Color>(
+                        (Set<MaterialState> states) {
+                      if (states.contains(MaterialState.hovered)) {
+                        return Colors.green;
+                      }
+
+                      return Colors.white;
+                    }),
                   ),
+                  onPressed: () {},
+                  child: const Text('Products', style: TextStyle(fontSize: 16)),
                 ),
                 const SizedBox(
                   width: 15,
                 ),
                 TextButton(
-                  onPressed: () {},
-                  child: Row(
-                    children: const [
-                      Text(
-                        'For Business',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Icon(
-                        Icons.arrow_back_ios,
-                        color: Colors.white,
-                        size: 12,
-                      )
-                    ],
+                  style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.resolveWith<Color>(
+                        (Set<MaterialState> states) {
+                      if (states.contains(MaterialState.hovered)) {
+                        return Colors.green;
+                      }
+
+                      return Colors.white;
+                    }),
                   ),
+                  onPressed: () {},
+                  child: const Text('For Business',
+                      style: TextStyle(fontSize: 16)),
                 ),
                 const SizedBox(
                   width: 15,
                 ),
                 TextButton(
-                  onPressed: () {},
-                  child: Row(
-                    children: const [
-                      Text(
-                        'Pricing',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Icon(
-                        Icons.arrow_back_ios,
-                        color: Colors.white,
-                        size: 12,
-                      )
-                    ],
+                  style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.resolveWith<Color>(
+                        (Set<MaterialState> states) {
+                      if (states.contains(MaterialState.hovered)) {
+                        return Colors.green;
+                      }
+
+                      return Colors.white;
+                    }),
                   ),
+                  onPressed: () {},
+                  child: const Text('Pricing', style: TextStyle(fontSize: 16)),
                 ),
                 const SizedBox(
                   width: 15,
                 ),
                 TextButton(
-                  onPressed: () {},
-                  child: Row(
-                    children: const [
-                      Text(
-                        'Resources',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Icon(
-                        Icons.arrow_back_ios,
-                        color: Colors.white,
-                        size: 12,
-                      )
-                    ],
+                  style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.resolveWith<Color>(
+                        (Set<MaterialState> states) {
+                      if (states.contains(MaterialState.hovered)) {
+                        return Colors.green;
+                      }
+
+                      return Colors.white;
+                    }),
                   ),
+                  onPressed: () {},
+                  child: const Text('Resource', style: TextStyle(fontSize: 16)),
                 ),
                 const SizedBox(
                   width: 70,
@@ -154,13 +135,29 @@ class _HomePageState extends State<HomePage> {
                             }),
                           ),
                           onPressed: () {},
-                          child: const Text('Sing in'),
+                          child: const Text('Sing in', style: TextStyle(fontSize: 16,
+                              fontWeight: FontWeight.bold),),
                         ),
                       ),
                     ),
                   ),
                 ),
-                TextButton(onPressed: () {}, child: const Text('Get Started')),
+                TextButton(
+                  onPressed: () {},
+                  child: Container(
+                    child: const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Text(
+                        'Get Started',
+                        style: TextStyle(
+                            color: kPrColor,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    color: Colors.white,
+                  ),
+                ),
                 const SizedBox(
                   width: 10,
                 ),
@@ -168,7 +165,7 @@ class _HomePageState extends State<HomePage> {
             ),
           )
         ],
-      ),
+      ),body: SafeArea(child: Column()),
     );
   }
 }
