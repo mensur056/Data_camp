@@ -140,32 +140,30 @@ class _HomePageState extends State<HomePage> {
                       decoration: const BoxDecoration(
                           color: kPrColor,
                           borderRadius: BorderRadius.all(Radius.circular(5))),
-                      child: const Center(
-                        child: Text(
-                          'Sing in',
-                          style: TextStyle(
-                              color: Colors.white, fontWeight: FontWeight.bold),
+                      child: Center(
+                        child: TextButton(
+                          style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.resolveWith<Color>(
+                                    (Set<MaterialState> states) {
+                              if (states.contains(MaterialState.hovered)) {
+                                return Colors.green;
+                              }
+
+                              return Colors.white;
+                            }),
+                          ),
+                          onPressed: () {},
+                          child: const Text('Sing in'),
                         ),
                       ),
                     ),
                   ),
                 ),
+                TextButton(onPressed: () {}, child: const Text('Get Started')),
                 const SizedBox(
                   width: 10,
                 ),
-                TextButton(
-                  style: ButtonStyle(
-                    foregroundColor: MaterialStateProperty.resolveWith<Color>(
-                            (Set<MaterialState> states) {
-                          if (states.contains(MaterialState.hovered))
-                            return Colors.green;
-
-                          return Colors.yellow; // null throus error in flutter 2.2+.
-                        }),
-                  ),
-                  onPressed: () { },
-                  child: Container(child: const Text('TextButton')),
-                )
               ],
             ),
           )
