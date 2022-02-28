@@ -189,7 +189,24 @@ class _HomePageState extends State<HomePage> {
                       ),
                       Container(
                         height: 60,
-                        width: 200,
+                        width: 350,
+                        decoration: const BoxDecoration(
+                          color: Colors.green,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(4),
+                          ),
+                        ),
+                        child: const Text(
+                          'Sign up',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      Container(
+                        height: 60,
+                        width: 350,
                         decoration: const BoxDecoration(
                           color: Colors.green,
                           borderRadius: BorderRadius.all(
@@ -203,10 +220,12 @@ class _HomePageState extends State<HomePage> {
                       )
                     ],
                   ),
-                  Container(
-                    height: 200,
-                    width: 150,
-                    color: Colors.white,
+                  Expanded(
+                    child: Container(
+                      height: 200,
+                      width: 150,
+                      color: Colors.white,
+                    ),
                   )
                 ],
               )
