@@ -11,8 +11,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
+    return Scaffold(backgroundColor:kPrColor ,
+      appBar: AppBar(elevation: 0,
         backgroundColor: kPrColor,
         actions: [
           Expanded(
@@ -165,7 +165,7 @@ class _HomePageState extends State<HomePage> {
             ),
           )
         ],
-      ),body: SafeArea(child: Column()),
+      ),body: SafeArea(child: Column(children: [],)),
     );
   }
 }
