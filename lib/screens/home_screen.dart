@@ -187,14 +187,18 @@ class _HomePageState extends State<HomePage> {
                         'Build data skills online',
                         style: TextStyle(color: Colors.white),
                       ),
-                      Expanded(
-                        child: Container(
-                          decoration: const BoxDecoration(
-                            borderRadius: BorderRadius.all(
-                              Radius.circular(8),
-                            ),
+                      Container(
+                        height: 60,
+                        width: 200,
+                        decoration: const BoxDecoration(
+                          color: Colors.green,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(4),
                           ),
-                          child: const Text('Sign up'),
+                        ),
+                        child: const Text(
+                          'Sign up',
+                          style: TextStyle(color: Colors.white),
                         ),
                       )
                     ],
