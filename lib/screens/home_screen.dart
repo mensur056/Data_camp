@@ -11,8 +11,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor:kPrColor ,
-      appBar: AppBar(elevation: 0,
+    return Scaffold(
+      backgroundColor: kPrColor,
+      appBar: AppBar(
+        elevation: 0,
         backgroundColor: kPrColor,
         actions: [
           Expanded(
@@ -135,8 +137,11 @@ class _HomePageState extends State<HomePage> {
                             }),
                           ),
                           onPressed: () {},
-                          child: const Text('Sing in', style: TextStyle(fontSize: 16,
-                              fontWeight: FontWeight.bold),),
+                          child: const Text(
+                            'Sing in',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
                         ),
                       ),
                     ),
@@ -165,7 +170,46 @@ class _HomePageState extends State<HomePage> {
             ),
           )
         ],
-      ),body: SafeArea(child: Column(children: [],)),
+      ),
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Column(
+                    children: [
+                      const Text(
+                        'Build data skills online',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      const Text(
+                        'Build data skills online',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      Expanded(
+                        child: Container(
+                          decoration: const BoxDecoration(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(8),
+                            ),
+                          ),
+                          child: const Text('Sign up'),
+                        ),
+                      )
+                    ],
+                  ),
+                  Container(
+                    height: 200,
+                    width: 150,
+                    color: Colors.white,
+                  )
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
