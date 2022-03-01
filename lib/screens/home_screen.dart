@@ -42,7 +42,8 @@ class _HomePageState extends State<HomePage> {
                     }),
                   ),
                   onPressed: () {},
-                  child: const Text('Products', style: TextStyle(fontSize: 16)),
+                  child:
+                      const Text('Products', style: TextStyle(fontSize: 16)),
                 ),
                 const SizedBox(
                   width: 25,
@@ -77,7 +78,8 @@ class _HomePageState extends State<HomePage> {
                     }),
                   ),
                   onPressed: () {},
-                  child: const Text('Pricing', style: TextStyle(fontSize: 16)),
+                  child:
+                      const Text('Pricing', style: TextStyle(fontSize: 16)),
                 ),
                 const SizedBox(
                   width: 25,
@@ -94,7 +96,8 @@ class _HomePageState extends State<HomePage> {
                     }),
                   ),
                   onPressed: () {},
-                  child: const Text('Resource', style: TextStyle(fontSize: 16)),
+                  child:
+                      const Text('Resource', style: TextStyle(fontSize: 16)),
                 ),
                 const SizedBox(
                   width: 70,
@@ -110,38 +113,36 @@ class _HomePageState extends State<HomePage> {
                 const SizedBox(
                   width: 15,
                 ),
-                Center(
-                  child: OutlineButton(
-                    borderSide: const BorderSide(
-                      color: Colors.white,
-                    ),
-                    highlightedBorderColor: Colors.green,
-                    onPressed: () {},
-                    child: Container(
-                      height: 35,
-                      width: 90,
-                      decoration: const BoxDecoration(
-                          color: kPrColor,
-                          borderRadius: BorderRadius.all(Radius.circular(5))),
-                      child: Center(
-                        child: TextButton(
-                          style: ButtonStyle(
-                            foregroundColor:
-                                MaterialStateProperty.resolveWith<Color>(
-                                    (Set<MaterialState> states) {
-                              if (states.contains(MaterialState.hovered)) {
-                                return Colors.green;
-                              }
+                OutlineButton(
+                  borderSide: const BorderSide(
+                    color: Colors.white,
+                  ),
+                  highlightedBorderColor: Colors.green,
+                  onPressed: () {},
+                  child: Container(
+                    height: 35,
+                    width: 90,
+                    decoration: const BoxDecoration(
+                        color: kPrColor,
+                        borderRadius: BorderRadius.all(Radius.circular(5))),
+                    child: Center(
+                      child: TextButton(
+                        style: ButtonStyle(
+                          foregroundColor:
+                              MaterialStateProperty.resolveWith<Color>(
+                                  (Set<MaterialState> states) {
+                            if (states.contains(MaterialState.hovered)) {
+                              return Colors.green;
+                            }
 
-                              return Colors.white;
-                            }),
-                          ),
-                          onPressed: () {},
-                          child: const Text(
-                            'Sing in',
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.bold),
-                          ),
+                            return Colors.white;
+                          }),
+                        ),
+                        onPressed: () {},
+                        child: const Text(
+                          'Sing in',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),
@@ -150,7 +151,8 @@ class _HomePageState extends State<HomePage> {
                 TextButton(
                   onPressed: () {},
                   child: Container(
-                    decoration: const BoxDecoration(      color: Colors.white,
+                    decoration: const BoxDecoration(
+                        color: Colors.white,
                         borderRadius: BorderRadius.all(Radius.circular(5))),
                     width: 120,
                     height: 40,
@@ -166,11 +168,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                     ),
-
                   ),
-                ),
-                const SizedBox(
-                  width: 10,
                 ),
               ],
             ),
@@ -180,7 +178,7 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.only(left: 250.0, right: 250, top: 100),
+            padding: const EdgeInsets.only(left: 400.0, right: 450, top: 100),
             child: Column(
               children: [
                 Row(
@@ -228,6 +226,7 @@ class _HomePageState extends State<HomePage> {
                         )
                       ],
                     ),
+                    const Spacer(),
                     Container(
                       height: 200,
                       width: 525,
