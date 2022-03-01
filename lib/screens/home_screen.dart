@@ -203,7 +203,7 @@ class _HomePageState extends State<HomePage> {
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 60,
-                              fontWeight: FontWeight.bold,fontFamily:'Rowdies' ),
+                              fontWeight: FontWeight.bold,fontFamily:'CarterOne' ),
                         ),
                         const Text(
                           'Build data skills online',

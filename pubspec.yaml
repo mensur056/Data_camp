@@ -80,3 +80,18 @@ flutter:
     - family: GreatVibes
       fonts:
         - asset: fonts/GreatVibes-Regular.ttf
+    - family: RacingSansOne
+      fonts:
+        - asset: fonts/RacingSansOne-Regular.ttf
+    - family: FugazOne
+      fonts:
+        - asset: fonts/FugazOne-Regular.ttf
+    - family: FasterOne
+      fonts:
+        - asset: fonts/FasterOne-Regular.ttf
+    - family: Courgette
+      fonts:
+        - asset: fonts/Courgette-Regular.ttf
+    - family: CarterOne
+      fonts:
+        - asset: fonts/CarterOne-Regular.ttf
