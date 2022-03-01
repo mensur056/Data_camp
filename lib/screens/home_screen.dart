@@ -272,14 +272,16 @@ class _HomePageState extends State<HomePage> {
                       ),
                       child: Column(
                         children: [
+                          const SizedBox(
+                            height: 15,
+                          ),
                           const Center(
                               child: Text(
                             'Create Your Free Account',
                             style: TextStyle(
                                 color: kPrColor,
-                                fontSize: 20,
-                                fontFamily: 'RacingSansOne'
-                                    ,
+                                fontSize: 18,
+                                fontFamily: 'ShipporiAntiqueB1',
                                 fontWeight: FontWeight.bold),
                           )),
                           Row(

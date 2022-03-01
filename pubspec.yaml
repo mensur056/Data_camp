@@ -98,3 +98,6 @@ flutter:
     - family: VarelaRound
       fonts:
         - asset: fonts/VarelaRound-Regular.ttf
+    - family: ShipporiAntiqueB1
+      fonts:
+        - asset: fonts/ShipporiAntiqueB1-Regular.ttf
