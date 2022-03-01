@@ -170,83 +170,80 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: SafeArea(
-        child: ListView(children: [
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.only(top: 100.0),
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Container(
-                          color: kPrColor,
-                        ),
-                      ),
-                      Column(
-                        children: [
-                          const Text(
-                            'Build data skills online',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                          const Text(
-                            'Build data skills online',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                          Container(
-                            height: 60,
-                            width: 350,
-                            decoration: const BoxDecoration(
-                              color: Colors.green,
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(4),
-                              ),
-                            ),
-                            child: const Text(
-                              'Sign up',
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 5,
-                          ),
-                          Container(
-                            height: 60,
-                            width: 350,
-                            decoration: const BoxDecoration(
-                              color: Colors.green,
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(4),
-                              ),
-                            ),
-                            child: const Text(
-                              'Sign up',
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          )
-                        ],
-                      ),
-                      const SizedBox(
-                        width: 220,
-                      ),
-                      Container(
-                        height: 550,
-                        width: 500,
-                        decoration: const BoxDecoration(color: Colors.white,
-                            borderRadius: BorderRadius.all(Radius.circular(8))),
-                      ),
-                      Expanded(
-                        child: Container(
-                          color: kPrColor,
-                        ),
-                      ),
-                    ],
-                  )
-                ],
-              ),
+        child: ListView(
+          children: [
+            const SizedBox(
+              height: 100,
             ),
-          ),
-        ]),
+            Column(
+              children: [
+                Row(
+                  children: [
+                    Expanded(
+                        child: Container(
+                      color: kPrColor,
+                    )),
+                    Column(
+                      children: [
+                        const Text(
+                          'Build data skills online',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        const Text(
+                          'Build data skills online',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        Container(
+                          height: 60,
+                          width: 350,
+                          decoration: const BoxDecoration(
+                            color: Colors.green,
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(4),
+                            ),
+                          ),
+                          child: const Text(
+                            'Sign up',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        Container(
+                          height: 60,
+                          width: 350,
+                          decoration: const BoxDecoration(
+                            color: Colors.green,
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(4),
+                            ),
+                          ),
+                          child: const Text(
+                            'Sign up',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        )
+                      ],
+                    ),
+                    Spacer(),
+                    Container(
+                      height: 550,
+                      width: 500,
+                      decoration: const BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                    ),
+                    Expanded(
+                        child: Container(
+                      color: kPrColor,
+                    )),
+                  ],
+                )
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
