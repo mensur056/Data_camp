@@ -149,15 +149,17 @@ class _HomePageState extends State<HomePage> {
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Container(
+                  child: Container(width: 120,
                     child: const Padding(
                       padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        'Get Started',
-                        style: TextStyle(
-                            color: kPrColor,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold),
+                      child: Center(
+                        child: Text(
+                          'Get Started',
+                          style: TextStyle(
+                              color: kPrColor,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                     color: Colors.white,
@@ -173,63 +175,66 @@ class _HomePageState extends State<HomePage> {
       ),
       body: SafeArea(
         child: Center(
-          child: Column(
-            children: [
-              Row(
-                children: [
-                  Column(
-                    children: [
-                      const Text(
-                        'Build data skills online',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                      const Text(
-                        'Build data skills online',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                      Container(
-                        height: 60,
-                        width: 350,
-                        decoration: const BoxDecoration(
-                          color: Colors.green,
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(4),
-                          ),
-                        ),
-                        child: const Text(
-                          'Sign up',
+          child: Padding(
+            padding: const EdgeInsets.only(left:250.0,right: 250,top: 100),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        const Text(
+                          'Build data skills online',
                           style: TextStyle(color: Colors.white),
                         ),
-                      ),
-                      const SizedBox(
-                        height: 5,
-                      ),
-                      Container(
-                        height: 60,
-                        width: 350,
-                        decoration: const BoxDecoration(
-                          color: Colors.green,
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(4),
-                          ),
-                        ),
-                        child: const Text(
-                          'Sign up',
+                        const Text(
+                          'Build data skills online',
                           style: TextStyle(color: Colors.white),
                         ),
-                      )
-                    ],
-                  ),
-                  Expanded(
-                    child: Container(
-                      height: 200,
-                      width: 150,
-                      color: Colors.white,
+                        Container(
+                          height: 60,
+                          width: 350,
+                          decoration: const BoxDecoration(
+                            color: Colors.green,
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(4),
+                            ),
+                          ),
+                          child: const Text(
+                            'Sign up',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        Container(
+                          height: 60,
+                          width: 350,
+                          decoration: const BoxDecoration(
+                            color: Colors.green,
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(4),
+                            ),
+                          ),
+                          child: const Text(
+                            'Sign up',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        )
+                      ],
                     ),
-                  )
-                ],
-              )
-            ],
+                    Expanded(
+                      child: Container(
+                        height: 200,
+                        width: 150,
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                )
+              ],
+            ),
           ),
         ),
       ),
