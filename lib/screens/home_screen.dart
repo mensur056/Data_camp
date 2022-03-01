@@ -1,5 +1,6 @@
 import 'package:data_camp/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:hovering/hovering.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key, required String title}) : super(key: key);
@@ -9,6 +10,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final Color hover = Colors.red;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -190,7 +193,8 @@ class _HomePageState extends State<HomePage> {
               children: [
                 Row(
                   children: [
-                    Expanded(flex: 3,
+                    Expanded(
+                      flex: 3,
                       child: Container(
                         color: kPrColor,
                       ),
@@ -202,45 +206,46 @@ class _HomePageState extends State<HomePage> {
                           'Build data skills online',
                           style: TextStyle(
                               color: Colors.white,
-                              fontSize: 50,
-                              fontWeight: FontWeight.bold,fontFamily:'CarterOne'
-                               ),
+                              fontSize: 55,
+                              fontFamily: 'VarelaRound'),
                         ),
                         const Text(
-                          'Build data skills online',
-                          style: TextStyle(color: Colors.white),
+                          'Data drives everything. Get the skills\nyou need for the future of work.',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 25,
+                              fontFamily: 'Quicksand'),
                         ),
-                        Container(
-                          height: 60,
-                          width: 350,
-                          decoration: const BoxDecoration(
-                            color: Colors.green,
-                            borderRadius: BorderRadius.all(
-                              Radius.circular(4),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        HoverContainer(
+                          hoverColor: Colors.grey,
+                          color: const Color(0xFF26d354),
+                          height: 65,
+                          width: 380,
+                          child: const Center(
+                            child: Text(
+                              'Start Learning For Free',
+                              style: TextStyle(color: Colors.white),
                             ),
-                          ),
-                          child: const Text(
-                            'Sign up',
-                            style: TextStyle(color: Colors.white),
                           ),
                         ),
                         const SizedBox(
-                          height: 5,
+                          height: 10,
                         ),
-                        Container(
-                          height: 60,
-                          width: 350,
-                          decoration: const BoxDecoration(
-                            color: Colors.green,
-                            borderRadius: BorderRadius.all(
-                              Radius.circular(4),
+                        HoverContainer(
+                          color: const Color(0xFF26d354),
+                          hoverColor: hover,
+                          height: 65,
+                          width: 380,
+                          child: const Center(
+                            child: Text(
+                              'DataCamp For Business',
+                              style: TextStyle(color: Colors.white),
                             ),
                           ),
-                          child: const Text(
-                            'Sign up',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        )
+                        ),
                       ],
                     ),
                     const Spacer(),
@@ -254,7 +259,8 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                     ),
-                    Expanded(flex: 3,
+                    Expanded(
+                      flex: 3,
                       child: Container(
                         color: kPrColor,
                       ),
