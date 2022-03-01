@@ -230,9 +230,10 @@ class _HomePageState extends State<HomePage> {
                         width: 220,
                       ),
                       Container(
-                        height: 200,
-                        width: 525,
-                        color: Colors.white,
+                        height: 550,
+                        width: 500,
+                        decoration: const BoxDecoration(color: Colors.white,
+                            borderRadius: BorderRadius.all(Radius.circular(8))),
                       ),
                       Expanded(
                         child: Container(
