@@ -219,18 +219,20 @@ class _HomePageState extends State<HomePage> {
                         const SizedBox(
                           height: 20,
                         ),
-                        HoverContainer(
-                          hoverColor: Colors.grey,
-                          color: const Color(0xFF26d354),
-                          height: 65,
-                          width: 380,
-                          child: const Center(
-                            child: Text(
-                              'Start Learning For Free',
-                              style: TextStyle(
-                                  color: kPrColor,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold),
+                        GestureDetector(onTap: (){},
+                          child: HoverContainer(
+                            color: Color(0xFF37d360),
+                            hoverColor: Colors.greenAccent,
+                            height: 65,
+                            width: 380,
+                            child: const Center(
+                              child: Text(
+                                'Start Learning For Free',
+                                style: TextStyle(
+                                    color: kPrColor,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,fontFamily: 'Rowdies'),
+                              ),
                             ),
                           ),
                         ),
@@ -239,7 +241,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         GestureDetector(onTap: (){},
                           child: HoverContainer(
-                            color: Colors.orangeAccent,
+                            color: Colors.orange,
                             hoverColor: Colors.red,
                             height: 65,
                             width: 380,
@@ -249,7 +251,7 @@ class _HomePageState extends State<HomePage> {
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
-                                    fontWeight: FontWeight.bold),
+                                    fontWeight: FontWeight.bold,fontFamily: 'Rowdies'),
                               ),
                             ),
                           ),
