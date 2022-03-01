@@ -10,8 +10,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -219,7 +217,8 @@ class _HomePageState extends State<HomePage> {
                         const SizedBox(
                           height: 20,
                         ),
-                        GestureDetector(onTap: (){},
+                        GestureDetector(
+                          onTap: () {},
                           child: HoverContainer(
                             color: Color(0xFF37d360),
                             hoverColor: Colors.greenAccent,
@@ -231,15 +230,17 @@ class _HomePageState extends State<HomePage> {
                                 style: TextStyle(
                                     color: kPrColor,
                                     fontSize: 20,
-                                    fontWeight: FontWeight.bold,fontFamily: 'Rowdies'),
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'Rowdies'),
                               ),
                             ),
                           ),
                         ),
                         const SizedBox(
-                          height: 10,
+                          height: 15,
                         ),
-                        GestureDetector(onTap: (){},
+                        GestureDetector(
+                          onTap: () {},
                           child: HoverContainer(
                             color: Colors.orange,
                             hoverColor: Colors.red,
@@ -251,7 +252,8 @@ class _HomePageState extends State<HomePage> {
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
-                                    fontWeight: FontWeight.bold,fontFamily: 'Rowdies'),
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'Rowdies'),
                               ),
                             ),
                           ),
@@ -267,6 +269,23 @@ class _HomePageState extends State<HomePage> {
                         borderRadius: BorderRadius.all(
                           Radius.circular(8),
                         ),
+                      ),
+                      child: Column(
+                        children: [
+                          const Center(
+                              child: Text(
+                            'Create Your Free Account',
+                            style: TextStyle(
+                                color: kPrColor,
+                                fontSize: 20,
+                                fontFamily: 'RacingSansOne'
+                                    ,
+                                fontWeight: FontWeight.bold),
+                          )),
+                          Row(
+                            children: [],
+                          )
+                        ],
                       ),
                     ),
                     Expanded(
