@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 const SizedBox(
-                  width: 70,
+                  width: 90,
                 ),
                 TextButton(
                   style: ButtonStyle(
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
                   child: const Text('Products', style: TextStyle(fontSize: 16)),
                 ),
                 const SizedBox(
-                  width: 15,
+                  width: 25,
                 ),
                 TextButton(
                   style: ButtonStyle(
@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
                       style: TextStyle(fontSize: 16)),
                 ),
                 const SizedBox(
-                  width: 15,
+                  width: 25,
                 ),
                 TextButton(
                   style: ButtonStyle(
@@ -80,7 +80,7 @@ class _HomePageState extends State<HomePage> {
                   child: const Text('Pricing', style: TextStyle(fontSize: 16)),
                 ),
                 const SizedBox(
-                  width: 15,
+                  width: 25,
                 ),
                 TextButton(
                   style: ButtonStyle(
@@ -108,7 +108,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 const SizedBox(
-                  width: 10,
+                  width: 15,
                 ),
                 Center(
                   child: OutlineButton(
@@ -149,7 +149,11 @@ class _HomePageState extends State<HomePage> {
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Container(width: 120,
+                  child: Container(
+                    decoration: const BoxDecoration(      color: Colors.white,
+                        borderRadius: BorderRadius.all(Radius.circular(5))),
+                    width: 120,
+                    height: 40,
                     child: const Padding(
                       padding: EdgeInsets.all(8.0),
                       child: Center(
@@ -162,7 +166,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                     ),
-                    color: Colors.white,
+
                   ),
                 ),
                 const SizedBox(
@@ -176,7 +180,7 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.only(left:250.0,right: 250,top: 100),
+            padding: const EdgeInsets.only(left: 250.0, right: 250, top: 100),
             child: Column(
               children: [
                 Row(
@@ -224,12 +228,10 @@ class _HomePageState extends State<HomePage> {
                         )
                       ],
                     ),
-                    Expanded(
-                      child: Container(
-                        height: 200,
-                        width: 150,
-                        color: Colors.white,
-                      ),
+                    Container(
+                      height: 200,
+                      width: 525,
+                      color: Colors.white,
                     )
                   ],
                 )
