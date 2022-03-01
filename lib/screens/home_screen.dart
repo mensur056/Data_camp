@@ -190,7 +190,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 Row(
                   children: [
-                    Expanded(
+                    Expanded(flex: 3,
                       child: Container(
                         color: kPrColor,
                       ),
@@ -202,8 +202,9 @@ class _HomePageState extends State<HomePage> {
                           'Build data skills online',
                           style: TextStyle(
                               color: Colors.white,
-                              fontSize: 60,
-                              fontWeight: FontWeight.bold,fontFamily:'CarterOne' ),
+                              fontSize: 50,
+                              fontWeight: FontWeight.bold,fontFamily:'CarterOne'
+                               ),
                         ),
                         const Text(
                           'Build data skills online',
@@ -244,8 +245,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const Spacer(),
                     Container(
-                      height: 550,
-                      width: 500,
+                      height: 520,
+                      width: 475,
                       decoration: const BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.all(
@@ -253,7 +254,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                     ),
-                    Expanded(
+                    Expanded(flex: 3,
                       child: Container(
                         color: kPrColor,
                       ),
