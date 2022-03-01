@@ -21,11 +21,8 @@ class _HomePageState extends State<HomePage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(5.0),
-                  child: Image.asset(
-                    'images/666.png',
-                  ),
+                Image.asset(
+                  'images/tessst1.png',
                 ),
                 const SizedBox(
                   width: 90,
