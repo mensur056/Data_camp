@@ -47,13 +47,14 @@ class _HomePageState extends State<HomePage> {
                 TextButton(
                   style: ButtonStyle(
                     foregroundColor: MaterialStateProperty.resolveWith<Color>(
-                        (Set<MaterialState> states) {
-                      if (states.contains(MaterialState.hovered)) {
-                        return Colors.green;
-                      }
+                      (Set<MaterialState> states) {
+                        if (states.contains(MaterialState.hovered)) {
+                          return Colors.green;
+                        }
 
-                      return Colors.white;
-                    }),
+                        return Colors.white;
+                      },
+                    ),
                   ),
                   onPressed: () {},
                   child: const Text('For Business',
@@ -74,7 +75,10 @@ class _HomePageState extends State<HomePage> {
                     }),
                   ),
                   onPressed: () {},
-                  child: const Text('Pricing', style: TextStyle(fontSize: 16)),
+                  child: const Text(
+                    'Pricing',
+                    style: TextStyle(fontSize: 16),
+                  ),
                 ),
                 const SizedBox(
                   width: 25,
@@ -91,7 +95,10 @@ class _HomePageState extends State<HomePage> {
                     }),
                   ),
                   onPressed: () {},
-                  child: const Text('Resource', style: TextStyle(fontSize: 16)),
+                  child: const Text(
+                    'Resource',
+                    style: TextStyle(fontSize: 16),
+                  ),
                 ),
                 const SizedBox(
                   width: 70,
@@ -124,13 +131,14 @@ class _HomePageState extends State<HomePage> {
                         style: ButtonStyle(
                           foregroundColor:
                               MaterialStateProperty.resolveWith<Color>(
-                                  (Set<MaterialState> states) {
-                            if (states.contains(MaterialState.hovered)) {
-                              return Colors.green;
-                            }
+                            (Set<MaterialState> states) {
+                              if (states.contains(MaterialState.hovered)) {
+                                return Colors.green;
+                              }
 
-                            return Colors.white;
-                          }),
+                              return Colors.white;
+                            },
+                          ),
                         ),
                         onPressed: () {},
                         child: const Text(
@@ -146,8 +154,11 @@ class _HomePageState extends State<HomePage> {
                   onPressed: () {},
                   child: Container(
                     decoration: const BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.all(Radius.circular(5))),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(5),
+                      ),
+                    ),
                     width: 120,
                     height: 40,
                     child: const Padding(
@@ -180,14 +191,19 @@ class _HomePageState extends State<HomePage> {
                 Row(
                   children: [
                     Expanded(
-                        child: Container(
-                      color: kPrColor,
-                    )),
+                      child: Container(
+                        color: kPrColor,
+                      ),
+                    ),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
                           'Build data skills online',
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 60,
+                              fontWeight: FontWeight.bold,fontFamily:'Rowdies' ),
                         ),
                         const Text(
                           'Build data skills online',
@@ -226,18 +242,22 @@ class _HomePageState extends State<HomePage> {
                         )
                       ],
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Container(
                       height: 550,
                       width: 500,
                       decoration: const BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(8),
+                        ),
+                      ),
                     ),
                     Expanded(
-                        child: Container(
-                      color: kPrColor,
-                    )),
+                      child: Container(
+                        color: kPrColor,
+                      ),
+                    ),
                   ],
                 )
               ],
