@@ -42,8 +42,7 @@ class _HomePageState extends State<HomePage> {
                     }),
                   ),
                   onPressed: () {},
-                  child:
-                      const Text('Products', style: TextStyle(fontSize: 16)),
+                  child: const Text('Products', style: TextStyle(fontSize: 16)),
                 ),
                 const SizedBox(
                   width: 25,
@@ -78,8 +77,7 @@ class _HomePageState extends State<HomePage> {
                     }),
                   ),
                   onPressed: () {},
-                  child:
-                      const Text('Pricing', style: TextStyle(fontSize: 16)),
+                  child: const Text('Pricing', style: TextStyle(fontSize: 16)),
                 ),
                 const SizedBox(
                   width: 25,
@@ -96,8 +94,7 @@ class _HomePageState extends State<HomePage> {
                     }),
                   ),
                   onPressed: () {},
-                  child:
-                      const Text('Resource', style: TextStyle(fontSize: 16)),
+                  child: const Text('Resource', style: TextStyle(fontSize: 16)),
                 ),
                 const SizedBox(
                   width: 70,
@@ -178,11 +175,16 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.only(left: 400.0, right: 450, top: 100),
+            padding: const EdgeInsets.only(top: 100.0),
             child: Column(
               children: [
                 Row(
                   children: [
+                    Expanded(
+                      child: Container(
+                        color: kPrColor,
+                      ),
+                    ),
                     Column(
                       children: [
                         const Text(
@@ -226,12 +228,19 @@ class _HomePageState extends State<HomePage> {
                         )
                       ],
                     ),
-                    const Spacer(),
+                    const SizedBox(
+                      width: 90,
+                    ),
                     Container(
                       height: 200,
                       width: 525,
                       color: Colors.white,
-                    )
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: kPrColor,
+                      ),
+                    ),
                   ],
                 )
               ],
