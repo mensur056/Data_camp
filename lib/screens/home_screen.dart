@@ -10,7 +10,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final Color hover = Colors.red;
+
 
   @override
   Widget build(BuildContext context) {
@@ -227,22 +227,30 @@ class _HomePageState extends State<HomePage> {
                           child: const Center(
                             child: Text(
                               'Start Learning For Free',
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(
+                                  color: kPrColor,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold),
                             ),
                           ),
                         ),
                         const SizedBox(
                           height: 10,
                         ),
-                        HoverContainer(
-                          color: const Color(0xFF26d354),
-                          hoverColor: hover,
-                          height: 65,
-                          width: 380,
-                          child: const Center(
-                            child: Text(
-                              'DataCamp For Business',
-                              style: TextStyle(color: Colors.white),
+                        GestureDetector(onTap: (){},
+                          child: HoverContainer(
+                            color: Colors.orangeAccent,
+                            hoverColor: Colors.red,
+                            height: 65,
+                            width: 380,
+                            child: const Center(
+                              child: Text(
+                                'DataCamp For Business',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold),
+                              ),
                             ),
                           ),
                         ),
