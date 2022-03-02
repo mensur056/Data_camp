@@ -285,8 +285,23 @@ class _HomePageState extends State<HomePage> {
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
+                          const SizedBox(
+                            height: 15,
+                          ),
                           Row(
-                            children: [],
+                            children: [
+                              OutlineButton(
+                                borderSide: const BorderSide(color: Colors.black),
+                                onPressed: () {},
+                                child: Container(
+                                  child: Row(
+                                    children: [Image.asset('name')
+                                      const Text('Google',style: TextStyle(color: Colors.red),),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
                           )
                         ],
                       ),
