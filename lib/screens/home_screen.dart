@@ -290,31 +290,8 @@ class _HomePageState extends State<HomePage> {
                             height: 15,
                           ),
                           Row(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(20),
-                                child: OutlineButton(
-                                  borderSide:
-                                      const BorderSide(color: Colors.grey),
-                                  onPressed: () {},
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Row(
-                                      children: [
-                                        SvgPicture.asset('images/google.svg',
-                                            width: 30),
-                                        const SizedBox(
-                                          width: 10,
-                                        ),
-                                        const Text(
-                                          'Google',
-                                          style: TextStyle(color: Colors.red),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              )
+                            children: const [
+                              AccountBar()
                             ],
                           )
                         ],
@@ -331,6 +308,40 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class AccountBar extends StatelessWidget {
+  const AccountBar({
+    Key? key, required this.name,
+  }) : super(key: key);
+final String name;
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(20),
+      child: OutlineButton(
+        borderSide:
+            const BorderSide(color: Colors.grey),
+        onPressed: () {},
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            children: [
+              SvgPicture.asset('images/google.svg',
+                  width: 30),
+              const SizedBox(
+                width: 10,
+              ),
+               Text(
+                name,
+                style: const TextStyle(color: kPrColor,fontWeight: FontWeight.bold,),
+              ),
+            ],
+          ),
         ),
       ),
     );
