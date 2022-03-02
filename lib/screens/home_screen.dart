@@ -185,7 +185,7 @@ class _HomePageState extends State<HomePage> {
         child: ListView(
           children: [
             const SizedBox(
-              height: 100,
+              height: 80,
             ),
             Column(
               children: [
@@ -262,8 +262,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const Spacer(),
                     Container(
-                      height: 520,
-                      width: 475,
+                      height: 475,
+                      width: 425,
                       decoration: const BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.all(
@@ -276,14 +276,15 @@ class _HomePageState extends State<HomePage> {
                             height: 15,
                           ),
                           const Center(
-                              child: Text(
-                            'Create Your Free Account',
-                            style: TextStyle(
-                                color: kPrColor,
-                                fontSize: 18,
-                                fontFamily: 'ShipporiAntiqueB1',
-                                fontWeight: FontWeight.bold),
-                          )),
+                            child: Text(
+                              'Create Your Free Account',
+                              style: TextStyle(
+                                  color: kPrColor,
+                                  fontSize: 18,
+                                  fontFamily: 'ShipporiAntiqueB1',
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
                           Row(
                             children: [],
                           )
