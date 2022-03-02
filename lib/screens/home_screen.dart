@@ -1,5 +1,6 @@
 import 'package:data_camp/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hovering/hovering.dart';
 
 class HomePage extends StatefulWidget {
@@ -290,14 +291,27 @@ class _HomePageState extends State<HomePage> {
                           ),
                           Row(
                             children: [
-                              OutlineButton(
-                                borderSide: const BorderSide(color: Colors.black),
-                                onPressed: () {},
-                                child: Container(
-                                  child: Row(
-                                    children: [Image.asset('name')
-                                      const Text('Google',style: TextStyle(color: Colors.red),),
-                                    ],
+                              Padding(
+                                padding: const EdgeInsets.all(20),
+                                child: OutlineButton(
+                                  borderSide:
+                                      const BorderSide(color: Colors.grey),
+                                  onPressed: () {},
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Row(
+                                      children: [
+                                        SvgPicture.asset('images/google.svg',
+                                            width: 30),
+                                        const SizedBox(
+                                          width: 10,
+                                        ),
+                                        const Text(
+                                          'Google',
+                                          style: TextStyle(color: Colors.red),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               )
