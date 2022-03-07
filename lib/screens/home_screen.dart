@@ -360,6 +360,7 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 TextField(
                                   decoration: InputDecoration(
+                                    hintText: 'Email Address',
                                     border: OutlineInputBorder(),
                                   ),
                                 ),
@@ -377,7 +378,7 @@ class _HomePageState extends State<HomePage> {
                                   height: 8,
                                 ),
                                 TextField(
-                                  decoration: InputDecoration(
+                                  decoration: InputDecoration(hintText: 'Password',
                                     border: OutlineInputBorder(),
                                   ),
                                 ),
