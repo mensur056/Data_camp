@@ -1,4 +1,4 @@
-import 'package:data_camp/screens/home_screen.dart';
+import 'package:data_camp/screens/home_page/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
