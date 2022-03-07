@@ -188,7 +188,7 @@ class _HomePageState extends State<HomePage> {
         child: ListView(
           children: [
             const SizedBox(
-              height: 80,
+              height: 60,
             ),
             Column(
               children: [
@@ -377,7 +377,7 @@ class _HomePageState extends State<HomePage> {
                                 SizedBox(
                                   height: 8,
                                 ),
-                                TextField(
+                                TextField(obscureText: true,
                                   decoration: InputDecoration(hintText: 'Password',
                                     border: OutlineInputBorder(),
                                   ),
