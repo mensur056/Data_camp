@@ -343,6 +343,27 @@ class _HomePageState extends State<HomePage> {
                               ],
                             ),
                           ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(19.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'Email',
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                                TextField(),
+                                Text(
+                                  'Password',
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                                TextField(),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
