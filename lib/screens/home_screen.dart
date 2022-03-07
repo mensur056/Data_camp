@@ -299,23 +299,50 @@ class _HomePageState extends State<HomePage> {
                               AccountBar(
                                 name: 'Google',
                                 pictureName: 'google.svg',
-                              ),   SizedBox(
+                              ),
+                              SizedBox(
                                 width: 10,
                               ),
                               AccountBar(
                                 name: 'Github',
                                 pictureName: 'icons8-github.svg',
-                              ),   SizedBox(
+                              ),
+                              SizedBox(
                                 width: 10,
                               ),
                               AccountBar(
                                 name: 'Facebook',
                                 pictureName: 's.svg',
-                              ), SizedBox(
+                              ),
+                              SizedBox(
                                 width: 16,
                               ),
                             ],
-                          )
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                                left: 19.0, right: 19, top: 10),
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    color: const Color(0xFFbbbbbb),
+                                    height: 1,
+                                  ),
+                                ),
+                                const Padding(
+                                  padding: EdgeInsets.only(left: 6, right: 6),
+                                  child: Text('or'),
+                                ),
+                                Expanded(
+                                  child: Container(
+                                    color: const Color(0xFFbbbbbb),
+                                    height: 1,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -335,4 +362,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
