@@ -13,6 +13,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  bool _passwordVisible = true;
+
+
+  @override
+  void initState() {
+    _passwordVisible = false;
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -347,39 +354,55 @@ class _HomePageState extends State<HomePage> {
                             padding: const EdgeInsets.all(19.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
-                                Text(
+                              children: [
+                                const Text(
                                   'Email Address',
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontSize: 16,
                                       fontFamily: 'Rowdies'),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 8,
                                 ),
-                                TextField(
+                                const TextField(
                                   decoration: InputDecoration(
                                     hintText: 'Email Address',
                                     border: OutlineInputBorder(),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 15,
                                 ),
-                                Text(
+                                const Text(
                                   'Password',
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontSize: 16,
                                       fontFamily: 'Rowdies'),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 8,
                                 ),
-                                TextField(obscureText: true,
-                                  decoration: InputDecoration(hintText: 'Password',
-                                    border: OutlineInputBorder(),
+                                TextField(
+                                  obscureText: _passwordVisible,
+                                  decoration: InputDecoration(
+                                    hintText: 'Password',
+                                    border: const OutlineInputBorder(),
+                                    suffixIcon: IconButton(
+                                      icon: Icon(
+                                        _passwordVisible
+                                            ? Icons.visibility
+                                            : Icons.visibility_off,
+                                        color:
+                                            Theme.of(context).primaryColorDark,
+                                      ),
+                                      onPressed: () {
+                                        setState(() {
+                                          _passwordVisible = !_passwordVisible;
+                                        });
+                                      },
+                                    ),
                                   ),
                                 ),
                               ],
