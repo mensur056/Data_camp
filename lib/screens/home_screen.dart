@@ -13,12 +13,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  bool _passwordVisible = true;
+  bool _passwordVisible = false;
 
 
   @override
   void initState() {
-    _passwordVisible = false;
+    _passwordVisible = true;
   }
   @override
   Widget build(BuildContext context) {
