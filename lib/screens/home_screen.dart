@@ -346,7 +346,7 @@ class AccountBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OutlineButton(
-      borderSide: const BorderSide(color: Colors.grey),
+      borderSide: const BorderSide(color: Color(0xFFb7b7b7)),
       onPressed: () {},
       child: Padding(
         padding: const EdgeInsets.all(8.0),
