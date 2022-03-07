@@ -343,9 +343,6 @@ class _HomePageState extends State<HomePage> {
                               ],
                             ),
                           ),
-                          const SizedBox(
-                            height: 10,
-                          ),
                           Padding(
                             padding: const EdgeInsets.all(19.0),
                             child: Column(
@@ -353,14 +350,30 @@ class _HomePageState extends State<HomePage> {
                               children: const [
                                 Text(
                                   'Email',
-                                  style: TextStyle(color: Colors.black),
+                                  style: TextStyle(color: Colors.black,),
                                 ),
-                                TextField(),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                TextField(
+                                  decoration: InputDecoration(
+                                    border: OutlineInputBorder(),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 15,
+                                ),
                                 Text(
                                   'Password',
                                   style: TextStyle(color: Colors.black),
+                                ),   SizedBox(
+                                  height: 8,
                                 ),
-                                TextField(),
+                                TextField(
+                                  decoration: InputDecoration(
+                                    border: OutlineInputBorder(),
+                                  ),
+                                ),
                               ],
                             ),
                           ),
