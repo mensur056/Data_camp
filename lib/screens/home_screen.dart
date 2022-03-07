@@ -349,8 +349,11 @@ class _HomePageState extends State<HomePage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: const [
                                 Text(
-                                  'Email',
-                                  style: TextStyle(color: Colors.black,),
+                                  'Email Address',
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 16,
+                                      fontFamily: 'Rowdies'),
                                 ),
                                 SizedBox(
                                   height: 8,
@@ -365,8 +368,12 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 Text(
                                   'Password',
-                                  style: TextStyle(color: Colors.black),
-                                ),   SizedBox(
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 16,
+                                      fontFamily: 'Rowdies'),
+                                ),
+                                SizedBox(
                                   height: 8,
                                 ),
                                 TextField(
