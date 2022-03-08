@@ -3,24 +3,24 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 import 'account_bar.dart';
 
-class AccountCard extends StatefulWidget {
-  const AccountCard({Key? key}) : super(key: key);
+class RegisterCard extends StatefulWidget {
+  const RegisterCard({Key? key}) : super(key: key);
 
   @override
-  State<AccountCard> createState() => _AccountCardState();
+  State<RegisterCard> createState() => _RegisterCardState();
 }
 
-class _AccountCardState extends State<AccountCard> {
+class _RegisterCardState extends State<RegisterCard> {
   @override
   Widget build(BuildContext context) {
     bool _passwordVisible = false;
-
 
     @override
     void initState() {
       _passwordVisible = true;
     }
-    return    Container(
+
+    return Container(
       height: 475,
       width: 425,
       decoration: const BoxDecoration(
@@ -76,8 +76,7 @@ class _AccountCardState extends State<AccountCard> {
             ],
           ),
           Padding(
-            padding: const EdgeInsets.only(
-                left: 19.0, right: 19, top: 10),
+            padding: const EdgeInsets.only(left: 19.0, right: 19, top: 10),
             child: Row(
               children: [
                 Expanded(
@@ -107,9 +106,7 @@ class _AccountCardState extends State<AccountCard> {
                 const Text(
                   'Email Address',
                   style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 16,
-                      fontFamily: 'Rowdies'),
+                      color: Colors.black, fontSize: 16, fontFamily: 'Rowdies'),
                 ),
                 const SizedBox(
                   height: 8,
@@ -126,9 +123,7 @@ class _AccountCardState extends State<AccountCard> {
                 const Text(
                   'Password',
                   style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 16,
-                      fontFamily: 'Rowdies'),
+                      color: Colors.black, fontSize: 16, fontFamily: 'Rowdies'),
                 ),
                 const SizedBox(
                   height: 8,
@@ -143,13 +138,14 @@ class _AccountCardState extends State<AccountCard> {
                         _passwordVisible
                             ? Icons.visibility
                             : Icons.visibility_off,
-                        color:
-                        Theme.of(context).primaryColorDark,
+                        color: Theme.of(context).primaryColorDark,
                       ),
                       onPressed: () {
-                        setState(() {
-                          _passwordVisible = !_passwordVisible;
-                        });
+                        setState(
+                          () {
+                            _passwordVisible = !_passwordVisible;
+                          },
+                        );
                       },
                     ),
                   ),
@@ -157,6 +153,25 @@ class _AccountCardState extends State<AccountCard> {
               ],
             ),
           ),
+          Expanded(
+            flex: 1,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 19.0, right: 19, bottom: 16),
+              child: Container(
+                color: Colors.green,
+              ),
+            ),
+          ),
+          const Expanded(
+            child: Padding(
+              padding: EdgeInsets.only(
+                left: 19,
+                right: 19,
+              ),
+              child: Text(
+                  'By continuing, you accept our Terms of Use, our Privacy Policy and that your data is stored in the USA. You confirm you are at least 16 years old (13 if you are an authorized Classrooms user).'),
+            ),
+          )
         ],
       ),
     );

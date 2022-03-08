@@ -1,4 +1,4 @@
-import 'package:data_camp/Widgets/account_card.dart';
+import 'package:data_camp/Widgets/register_card.dart';
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 
@@ -95,7 +95,7 @@ class _BodyState extends State<Body> {
                     ],
                   ),
                   const Spacer(),
-                  const AccountCard(),
+                  const RegisterCard(),
                   Expanded(
                     flex: 3,
                     child: Container(
