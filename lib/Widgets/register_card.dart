@@ -158,6 +158,10 @@ class _RegisterCardState extends State<RegisterCard> {
             child: Padding(
               padding: const EdgeInsets.only(left: 19.0, right: 19, bottom: 16),
               child: Container(
+                child: Center(
+                    child: const Text(
+                  'Start Learning For Free',
+                )),
                 color: Colors.green,
               ),
             ),
