@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hovering/hovering.dart';
 
 import '../constants.dart';
 import 'account_bar.dart';
@@ -157,12 +158,21 @@ class _RegisterCardState extends State<RegisterCard> {
             flex: 1,
             child: Padding(
               padding: const EdgeInsets.only(left: 19.0, right: 19, bottom: 16),
-              child: Container(
-                child: Center(
-                    child: const Text(
-                  'Start Learning For Free',
-                )),
-                color: Colors.green,
+              child: GestureDetector(
+                onTap: () {},
+                child: HoverContainer(
+                  hoverColor: Colors.greenAccent,
+                  child: const Center(
+                    child: Text(
+                      'Start Learning For Free',
+                      style: TextStyle(
+                          color: kPrColor,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  color: const Color(0xFF37d360),
+                ),
               ),
             ),
           ),
