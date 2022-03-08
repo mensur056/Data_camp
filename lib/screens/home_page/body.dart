@@ -116,25 +116,55 @@ class _BodyState extends State<Body> {
                   ),
                 ],
               ),
+              const SizedBox(
+                height: 100,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SvgPicture.asset('images/icons8-c++.svg'),
-                  const Text('C++'),
-                  SvgPicture.asset('images/icons8-figma.svg'),
-                  const Text('Figma'),
-                  SvgPicture.asset('images/icons8-flutter.svg'),
-                  const Text('Flutter'),
-                  SvgPicture.asset('images/icons8-git.svg'),
-                  const Text('Git'),
-                  SvgPicture.asset('images/icons8-javascript.svg'),
-                  const Text('Java Script'),
-                  SvgPicture.asset('images/icons8-python.svg'),
-                  const Text('Python'),
-                  SvgPicture.asset('images/icons8-arduino.svg'),
-                  const Text('Arduino'),
-                  SvgPicture.asset('images/icons8-java.svg'),
-                  const Text('Java'),
+                  SvgPicture.asset('images/icons8-c++.svg', width: 70),
+                  const Text(
+                    'C++',
+                    style: TextStyle(color: Colors.grey, fontSize: 22),
+                  ),
+                  SvgPicture.asset('images/icons8-figma.svg', width: 70),
+                  const Text(
+                    'Figma',
+                    style: TextStyle(color: Colors.grey, fontSize: 22),
+                  ),
+                  SvgPicture.asset('images/icons8-flutter.svg', width: 70),
+                  const Text(
+                    'Flutter',
+                    style: TextStyle(color: Colors.grey, fontSize: 22),
+                  ),
+                  SvgPicture.asset('images/icons8-git.svg', width: 70),
+                  const Text(
+                    'Git',
+                    style: TextStyle(color: Colors.grey, fontSize: 22),
+                  ),
+                  SvgPicture.asset('images/icons8-javascript.svg', width: 70),
+                  const Text(
+                    'Java Script',
+                    style: TextStyle(color: Colors.grey, fontSize: 22),
+                  ),
+                  SvgPicture.asset('images/icons8-python.svg', width: 70),
+                  const Text(
+                    'Python',
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 22,
+                    ),
+                  ),
+                  SvgPicture.asset('images/icons8-arduino.svg', width: 70),
+                  const Text(
+                    'Arduino',
+                    style: TextStyle(color: Colors.grey, fontSize: 22),
+                  ),
+                  SvgPicture.asset('images/icons8-java.svg', width: 70),
+                  const Text(
+                    'Java',
+                    style: TextStyle(color: Colors.grey, fontSize: 22),
+                  ),
                 ],
               )
             ],
