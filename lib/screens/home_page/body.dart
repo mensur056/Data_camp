@@ -117,7 +117,15 @@ class _BodyState extends State<Body> {
                 ],
               ),
               Row(
-                children: [SvgPicture.asset('images/icons8-c++.svg')],
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SvgPicture.asset('images/icons8-c++.svg'),
+                  SvgPicture.asset('images/icons8-figma.svg'),
+                  SvgPicture.asset('images/icons8-flutter.svg'),
+                  SvgPicture.asset('images/icons8-git.svg'),
+                  SvgPicture.asset('images/icons8-javascript.svg'),
+                  SvgPicture.asset('images/icons8-python.svg')
+                ],
               )
             ],
           ),
