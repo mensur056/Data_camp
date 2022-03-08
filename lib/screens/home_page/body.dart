@@ -117,53 +117,74 @@ class _BodyState extends State<Body> {
                 ],
               ),
               const SizedBox(
-                height: 100,
+                height: 200,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SvgPicture.asset('images/icons8-c++.svg', width: 70),
+                  SvgPicture.asset('images/icons8-c++.svg', width: kWidth),
                   const Text(
                     'C++',
-                    style: TextStyle(color: Colors.grey, fontSize: 22),
+                    style: TextStyle(color: Colors.grey, fontSize: 20),
                   ),
-                  SvgPicture.asset('images/icons8-figma.svg', width: 70),
+                  const SizedBox(
+                    width: kDefSpace,
+                  ),
+                  SvgPicture.asset('images/icons8-figma.svg', width: kWidth),
                   const Text(
                     'Figma',
-                    style: TextStyle(color: Colors.grey, fontSize: 22),
+                    style: TextStyle(color: Colors.grey, fontSize: 20),
                   ),
-                  SvgPicture.asset('images/icons8-flutter.svg', width: 70),
+                  const SizedBox(
+                    width: kDefSpace,
+                  ),
+                  SvgPicture.asset('images/icons8-flutter.svg', width: kWidth),
                   const Text(
                     'Flutter',
-                    style: TextStyle(color: Colors.grey, fontSize: 22),
+                    style: TextStyle(color: Colors.grey, fontSize: 20),
                   ),
-                  SvgPicture.asset('images/icons8-git.svg', width: 70),
+                  const SizedBox(
+                    width: kDefSpace,
+                  ),
+                  SvgPicture.asset('images/icons8-git.svg', width: kWidth),
                   const Text(
                     'Git',
-                    style: TextStyle(color: Colors.grey, fontSize: 22),
+                    style: TextStyle(color: Colors.grey, fontSize: 20),
                   ),
-                  SvgPicture.asset('images/icons8-javascript.svg', width: 70),
+                  const SizedBox(
+                    width: kDefSpace,
+                  ),
+                  SvgPicture.asset('images/icons8-javascript.svg', width: kWidth),
                   const Text(
                     'Java Script',
-                    style: TextStyle(color: Colors.grey, fontSize: 22),
+                    style: TextStyle(color: Colors.grey, fontSize: 20),
                   ),
-                  SvgPicture.asset('images/icons8-python.svg', width: 70),
+                  const SizedBox(
+                    width: kDefSpace,
+                  ),
+                  SvgPicture.asset('images/icons8-python.svg', width: kWidth),
                   const Text(
                     'Python',
                     style: TextStyle(
                       color: Colors.grey,
-                      fontSize: 22,
+                      fontSize: 20,
                     ),
                   ),
-                  SvgPicture.asset('images/icons8-arduino.svg', width: 70),
+                  const SizedBox(
+                    width: kDefSpace,
+                  ),
+                  SvgPicture.asset('images/icons8-arduino.svg', width: kWidth),
                   const Text(
                     'Arduino',
-                    style: TextStyle(color: Colors.grey, fontSize: 22),
+                    style: TextStyle(color: Colors.grey, fontSize: 20),
                   ),
-                  SvgPicture.asset('images/icons8-java.svg', width: 70),
+                  const SizedBox(
+                    width: kDefSpace,
+                  ),
+                  SvgPicture.asset('images/icons8-java.svg', width: kWidth),
                   const Text(
                     'Java',
-                    style: TextStyle(color: Colors.grey, fontSize: 22),
+                    style: TextStyle(color: Colors.grey, fontSize: 20),
                   ),
                 ],
               )
