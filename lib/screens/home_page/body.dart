@@ -55,13 +55,14 @@ class _BodyState extends State<Body> {
                         onTap: () {},
                         child: HoverContainer(
                           hoverDecoration:
-                              const BoxDecoration(color: Colors.greenAccent),
+                              const BoxDecoration(color: Colors.greenAccent, borderRadius:
+                              BorderRadius.all(Radius.circular(5))),
                           decoration: const BoxDecoration(
                               color: Color(0xFF37d360),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(5))),
                           height: 65,
-                          width: 380,
+                          width: 360,
                           child: const Center(
                             child: Text(
                               'Start Learning For Free',
@@ -80,14 +81,16 @@ class _BodyState extends State<Body> {
                       GestureDetector(
                         onTap: () {},
                         child: HoverContainer(
-                          hoverDecoration:
-                              const BoxDecoration(color: Colors.red),
+                          hoverDecoration: const BoxDecoration(
+                              color: Colors.red,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(5))),
                           decoration: const BoxDecoration(
                               color: Colors.orange,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(5))),
                           height: 65,
-                          width: 380,
+                          width: 360,
                           child: const Center(
                             child: Text(
                               'DataCamp For Business',
