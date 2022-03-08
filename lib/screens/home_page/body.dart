@@ -120,11 +120,21 @@ class _BodyState extends State<Body> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SvgPicture.asset('images/icons8-c++.svg'),
+                  const Text('C++'),
                   SvgPicture.asset('images/icons8-figma.svg'),
+                  const Text('Figma'),
                   SvgPicture.asset('images/icons8-flutter.svg'),
+                  const Text('Flutter'),
                   SvgPicture.asset('images/icons8-git.svg'),
+                  const Text('Git'),
                   SvgPicture.asset('images/icons8-javascript.svg'),
-                  SvgPicture.asset('images/icons8-python.svg')
+                  const Text('Java Script'),
+                  SvgPicture.asset('images/icons8-python.svg'),
+                  const Text('Python'),
+                  SvgPicture.asset('images/icons8-arduino.svg'),
+                  const Text('Arduino'),
+                  SvgPicture.asset('images/icons8-java.svg'),
+                  const Text('Java'),
                 ],
               )
             ],
