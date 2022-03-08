@@ -183,7 +183,9 @@ class _RegisterCardState extends State<RegisterCard> {
                 right: 19,
               ),
               child: Text(
-                  'By continuing, you accept our Terms of Use, our Privacy Policy and that your data is stored in the USA. You confirm you are at least 16 years old (13 if you are an authorized Classrooms user).'),
+                'By continuing, you accept our Terms of Use, our Privacy Policy and that your data is stored in the USA. You confirm you are at least 16 years old (13 if you are an authorized Classrooms user).',
+                style: TextStyle(fontSize: 12),
+              ),
             ),
           )
         ],
