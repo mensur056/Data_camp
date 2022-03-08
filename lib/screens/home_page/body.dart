@@ -1,7 +1,7 @@
 import 'package:data_camp/Widgets/register_card.dart';
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
-
+import 'package:flutter_svg/svg.dart';
 import '../../Widgets/account_bar.dart';
 import '../../constants.dart';
 
@@ -54,9 +54,10 @@ class _BodyState extends State<Body> {
                       GestureDetector(
                         onTap: () {},
                         child: HoverContainer(
-                          hoverDecoration:
-                              const BoxDecoration(color: Colors.greenAccent, borderRadius:
-                              BorderRadius.all(Radius.circular(5))),
+                          hoverDecoration: const BoxDecoration(
+                              color: Colors.greenAccent,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(5))),
                           decoration: const BoxDecoration(
                               color: Color(0xFF37d360),
                               borderRadius:
@@ -114,6 +115,9 @@ class _BodyState extends State<Body> {
                     ),
                   ),
                 ],
+              ),
+              Row(
+                children: [SvgPicture.asset('images/icons8-c++.svg')],
               )
             ],
           ),
