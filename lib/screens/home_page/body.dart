@@ -26,7 +26,7 @@ class _BodyState extends State<Body> {
               Row(
                 children: [
                   Expanded(
-                    flex: 3,
+                    flex: 4,
                     child: Container(
                       color: kPrColor,
                     ),
@@ -54,8 +54,12 @@ class _BodyState extends State<Body> {
                       GestureDetector(
                         onTap: () {},
                         child: HoverContainer(
-                          color: const Color(0xFF37d360),
-                          hoverColor: Colors.greenAccent,
+                          hoverDecoration:
+                              const BoxDecoration(color: Colors.greenAccent),
+                          decoration: const BoxDecoration(
+                              color: Color(0xFF37d360),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(5))),
                           height: 65,
                           width: 380,
                           child: const Center(
@@ -76,8 +80,12 @@ class _BodyState extends State<Body> {
                       GestureDetector(
                         onTap: () {},
                         child: HoverContainer(
-                          color: Colors.orange,
-                          hoverColor: Colors.red,
+                          hoverDecoration:
+                              const BoxDecoration(color: Colors.red),
+                          decoration: const BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(5))),
                           height: 65,
                           width: 380,
                           child: const Center(
@@ -97,7 +105,7 @@ class _BodyState extends State<Body> {
                   const Spacer(),
                   const RegisterCard(),
                   Expanded(
-                    flex: 3,
+                    flex: 4,
                     child: Container(
                       color: kPrColor,
                     ),

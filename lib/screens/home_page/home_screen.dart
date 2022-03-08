@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
                 'images/tessst1.png',
               ),
               const SizedBox(
-                width: 90,
+                width: 80,
               ),
               TextButton(
                 style: ButtonStyle(
@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               const SizedBox(
-                width: 70,
+                width: 60,
               ),
               IconButton(
                 onPressed: () {},
