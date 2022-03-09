@@ -125,7 +125,7 @@ class _BodyState extends State<Body> {
                   SvgPicture.asset('images/icons8-c++.svg', width: kWidth),
                   const Text(
                     'C++',
-                    style: TextStyle(color: Colors.grey, fontSize: 20),
+                    style: TextStyle(color: Colors.grey, fontSize: 20,fontFamily: 'Courgette'),
                   ),
                   const SizedBox(
                     width: kDefSpace,
@@ -133,7 +133,7 @@ class _BodyState extends State<Body> {
                   SvgPicture.asset('images/icons8-figma.svg', width: kWidth),
                   const Text(
                     'Figma',
-                    style: TextStyle(color: Colors.grey, fontSize: 20),
+                    style: TextStyle(color: Colors.grey, fontSize: 20,fontFamily: ''),
                   ),
                   const SizedBox(
                     width: kDefSpace,
@@ -167,7 +167,7 @@ class _BodyState extends State<Body> {
                     'Python',
                     style: TextStyle(
                       color: Colors.grey,
-                      fontSize: 20,
+                      fontSize: 20,fontFamily: 'Courgette'
                     ),
                   ),
                   const SizedBox(
