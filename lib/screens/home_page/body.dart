@@ -1,4 +1,5 @@
 import 'package:data_camp/Widgets/register_card.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 import 'package:flutter_svg/svg.dart';
@@ -221,13 +222,7 @@ class _BodyState extends State<Body> {
                 height: 425,
                 color: Colors.purple,
               ),
-              Container(
-                color: Colors.red,
-                height: 800,
-              ),
-              Container(height: 500,
-                  child: CustomPaint(
-                      size: const Size(1875, 1875), painter: DrawTriangle()))
+
             ],
           ),
         ],
