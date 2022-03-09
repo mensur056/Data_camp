@@ -124,7 +124,10 @@ class _BodyState extends State<Body> {
                   SvgPicture.asset('images/icons8-c++.svg', width: kWidth),
                   const Text(
                     'C++',
-                    style: TextStyle(color: Colors.grey, fontSize: 20,fontFamily: 'Courgette'),
+                    style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 22,
+                        fontFamily: 'Courgette'),
                   ),
                   const SizedBox(
                     width: kDefSpace,
@@ -132,7 +135,10 @@ class _BodyState extends State<Body> {
                   SvgPicture.asset('images/icons8-figma.svg', width: kWidth),
                   const Text(
                     'Figma',
-                    style: TextStyle(color: Colors.grey, fontSize: 20,fontFamily: 'Pacifico'),
+                    style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 22,
+                        fontFamily: 'Pacifico'),
                   ),
                   const SizedBox(
                     width: kDefSpace,
@@ -140,7 +146,10 @@ class _BodyState extends State<Body> {
                   SvgPicture.asset('images/icons8-flutter.svg', width: kWidth),
                   const Text(
                     'Flutter',
-                    style: TextStyle(color: Colors.grey, fontSize: 20,fontFamily: 'Courgette'),
+                    style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 22,
+                        fontFamily: 'Courgette'),
                   ),
                   const SizedBox(
                     width: kDefSpace,
@@ -148,15 +157,22 @@ class _BodyState extends State<Body> {
                   SvgPicture.asset('images/icons8-git.svg', width: kWidth),
                   const Text(
                     'Git',
-                    style: TextStyle(color: Colors.grey, fontSize: 20,fontFamily: 'Sriracha'),
+                    style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 22,
+                        fontFamily: 'Sriracha'),
                   ),
                   const SizedBox(
                     width: kDefSpace,
                   ),
-                  SvgPicture.asset('images/icons8-javascript.svg', width: kWidth),
+                  SvgPicture.asset('images/icons8-javascript.svg',
+                      width: kWidth),
                   const Text(
                     'Java Script',
-                    style: TextStyle(color: Colors.grey, fontSize: 20,fontFamily: 'ShipporiAntiqueB1'),
+                    style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 22,
+                        fontFamily: 'ShipporiAntiqueB1'),
                   ),
                   const SizedBox(
                     width: kDefSpace,
@@ -165,9 +181,9 @@ class _BodyState extends State<Body> {
                   const Text(
                     'Python',
                     style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 20,fontFamily: 'Courgette'
-                    ),
+                        color: Colors.grey,
+                        fontSize: 22,
+                        fontFamily: 'Courgette'),
                   ),
                   const SizedBox(
                     width: kDefSpace,
@@ -175,7 +191,10 @@ class _BodyState extends State<Body> {
                   SvgPicture.asset('images/icons8-arduino.svg', width: kWidth),
                   const Text(
                     'Arduino',
-                    style: TextStyle(color: Colors.grey, fontSize: 20,fontFamily: 'SansitaSwashed'),
+                    style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 22,
+                        fontFamily: 'SansitaSwashed'),
                   ),
                   const SizedBox(
                     width: kDefSpace,
@@ -183,9 +202,19 @@ class _BodyState extends State<Body> {
                   SvgPicture.asset('images/icons8-java.svg', width: kWidth),
                   const Text(
                     'Java',
-                    style: TextStyle(color: Colors.grey, fontSize: 20,fontFamily: 'Sriracha'),
+                    style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 22,
+                        fontFamily: 'Sriracha'),
                   ),
                 ],
+              ),
+              const SizedBox(
+                height: 100,
+              ),
+              Container(
+                color: Colors.white,
+                height: 200,
               )
             ],
           ),
