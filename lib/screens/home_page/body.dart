@@ -234,14 +234,16 @@ class _BodyState extends State<Body> {
                           color: kPrColor,
                           height: 80,
                         ),
-                      ),  Expanded(
+                      ),
+                      Expanded(
                         flex: 1,
                         child: Container(
                           width: 200,
                           color: Colors.white,
                           height: 25,
                         ),
-                      ),Expanded(
+                      ),
+                      Expanded(
                         flex: 1,
                         child: Container(
                           width: 200,
@@ -249,13 +251,12 @@ class _BodyState extends State<Body> {
                           height: 40,
                         ),
                       ),
-
                       Expanded(
                         flex: 2,
                         child: Column(
                           children: [
                             Container(
-                              color: Colors.deepPurple,
+                              color: Colors.purpleAccent,
                               height: 30,
                             ),
                             Container(
@@ -275,9 +276,8 @@ class _BodyState extends State<Body> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Expanded(
-                        flex: 3,
+                        flex: 2,
                         child: Container(
-                          width: 420,
                           color: Colors.white,
                           height: 40,
                         ),
@@ -285,23 +285,20 @@ class _BodyState extends State<Body> {
                       Expanded(
                         flex: 1,
                         child: Container(
-                          width: 200,
-                          color: Colors.purpleAccent,
+                          color: const Color(0xFF7933ff),
                           height: 40,
                         ),
                       ),
                       Expanded(
-                        flex: 4,
+                        flex: 3,
                         child: Container(
-                          width: 600,
                           color: Colors.white,
                           height: 40,
                         ),
                       ),
                       Expanded(
-                        flex: 4,
+                        flex: 3,
                         child: Container(
-                          width: 600,
                           color: Colors.blue,
                           height: 40,
                         ),
