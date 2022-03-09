@@ -2,6 +2,7 @@ import 'package:data_camp/Widgets/register_card.dart';
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 import 'package:flutter_svg/svg.dart';
+import '../../Widgets/container_dec.dart';
 import '../../constants.dart';
 
 class Body extends StatefulWidget {
@@ -221,12 +222,12 @@ class _BodyState extends State<Body> {
                 color: Colors.purple,
               ),
               Container(
-                color: kPrColor,
+                color: Colors.red,
                 height: 800,
-              ),Container(
-                color: Color(0xFFfffec8),
-                height: 800,
-              )
+              ),
+              Container(
+                  child: CustomPaint(
+                      size: const Size(1875, 1875), painter: DrawTriangle()))
             ],
           ),
         ],
