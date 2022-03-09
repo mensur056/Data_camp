@@ -118,7 +118,7 @@ class _BodyState extends State<Body> {
                 ],
               ),
               const SizedBox(
-                height: 150,
+                height: 100,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -217,39 +217,89 @@ class _BodyState extends State<Body> {
               Column(
                 children: [
                   Row(
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                      Container(
-                        width: 420,
-                        color: Colors.blue,
-                        height: 80,
-                      )
+                      Expanded(
+                        flex: 2,
+                        child: Container(
+                          width: 420,
+                          color: Colors.blue,
+                          height: 80,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 3,
+                        child: Container(
+                          width: 420,
+                          color: kPrColor,
+                          height: 80,
+                        ),
+                      ),  Expanded(
+                        flex: 1,
+                        child: Container(
+                          width: 200,
+                          color: Colors.white,
+                          height: 25,
+                        ),
+                      ),Expanded(
+                        flex: 1,
+                        child: Container(
+                          width: 200,
+                          color: Colors.lightBlueAccent,
+                          height: 40,
+                        ),
+                      ),
+
+                      Expanded(
+                        flex: 2,
+                        child: Column(
+                          children: [
+                            Container(
+                              color: Colors.deepPurple,
+                              height: 30,
+                            ),
+                            Container(
+                              color: Colors.blue,
+                              height: 25,
+                            ),
+                            Container(
+                              color: Colors.blue,
+                              height: 25,
+                            ),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Expanded(flex: 3,
+                      Expanded(
+                        flex: 3,
                         child: Container(
                           width: 420,
                           color: Colors.white,
                           height: 40,
                         ),
                       ),
-                      Expanded(flex: 1,
+                      Expanded(
+                        flex: 1,
                         child: Container(
                           width: 200,
                           color: Colors.purpleAccent,
                           height: 40,
                         ),
                       ),
-                      Expanded(flex: 4,
+                      Expanded(
+                        flex: 4,
                         child: Container(
                           width: 600,
                           color: Colors.white,
                           height: 40,
                         ),
                       ),
-                      Expanded(flex: 4,
+                      Expanded(
+                        flex: 4,
                         child: Container(
                           width: 600,
                           color: Colors.blue,
