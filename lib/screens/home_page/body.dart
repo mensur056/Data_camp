@@ -118,7 +118,7 @@ class _BodyState extends State<Body> {
                 ],
               ),
               const SizedBox(
-                height: 200,
+                height: 150,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -212,7 +212,37 @@ class _BodyState extends State<Body> {
                 ],
               ),
               const SizedBox(
-                height: 100,
+                height: 70,
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    color: Colors.lightBlueAccent,
+                    height: 80,
+                    width: 450,
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        color: Colors.red,
+                        height: 25,
+                        width: 550,
+                      ),
+                      Container(
+                        color: kPrColor,
+                        height: 25,
+                        width: 450,
+                      ),
+                    ],
+                  ),
+                  Container(
+                    color: Colors.white,
+                    height: 30,
+                    width: 200,
+                  ),
+                ],
               ),
               Container(
                 color: Colors.white,
@@ -222,7 +252,6 @@ class _BodyState extends State<Body> {
                 height: 425,
                 color: Colors.purple,
               ),
-
             ],
           ),
         ],
