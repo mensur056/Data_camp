@@ -214,34 +214,50 @@ class _BodyState extends State<Body> {
               const SizedBox(
                 height: 70,
               ),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                mainAxisAlignment: MainAxisAlignment.center,
+              Column(
                 children: [
-                  Container(
-                    color: Colors.lightBlueAccent,
-                    height: 80,
-                    width: 450,
-                  ),
-                  Column(
+                  Row(
                     children: [
                       Container(
-                        color: Colors.red,
-                        height: 25,
-                        width: 550,
-                      ),
-                      Container(
-                        color: kPrColor,
-                        height: 25,
-                        width: 450,
-                      ),
+                        width: 420,
+                        color: Colors.blue,
+                        height: 80,
+                      )
                     ],
                   ),
-                  Container(
-                    color: Colors.white,
-                    height: 30,
-                    width: 200,
-                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        child: Container(
+                          width: 420,
+                          color: Colors.white,
+                          height: 40,
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          width: 200,
+                          color: Colors.purpleAccent,
+                          height: 40,
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          width: 600,
+                          color: Colors.white,
+                          height: 40,
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          width: 600,
+                          color: Colors.lightBlueAccent,
+                          height: 40,
+                        ),
+                      ),
+                    ],
+                  )
                 ],
               ),
               Container(
@@ -259,3 +275,43 @@ class _BodyState extends State<Body> {
     );
   }
 }
+//  Row(
+//                 crossAxisAlignment: CrossAxisAlignment.end,
+//                 mainAxisAlignment: MainAxisAlignment.center,
+//                 children: [
+//                   Container(
+//                     color: Colors.lightBlueAccent,
+//                     height: 80,
+//                     width: 450,
+//                   ),
+//                   Container(
+//                     color: kPrColor,
+//                     height: 50,
+//                     width: 450,
+//                   ),
+//                   Column(
+//                     crossAxisAlignment: CrossAxisAlignment.start,
+//                     children: [
+//                       Row(
+//                         children: [ Container(
+//                           color: kPrColor,
+//                           height: 30,
+//                           width: 150,
+//                         ),
+//                           Container(
+//                             color: Colors.grey,
+//                             height: 65,
+//                             width: 150,
+//                           ),
+//
+//                         ],
+//                       ),
+//                       Container(
+//                         color: Colors.white,
+//                         height: 40,
+//                         width: 250,
+//                       ),
+//                     ],
+//                   ),
+//                 ],
+//               ),
