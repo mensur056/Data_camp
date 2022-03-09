@@ -214,7 +214,15 @@ class _BodyState extends State<Body> {
               ),
               Container(
                 color: Colors.white,
-                height: 200,
+                height: 425,
+              ),
+              Container(
+                height: 425,
+                color: Colors.purple,
+              ),
+              Container(
+                color: kPrColor,
+                height: 800,
               )
             ],
           ),
