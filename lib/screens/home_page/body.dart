@@ -225,7 +225,7 @@ class _BodyState extends State<Body> {
                 color: Colors.red,
                 height: 800,
               ),
-              Container(
+              Container(height: 500,
                   child: CustomPaint(
                       size: const Size(1875, 1875), painter: DrawTriangle()))
             ],
