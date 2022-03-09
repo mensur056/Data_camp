@@ -228,31 +228,31 @@ class _BodyState extends State<Body> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Expanded(
+                      Expanded(flex: 3,
                         child: Container(
                           width: 420,
                           color: Colors.white,
                           height: 40,
                         ),
                       ),
-                      Expanded(
+                      Expanded(flex: 1,
                         child: Container(
                           width: 200,
                           color: Colors.purpleAccent,
                           height: 40,
                         ),
                       ),
-                      Expanded(
+                      Expanded(flex: 4,
                         child: Container(
                           width: 600,
                           color: Colors.white,
                           height: 40,
                         ),
                       ),
-                      Expanded(
+                      Expanded(flex: 4,
                         child: Container(
                           width: 600,
-                          color: Colors.lightBlueAccent,
+                          color: Colors.blue,
                           height: 40,
                         ),
                       ),
