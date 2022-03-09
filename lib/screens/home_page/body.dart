@@ -20,7 +20,7 @@ class _BodyState extends State<Body> {
       child: ListView(
         children: [
           const SizedBox(
-            height: 60,
+            height: 50,
           ),
           Column(
             children: [
@@ -118,7 +118,7 @@ class _BodyState extends State<Body> {
                 ],
               ),
               const SizedBox(
-                height: 100,
+                height: 80,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -212,7 +212,7 @@ class _BodyState extends State<Body> {
                 ],
               ),
               const SizedBox(
-                height: 70,
+                height: 60,
               ),
               Column(
                 children: [

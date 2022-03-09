@@ -12,15 +12,19 @@ class RegisterCard extends StatefulWidget {
 }
 
 class _RegisterCardState extends State<RegisterCard> {
+  final textFieldFocusNode = FocusNode();
+  bool _obscured = false;
+
+  void _toggleObscured() {
+    setState(() {
+      _obscured = !_obscured;
+      if (textFieldFocusNode.hasPrimaryFocus) return;
+      textFieldFocusNode.canRequestFocus = false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    bool _passwordVisible = false;
-
-    @override
-    void initState() {
-      _passwordVisible = true;
-    }
-
     return Container(
       height: 475,
       width: 425,
@@ -130,25 +134,18 @@ class _RegisterCardState extends State<RegisterCard> {
                   height: 8,
                 ),
                 TextField(
-                  obscureText: _passwordVisible,
+                  obscureText: _obscured?false:true,
                   decoration: InputDecoration(
                     hintText: 'Password',
                     border: const OutlineInputBorder(),
                     suffixIcon: IconButton(
-                      icon: Icon(
-                        _passwordVisible
-                            ? Icons.visibility
-                            : Icons.visibility_off,
-                        color: Theme.of(context).primaryColorDark,
-                      ),
-                      onPressed: () {
-                        setState(
-                          () {
-                            _passwordVisible = !_passwordVisible;
-                          },
-                        );
-                      },
-                    ),
+                        icon: Icon(
+                          _obscured
+                              ? Icons.visibility_rounded
+                              : Icons.visibility_off_rounded,
+                          color: Theme.of(context).primaryColorDark,
+                        ),
+                        onPressed: _toggleObscured),
                   ),
                 ),
               ],
