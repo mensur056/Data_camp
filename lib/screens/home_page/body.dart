@@ -311,9 +311,23 @@ class _BodyState extends State<Body> {
                 color: Colors.white,
                 height: 450,
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Column(
-                      children: [],
+                      children: [
+                        const Text(
+                            "LOVED BY LEARNERS AT THOUSANDS OF COMPANIES"),
+                        const Text(
+                            'Skill up at scale. Data training designed for your business.'),
+                        const Text(
+                            'Join 2,000+ companies and 80% of the Fortune 1000 who use DataCamp to upskill their teams.'),
+                        Container(
+                          color: Colors.green,
+                          child: const Text('Learn More'),
+                          height: 50,
+                          width: 100,
+                        )
+                      ],
                     ),
                     Column(
                       children: [],
