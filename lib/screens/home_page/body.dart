@@ -128,7 +128,7 @@ class _BodyState extends State<Body> {
                     'C++',
                     style: TextStyle(
                         color: Colors.grey,
-                        fontSize: 22,
+                        fontSize: 20,
                         fontFamily: 'Courgette'),
                   ),
                   const SizedBox(
@@ -139,7 +139,7 @@ class _BodyState extends State<Body> {
                     'Figma',
                     style: TextStyle(
                         color: Colors.grey,
-                        fontSize: 22,
+                        fontSize: 20,
                         fontFamily: 'Pacifico'),
                   ),
                   const SizedBox(
@@ -150,7 +150,7 @@ class _BodyState extends State<Body> {
                     'Flutter',
                     style: TextStyle(
                         color: Colors.grey,
-                        fontSize: 22,
+                        fontSize: 20,
                         fontFamily: 'Courgette'),
                   ),
                   const SizedBox(
@@ -161,7 +161,7 @@ class _BodyState extends State<Body> {
                     'Git',
                     style: TextStyle(
                         color: Colors.grey,
-                        fontSize: 22,
+                        fontSize: 20,
                         fontFamily: 'Sriracha'),
                   ),
                   const SizedBox(
@@ -173,7 +173,7 @@ class _BodyState extends State<Body> {
                     'Java Script',
                     style: TextStyle(
                         color: Colors.grey,
-                        fontSize: 22,
+                        fontSize: 20,
                         fontFamily: 'ShipporiAntiqueB1'),
                   ),
                   const SizedBox(
@@ -195,7 +195,7 @@ class _BodyState extends State<Body> {
                     'Arduino',
                     style: TextStyle(
                         color: Colors.grey,
-                        fontSize: 22,
+                        fontSize: 20,
                         fontFamily: 'SansitaSwashed'),
                   ),
                   const SizedBox(
@@ -206,7 +206,7 @@ class _BodyState extends State<Body> {
                     'Java',
                     style: TextStyle(
                         color: Colors.grey,
-                        fontSize: 22,
+                        fontSize: 20,
                         fontFamily: 'Sriracha'),
                   ),
                 ],
