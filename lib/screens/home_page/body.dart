@@ -529,6 +529,27 @@ class _BodyState extends State<Body> {
               Container(
                 height: 400,
                 color: const Color(0xFF7933ff),
+                child: Center(
+                  child: Column(
+                    children: [
+                      const Text(
+                        'What is DataCamp?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Poppins',
+                            fontSize: 50,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                          'Learn the data skills you need online at your own\npace—from non-coding essentials to data science\nand machine learning.'),
+                      HoverContainer(
+                        decoration: BoxDecoration(
+                            color: Colors.green,
+                            borderRadius: BorderRadius.all(Radius.circular(3))),
+                      )
+                    ],
+                  ),
+                ),
               ),
             ],
           ),
