@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
                 'images/tessst1.png',
               ),
               const SizedBox(
-                width: 80,
+                width: 60,
               ),
               TextButton(
                 style: ButtonStyle(
@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
                 child: const Text('Products', style: TextStyle(fontSize: 16)),
               ),
               const SizedBox(
-                width: 25,
+                width: 20,
               ),
               TextButton(
                 style: ButtonStyle(
@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                     const Text('For Business', style: TextStyle(fontSize: 16)),
               ),
               const SizedBox(
-                width: 25,
+                width: 20,
               ),
               TextButton(
                 style: ButtonStyle(
@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               const SizedBox(
-                width: 25,
+                width: 20,
               ),
               TextButton(
                 style: ButtonStyle(
@@ -100,12 +100,12 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onPressed: () {},
                 child: const Text(
-                  'Resource',
+                  'Resources',
                   style: TextStyle(fontSize: 16),
                 ),
               ),
               const SizedBox(
-                width: 60,
+                width: 55,
               ),
               IconButton(
                 onPressed: () {},
@@ -116,7 +116,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               const SizedBox(
-                width: 15,
+                width: 10,
               ),
               OutlineButton(
                 borderSide: const BorderSide(
@@ -125,8 +125,8 @@ class _HomePageState extends State<HomePage> {
                 highlightedBorderColor: Colors.green,
                 onPressed: () {},
                 child: Container(
-                  height: 35,
-                  width: 90,
+                  height: 32,
+                  width: 70,
                   decoration: const BoxDecoration(
                       color: kPrColor,
                       borderRadius: BorderRadius.all(Radius.circular(5))),
@@ -148,7 +148,7 @@ class _HomePageState extends State<HomePage> {
                       child: const Text(
                         'Sing in',
                         style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold),
+                            fontSize: 16,),
                       ),
                     ),
                   ),
@@ -163,8 +163,8 @@ class _HomePageState extends State<HomePage> {
                       Radius.circular(5),
                     ),
                   ),
-                  width: 120,
-                  height: 40,
+                  width: 110,
+                  height: 35,
                   child: const Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Center(

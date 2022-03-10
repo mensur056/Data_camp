@@ -27,7 +27,7 @@ class _BodyState extends State<Body> {
               Row(
                 children: [
                   Expanded(
-                    flex: 4,
+                    flex: 3,
                     child: Container(
                       color: kPrColor,
                     ),
@@ -39,8 +39,8 @@ class _BodyState extends State<Body> {
                         'Build data skills online',
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 50,
-                            fontFamily: 'VarelaRound'),
+                            fontSize: 40,
+                            fontFamily: 'Poppins'),
                       ),
                       const Text(
                         'Data drives everything. Get the skills\nyou need for the future of work.',
@@ -110,7 +110,7 @@ class _BodyState extends State<Body> {
                   const Spacer(),
                   const RegisterCard(),
                   Expanded(
-                    flex: 4,
+                    flex: 3,
                     child: Container(
                       color: kPrColor,
                     ),

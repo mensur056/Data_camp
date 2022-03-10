@@ -26,7 +26,7 @@ class _RegisterCardState extends State<RegisterCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 460,
+      height: 440,
       width: 415,
       decoration: const BoxDecoration(
         color: Colors.white,
@@ -104,7 +104,7 @@ class _RegisterCardState extends State<RegisterCard> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(19.0),
+            padding: const EdgeInsets.all(12.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -123,7 +123,7 @@ class _RegisterCardState extends State<RegisterCard> {
                   ),
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 12,
                 ),
                 const Text(
                   'Password',
@@ -154,11 +154,16 @@ class _RegisterCardState extends State<RegisterCard> {
           Expanded(
             flex: 1,
             child: Padding(
-              padding: const EdgeInsets.only(left: 19.0, right: 19, bottom: 16),
+              padding: const EdgeInsets.only(left: 12.0, right: 19, bottom: 16),
               child: GestureDetector(
                 onTap: () {},
                 child: HoverContainer(
-                  hoverColor: Colors.greenAccent,
+                  decoration: const BoxDecoration(
+                      color: Color(0xFF37d360),
+                      borderRadius: BorderRadius.all(Radius.circular(5))),
+                  hoverDecoration: const BoxDecoration(
+                      color: Colors.greenAccent,
+                      borderRadius: BorderRadius.all(Radius.circular(5))),
                   child: const Center(
                     child: Text(
                       'Start Learning For Free',
@@ -168,7 +173,6 @@ class _RegisterCardState extends State<RegisterCard> {
                           fontWeight: FontWeight.bold),
                     ),
                   ),
-                  color: const Color(0xFF37d360),
                 ),
               ),
             ),
