@@ -39,7 +39,7 @@ class _BodyState extends State<Body> {
                         'Build data skills online',
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 55,
+                            fontSize: 50,
                             fontFamily: 'VarelaRound'),
                       ),
                       const Text(
@@ -63,8 +63,8 @@ class _BodyState extends State<Body> {
                               color: Color(0xFF37d360),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(5))),
-                          height: 65,
-                          width: 360,
+                          height: 60,
+                          width: 340,
                           child: const Center(
                             child: Text(
                               'Start Learning For Free',
@@ -91,8 +91,8 @@ class _BodyState extends State<Body> {
                               color: Colors.orange,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(5))),
-                          height: 65,
-                          width: 360,
+                          height: 60,
+                          width: 340,
                           child: const Center(
                             child: Text(
                               'DataCamp For Business',
@@ -309,7 +309,7 @@ class _BodyState extends State<Body> {
               ),
               Container(
                 color: Colors.white,
-                height: 450,
+                height: 425,
                 child: Center(
                   child: Padding(
                     padding: const EdgeInsets.only(top: 60.0),
@@ -347,9 +347,7 @@ class _BodyState extends State<Body> {
                               height: 20,
                             ),
                             GestureDetector(
-                              onTap: () {
-
-                              },
+                              onTap: () {},
                               child: HoverContainer(
                                 hoverDecoration: const BoxDecoration(
                                   color: Colors.orangeAccent,
@@ -378,52 +376,64 @@ class _BodyState extends State<Body> {
                           ],
                         ),
                         const SizedBox(
-                          width: 150,
+                          width: 125,
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
+                            const SizedBox(
+                              height: 60,
+                            ),
                             Row(
                               children: const [
                                 Text(
                                   'Google',
-                                  style: TextStyle(color: kPrColor, fontSize: 30),
+                                  style:
+                                      TextStyle(color: kPrColor, fontSize: 30,fontFamily: 'CarterOne'),
                                 ),
                                 SizedBox(
-                                  width: 30,
+                                  width: 40,
                                 ),
                                 Text(
                                   'Intel',
-                                  style: TextStyle(color: kPrColor, fontSize: 30),
+                                  style:
+                                      TextStyle(color: kPrColor, fontSize: 30,fontFamily: 'Sriracha',fontWeight: FontWeight.bold
+                                          ),
                                 ),
                                 SizedBox(
-                                  width: 30,
+                                  width: 40,
                                 ),
                                 Text(
                                   'ebay',
-                                  style: TextStyle(color: kPrColor, fontSize: 30),
+                                  style:
+                                      TextStyle(color: kPrColor, fontSize: 30,fontFamily: 'FugazOne'),
                                 )
                               ],
+                            ), const SizedBox(
+                              height: 50,
                             ),
                             Row(
                               children: const [
                                 Text(
                                   'PayPal',
-                                  style: TextStyle(color: kPrColor, fontSize: 30),
+                                  style:
+                                      TextStyle(color: kPrColor, fontSize: 30,fontFamily: 'RacingSansOne'),
                                 ),
                                 SizedBox(
-                                  width: 30,
+                                  width: 40,
                                 ),
                                 Text(
                                   'Uber',
-                                  style: TextStyle(color: kPrColor, fontSize: 30),
+                                  style:
+                                      TextStyle(color: kPrColor, fontSize: 30,fontFamily: 'Courgette',fontWeight: FontWeight.bold),
                                 ),
                                 SizedBox(
-                                  width: 30,
+                                  width: 40,
                                 ),
                                 Text(
                                   'Deloitte',
-                                  style: TextStyle(color: kPrColor, fontSize: 30),
+                                  style:
+                                      TextStyle(color: kPrColor, fontSize: 30,fontFamily: 'Poppins'),
                                 )
                               ],
                             ),

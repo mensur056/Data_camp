@@ -26,12 +26,12 @@ class _RegisterCardState extends State<RegisterCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 475,
-      width: 425,
+      height: 460,
+      width: 415,
       decoration: const BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.all(
-          Radius.circular(8),
+          Radius.circular(5),
         ),
       ),
       child: Column(
@@ -55,7 +55,7 @@ class _RegisterCardState extends State<RegisterCard> {
           Row(
             children: const [
               SizedBox(
-                width: 18,
+                width: 12,
               ),
               AccountBar(
                 name: 'Google',
@@ -76,7 +76,7 @@ class _RegisterCardState extends State<RegisterCard> {
                 pictureName: 's.svg',
               ),
               SizedBox(
-                width: 16,
+                width: 12,
               ),
             ],
           ),
