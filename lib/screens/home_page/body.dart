@@ -376,7 +376,7 @@ class _BodyState extends State<Body> {
                           ],
                         ),
                         const SizedBox(
-                          width: 125,
+                          width: 110,
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
