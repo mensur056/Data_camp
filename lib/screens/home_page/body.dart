@@ -321,7 +321,7 @@ class _BodyState extends State<Body> {
                     height: 425,
                     child: Center(
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 60.0),
+                        padding: const EdgeInsets.only(top: 80.0),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -367,7 +367,7 @@ class _BodyState extends State<Body> {
                                     decoration: const BoxDecoration(
                                       color: Colors.amber,
                                       borderRadius: BorderRadius.all(
-                                        Radius.circular(5),
+                                        Radius.circular(3),
                                       ),
                                     ),
                                     child: const Center(
@@ -385,7 +385,7 @@ class _BodyState extends State<Body> {
                               ],
                             ),
                             const SizedBox(
-                              width: 110,
+                              width: 160,
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -476,9 +476,59 @@ class _BodyState extends State<Body> {
                   ),
                 ],
               ),
+              Row(
+                children: [
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      color: Colors.blueAccent,
+                      height: 30,
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Container(
+                      color: const Color(0xFF7933ff),
+                      height: 30,
+                    ),
+                  ),
+                  Expanded(
+                    flex: 6,
+                    child: Container(
+                      color: Colors.white,
+                      height: 30,
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      color: const Color(0xFF7933ff),
+                      height: 30,
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Container(
+                      color: Colors.black,
+                      height: 30,
+                    ),
+                  ),
+                  Expanded(
+                    flex: 6,
+                    child: Container(
+                      color: const Color(0xFF7933ff),
+                      height: 30,
+                    ),
+                  ),
+                ],
+              ),
               Container(
-                height: 425,
-                color: Colors.purple,
+                height: 400,
+                color: const Color(0xFF7933ff),
               ),
             ],
           ),
