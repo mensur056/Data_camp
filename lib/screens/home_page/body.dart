@@ -540,12 +540,32 @@ class _BodyState extends State<Body> {
                             fontSize: 50,
                             fontWeight: FontWeight.bold),
                       ),
-                      Text(
+                      const Text(
                           'Learn the data skills you need online at your own\npace—from non-coding essentials to data science\nand machine learning.'),
                       HoverContainer(
-                        decoration: BoxDecoration(
-                            color: Colors.green,
-                            borderRadius: BorderRadius.all(Radius.circular(3))),
+                        height: 50,
+                        width: 180,
+                        decoration: const BoxDecoration(
+                          color: Colors.green,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(3),
+                          ),
+                        ),
+                        hoverDecoration: const BoxDecoration(
+                          color: Colors.greenAccent,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(3),
+                          ),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            'Start Learning For Free',
+                            style: TextStyle(
+                                color: kPrColor,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15),
+                          ),
+                        ),
                       )
                     ],
                   ),
