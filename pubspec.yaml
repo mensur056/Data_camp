@@ -137,4 +137,4 @@ flutter:
 
     - family: Poppins
       fonts:
-        - asset: fonts/Poppins-SemiBold.ttf
+        - asset: fonts/Poppins-Bold.ttf

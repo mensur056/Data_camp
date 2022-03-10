@@ -321,23 +321,52 @@ class _BodyState extends State<Body> {
                             "LOVED BY LEARNERS AT THOUSANDS OF COMPANIES",
                             style: TextStyle(
                                 color: Colors.red,
-                                fontFamily: 'Quicksand',fontWeight: FontWeight.bold,
+                                fontFamily: 'Quicksand',
+                                fontWeight: FontWeight.bold,
                                 fontSize: 16),
                           ),
                           const Text(
                             'Skill up at scale. Data training\ndesigned for your business.',
                             style: TextStyle(
                                 color: kPrColor,
-                                fontFamily: 'Poppins',fontWeight: FontWeight.bold,
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.bold,
                                 fontSize: 40),
                           ),
                           const Text(
-                              'Join 2,000+ companies and 80% of the Fortune 1000 who\nuse DataCamp to upskill their teams.'),
-                          Container(
-                            color: Colors.green,
-                            child: const Text('Learn More'),
-                            height: 50,
-                            width: 100,
+                            'Join 2,000+ companies and 80% of the Fortune 1000 who\nuse DataCamp to upskill their teams.',
+                            style: TextStyle(
+                                color: kPrColor,
+                                fontFamily: 'Quicksand',
+                                fontWeight: FontWeight.bold,
+                                fontSize: 17),
+                          ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                             ;
+                            },
+                            child: HoverContainer(
+                              hoverDecoration: const BoxDecoration(
+                                  color: Colors.orangeAccent,
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5))),
+                              decoration: const BoxDecoration(
+                                  color: Colors.amber,
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5))),
+                              child: const Center(
+                                  child: Text(
+                                'Learn More',
+                                style: TextStyle(
+                                    color: kPrColor,
+                                    fontWeight: FontWeight.bold),
+                              )),
+                              height: 45,
+                              width: 125,
+                            ),
                           )
                         ],
                       ),
