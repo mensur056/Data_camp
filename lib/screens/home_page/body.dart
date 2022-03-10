@@ -335,16 +335,16 @@ class _BodyState extends State<Body> {
                     Column(
                       children: [
                         Row(
-                          children: [
-                            const Text(
+                          children: const [
+                            Text(
                               'Google',
                               style: TextStyle(color: kPrColor),
                             ),
-                            SvgPicture.asset(
-                              'images/intel.svg',
-                              width: 80,
+                            Text(
+                              'Intel',
+                              style: TextStyle(color: kPrColor),
                             ),
-                            const Text(
+                            Text(
                               'ebay',
                               style: TextStyle(color: kPrColor),
                             )
@@ -382,4 +382,3 @@ class _BodyState extends State<Body> {
     );
   }
 }
-
