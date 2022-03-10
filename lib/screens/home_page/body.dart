@@ -379,6 +379,99 @@ class _BodyState extends State<Body> {
                 ],
               ),
               const WhatIsDataCamp(),
+              Row(
+                children: [
+                  Expanded(flex: 3,
+                    child: Container(
+                      height: 30,
+                      color: const Color(0xFF7933ff),
+                    ),
+                  ),
+                  Expanded(flex: 2,
+                    child: Container(
+                      height: 30,
+                      color: Colors.lightBlueAccent,
+                    ),
+                  ),
+                  Expanded(flex: 5,
+                    child: Container(
+                      height: 30,
+                      color: const Color(0xFF7933ff),
+                    ),
+                  ),
+                  Expanded(flex: 3,
+                    child: Container(
+                      height: 30,
+                      color: const Color(0xFF7933ff),
+                    ),
+                  )
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(flex: 3,
+                    child: Container(
+                      height: 30,
+                      color: Colors.pinkAccent,
+                    ),
+                  ),
+                  Expanded(flex: 2,
+                    child: Container(
+                      height: 30,
+                      color: const Color(0xFF213147),
+                    ),
+                  ),
+                  Expanded(flex: 5,
+                    child: Container(
+                      height: 30,
+                      color: kPrColor,
+                    ),
+                  ),
+                  Expanded(flex: 3,
+                    child: Container(
+                      height: 30,
+                      color: const Color(0xFF7933ff),
+                    ),
+                  )
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(flex: 3  ,
+                    child: Container(
+                      height: 30,
+                      color: kPrColor,
+                    ),
+                  ),
+                  Expanded(flex: 2,
+                    child: Container(
+                      height: 30,
+                      color: const Color(0xFF213147),
+                    ),
+                  ),
+                  Expanded(flex: 5,
+                    child: Container(
+                      height: 30,
+                      color: kPrColor,
+                    ),
+                  ),
+                  Expanded(flex: 3,
+                    child: Container(
+                      height: 30,
+                      color: Colors.lightBlueAccent,
+                    ),
+                  )
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(
+                      child: Container(
+                    color: kPrColor,
+                    height: 450,
+                  )),
+                ],
+              )
             ],
           ),
         ],
@@ -386,4 +479,3 @@ class _BodyState extends State<Body> {
     );
   }
 }
-
