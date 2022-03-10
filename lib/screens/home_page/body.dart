@@ -310,65 +310,91 @@ class _BodyState extends State<Body> {
               Container(
                 color: Colors.white,
                 height: 450,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Column(
-                      children: [
-                        const Text(
-                            "LOVED BY LEARNERS AT THOUSANDS OF COMPANIES"),
-                        const Text(
-                            'Skill up at scale. Data training designed for your business.'),
-                        const Text(
-                            'Join 2,000+ companies and 80% of the Fortune 1000 who use DataCamp to upskill their teams.'),
-                        Container(
-                          color: Colors.green,
-                          child: const Text('Learn More'),
-                          height: 50,
-                          width: 100,
-                        )
-                      ],
-                    ),
-                    const SizedBox(
-                      width: 150,
-                    ),
-                    Column(
-                      children: [
-                        Row(
-                          children: const [
-                            Text(
-                              'Google',
-                              style: TextStyle(color: kPrColor),
-                            ),
-                            Text(
-                              'Intel',
-                              style: TextStyle(color: kPrColor),
-                            ),
-                            Text(
-                              'ebay',
-                              style: TextStyle(color: kPrColor),
-                            )
-                          ],
-                        ),
-                        Row(
-                          children: const [
-                            Text(
-                              'PayPal',
-                              style: TextStyle(color: kPrColor),
-                            ),
-                            Text(
-                              'Uber',
-                              style: TextStyle(color: kPrColor),
-                            ),
-                            Text(
-                              'Deloitte',
-                              style: TextStyle(color: kPrColor),
-                            )
-                          ],
-                        ),
-                      ],
-                    )
-                  ],
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            "LOVED BY LEARNERS AT THOUSANDS OF COMPANIES",
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontFamily: 'Quicksand',fontWeight: FontWeight.bold,
+                                fontSize: 16),
+                          ),
+                          const Text(
+                            'Skill up at scale. Data training\ndesigned for your business.',
+                            style: TextStyle(
+                                color: kPrColor,
+                                fontFamily: 'Quicksand',fontWeight: FontWeight.bold,
+                                fontSize: 50),
+                          ),
+                          const Text(
+                              'Join 2,000+ companies and 80% of the Fortune 1000 who\nuse DataCamp to upskill their teams.'),
+                          Container(
+                            color: Colors.green,
+                            child: const Text('Learn More'),
+                            height: 50,
+                            width: 100,
+                          )
+                        ],
+                      ),
+                      const SizedBox(
+                        width: 150,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: const [
+                              Text(
+                                'Google',
+                                style: TextStyle(color: kPrColor, fontSize: 30),
+                              ),
+                              SizedBox(
+                                width: 30,
+                              ),
+                              Text(
+                                'Intel',
+                                style: TextStyle(color: kPrColor, fontSize: 30),
+                              ),
+                              SizedBox(
+                                width: 30,
+                              ),
+                              Text(
+                                'ebay',
+                                style: TextStyle(color: kPrColor, fontSize: 30),
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: const [
+                              Text(
+                                'PayPal',
+                                style: TextStyle(color: kPrColor, fontSize: 30),
+                              ),
+                              SizedBox(
+                                width: 30,
+                              ),
+                              Text(
+                                'Uber',
+                                style: TextStyle(color: kPrColor, fontSize: 30),
+                              ),
+                              SizedBox(
+                                width: 30,
+                              ),
+                              Text(
+                                'Deloitte',
+                                style: TextStyle(color: kPrColor, fontSize: 30),
+                              )
+                            ],
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ),
               Container(
