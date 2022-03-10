@@ -1,9 +1,9 @@
 import 'package:data_camp/Widgets/register_card.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 import 'package:flutter_svg/svg.dart';
-import '../../Widgets/container_dec.dart';
+
 import '../../constants.dart';
 
 class Body extends StatefulWidget {
@@ -309,7 +309,17 @@ class _BodyState extends State<Body> {
               ),
               Container(
                 color: Colors.white,
-                height: 425,
+                height: 450,
+                child: Row(
+                  children: [
+                    Column(
+                      children: [],
+                    ),
+                    Column(
+                      children: [],
+                    )
+                  ],
+                ),
               ),
               Container(
                 height: 425,

@@ -134,7 +134,7 @@ class _RegisterCardState extends State<RegisterCard> {
                   height: 8,
                 ),
                 TextField(
-                  obscureText: _obscured?false:true,
+                  obscureText: _obscured ? false : true,
                   decoration: InputDecoration(
                     hintText: 'Password',
                     border: const OutlineInputBorder(),
