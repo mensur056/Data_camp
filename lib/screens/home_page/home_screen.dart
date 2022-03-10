@@ -1,6 +1,7 @@
 import 'package:data_camp/constants.dart';
 import 'package:data_camp/screens/home_page/body.dart';
 import 'package:flutter/material.dart';
+import 'package:hovering/hovering.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key, required String title}) : super(key: key);
@@ -125,8 +126,8 @@ class _HomePageState extends State<HomePage> {
                 highlightedBorderColor: Colors.green,
                 onPressed: () {},
                 child: Container(
-                  height: 32,
-                  width: 70,
+                  height: 30,
+                  width: 65,
                   decoration: const BoxDecoration(
                       color: kPrColor,
                       borderRadius: BorderRadius.all(Radius.circular(5))),
@@ -148,7 +149,8 @@ class _HomePageState extends State<HomePage> {
                       child: const Text(
                         'Sing in',
                         style: TextStyle(
-                            fontSize: 16,),
+                          fontSize: 16,
+                        ),
                       ),
                     ),
                   ),
@@ -156,15 +158,18 @@ class _HomePageState extends State<HomePage> {
               ),
               TextButton(
                 onPressed: () {},
-                child: Container(
+                child: HoverContainer(
+                  hoverDecoration: const BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.all(Radius.circular(3))),
                   decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.all(
-                      Radius.circular(5),
+                      Radius.circular(3),
                     ),
                   ),
                   width: 110,
-                  height: 35,
+                  height: 32,
                   child: const Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Center(
