@@ -329,8 +329,44 @@ class _BodyState extends State<Body> {
                         )
                       ],
                     ),
+                    const SizedBox(
+                      width: 150,
+                    ),
                     Column(
-                      children: [],
+                      children: [
+                        Row(
+                          children: [
+                            const Text(
+                              'Google',
+                              style: TextStyle(color: kPrColor),
+                            ),
+                            SvgPicture.asset(
+                              'images/intel.svg',
+                              width: 80,
+                            ),
+                            const Text(
+                              'ebay',
+                              style: TextStyle(color: kPrColor),
+                            )
+                          ],
+                        ),
+                        Row(
+                          children: const [
+                            Text(
+                              'PayPal',
+                              style: TextStyle(color: kPrColor),
+                            ),
+                            Text(
+                              'Uber',
+                              style: TextStyle(color: kPrColor),
+                            ),
+                            Text(
+                              'Deloitte',
+                              style: TextStyle(color: kPrColor),
+                            )
+                          ],
+                        ),
+                      ],
                     )
                   ],
                 ),
@@ -346,43 +382,4 @@ class _BodyState extends State<Body> {
     );
   }
 }
-//  Row(
-//                 crossAxisAlignment: CrossAxisAlignment.end,
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Container(
-//                     color: Colors.lightBlueAccent,
-//                     height: 80,
-//                     width: 450,
-//                   ),
-//                   Container(
-//                     color: kPrColor,
-//                     height: 50,
-//                     width: 450,
-//                   ),
-//                   Column(
-//                     crossAxisAlignment: CrossAxisAlignment.start,
-//                     children: [
-//                       Row(
-//                         children: [ Container(
-//                           color: kPrColor,
-//                           height: 30,
-//                           width: 150,
-//                         ),
-//                           Container(
-//                             color: Colors.grey,
-//                             height: 65,
-//                             width: 150,
-//                           ),
-//
-//                         ],
-//                       ),
-//                       Container(
-//                         color: Colors.white,
-//                         height: 40,
-//                         width: 250,
-//                       ),
-//                     ],
-//                   ),
-//                 ],
-//               ),
+
