@@ -417,7 +417,7 @@ class _BodyState extends State<Body> {
                                       width: 40,
                                     ),
                                     Text(
-                                      'ebay',
+                                      'Ebay',
                                       style: TextStyle(
                                           color: kPrColor,
                                           fontSize: 30,
