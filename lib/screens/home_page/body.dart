@@ -311,123 +311,126 @@ class _BodyState extends State<Body> {
                 color: Colors.white,
                 height: 450,
                 child: Center(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Text(
-                            "LOVED BY LEARNERS AT THOUSANDS OF COMPANIES",
-                            style: TextStyle(
-                                color: Colors.red,
-                                fontFamily: 'Quicksand',
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16),
-                          ),
-                          const Text(
-                            'Skill up at scale. Data training\ndesigned for your business.',
-                            style: TextStyle(
-                                color: kPrColor,
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.bold,
-                                fontSize: 40),
-                          ),
-                          const Text(
-                            'Join 2,000+ companies and 80% of the Fortune 1000 who\nuse DataCamp to upskill their teams.',
-                            style: TextStyle(
-                                color: kPrColor,
-                                fontFamily: 'Quicksand',
-                                fontWeight: FontWeight.bold,
-                                fontSize: 17),
-                          ),
-                          const SizedBox(
-                            height: 20,
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              ;
-                            },
-                            child: HoverContainer(
-                              hoverDecoration: const BoxDecoration(
-                                color: Colors.orangeAccent,
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(5),
-                                ),
-                              ),
-                              decoration: const BoxDecoration(
-                                color: Colors.amber,
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(5),
-                                ),
-                              ),
-                              child: const Center(
-                                child: Text(
-                                  'Learn More',
-                                  style: TextStyle(
-                                      color: kPrColor,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              height: 45,
-                              width: 125,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 60.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              "LOVED BY LEARNERS AT THOUSANDS OF COMPANIES",
+                              style: TextStyle(
+                                  color: Colors.red,
+                                  fontFamily: 'Quicksand',
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16),
                             ),
-                          )
-                        ],
-                      ),
-                      const SizedBox(
-                        width: 150,
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            children: const [
-                              Text(
-                                'Google',
-                                style: TextStyle(color: kPrColor, fontSize: 30),
+                            const Text(
+                              'Skill up at scale. Data training\ndesigned for your business.',
+                              style: TextStyle(
+                                  color: kPrColor,
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 40),
+                            ),
+                            const Text(
+                              'Join 2,000+ companies and 80% of the Fortune 1000 who\nuse DataCamp to upskill their teams.',
+                              style: TextStyle(
+                                  color: kPrColor,
+                                  fontFamily: 'Quicksand',
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 17),
+                            ),
+                            const SizedBox(
+                              height: 20,
+                            ),
+                            GestureDetector(
+                              onTap: () {
+
+                              },
+                              child: HoverContainer(
+                                hoverDecoration: const BoxDecoration(
+                                  color: Colors.orangeAccent,
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(5),
+                                  ),
+                                ),
+                                decoration: const BoxDecoration(
+                                  color: Colors.amber,
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(5),
+                                  ),
+                                ),
+                                child: const Center(
+                                  child: Text(
+                                    'Learn More',
+                                    style: TextStyle(
+                                        color: kPrColor,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ),
+                                height: 45,
+                                width: 125,
                               ),
-                              SizedBox(
-                                width: 30,
-                              ),
-                              Text(
-                                'Intel',
-                                style: TextStyle(color: kPrColor, fontSize: 30),
-                              ),
-                              SizedBox(
-                                width: 30,
-                              ),
-                              Text(
-                                'ebay',
-                                style: TextStyle(color: kPrColor, fontSize: 30),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: const [
-                              Text(
-                                'PayPal',
-                                style: TextStyle(color: kPrColor, fontSize: 30),
-                              ),
-                              SizedBox(
-                                width: 30,
-                              ),
-                              Text(
-                                'Uber',
-                                style: TextStyle(color: kPrColor, fontSize: 30),
-                              ),
-                              SizedBox(
-                                width: 30,
-                              ),
-                              Text(
-                                'Deloitte',
-                                style: TextStyle(color: kPrColor, fontSize: 30),
-                              )
-                            ],
-                          ),
-                        ],
-                      )
-                    ],
+                            )
+                          ],
+                        ),
+                        const SizedBox(
+                          width: 150,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: const [
+                                Text(
+                                  'Google',
+                                  style: TextStyle(color: kPrColor, fontSize: 30),
+                                ),
+                                SizedBox(
+                                  width: 30,
+                                ),
+                                Text(
+                                  'Intel',
+                                  style: TextStyle(color: kPrColor, fontSize: 30),
+                                ),
+                                SizedBox(
+                                  width: 30,
+                                ),
+                                Text(
+                                  'ebay',
+                                  style: TextStyle(color: kPrColor, fontSize: 30),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: const [
+                                Text(
+                                  'PayPal',
+                                  style: TextStyle(color: kPrColor, fontSize: 30),
+                                ),
+                                SizedBox(
+                                  width: 30,
+                                ),
+                                Text(
+                                  'Uber',
+                                  style: TextStyle(color: kPrColor, fontSize: 30),
+                                ),
+                                SizedBox(
+                                  width: 30,
+                                ),
+                                Text(
+                                  'Deloitte',
+                                  style: TextStyle(color: kPrColor, fontSize: 30),
+                                )
+                              ],
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),
