@@ -328,7 +328,7 @@ class _BodyState extends State<Body> {
                             'Skill up at scale. Data training\ndesigned for your business.',
                             style: TextStyle(
                                 color: kPrColor,
-                                fontFamily: 'Fredoka',fontWeight: FontWeight.bold,
+                                fontFamily: 'Poppins',fontWeight: FontWeight.bold,
                                 fontSize: 40),
                           ),
                           const Text(
