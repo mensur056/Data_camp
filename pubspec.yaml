@@ -134,3 +134,7 @@ flutter:
     - family: Fredoka
       fonts:
         - asset: fonts/Fredoka-VariableFont_wdth,wght.ttf
+
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins-SemiBold.ttf

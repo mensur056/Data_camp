@@ -328,8 +328,8 @@ class _BodyState extends State<Body> {
                             'Skill up at scale. Data training\ndesigned for your business.',
                             style: TextStyle(
                                 color: kPrColor,
-                                fontFamily: 'Rowdies',fontWeight: FontWeight.bold,
-                                fontSize: 50),
+                                fontFamily: 'Fredoka',fontWeight: FontWeight.bold,
+                                fontSize: 40),
                           ),
                           const Text(
                               'Join 2,000+ companies and 80% of the Fortune 1000 who\nuse DataCamp to upskill their teams.'),
