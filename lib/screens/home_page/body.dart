@@ -516,8 +516,8 @@ class _BodyState extends State<Body> {
                           ),
                           Container(
                             color: Colors.red,
-                            height: 500,
-                            width: 1000,
+                            height: 550,
+                            width: 800,
                             child: Padding(
                               padding: const EdgeInsets.only(top: 70.0),
                               child: Column(
@@ -623,8 +623,22 @@ class _BodyState extends State<Body> {
                                       ),
                                     ],
                                   ),
-                                  const SizedBox(
-                                    height: 100,
+                                  Row(
+                                    children: [SizedBox(width:160,),
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                            top: 25.0, bottom: 25),
+                                        child: Image.asset('images/arrow1.png',width: 100,height: 150,),
+                                      ),
+                                      const SizedBox(
+                                        width: 190,
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                            top: 25.0, bottom: 25),
+                                        child: Image.asset('images/arrow1.png',width: 100,height: 150,),
+                                      ),
+                                    ],
                                   ),
                                   Row(
                                     children: [
