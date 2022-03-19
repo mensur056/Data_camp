@@ -524,12 +524,22 @@ class _BodyState extends State<Body> {
                                     Row(
                                       children: [
                                         Column(
-                                          children: [
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: const [
                                             Text(
                                               'Assess',
                                               style: TextStyle(
-                                                  color: Colors.black,
+                                                  color: Colors.black,fontFamily: 'Poppins',
                                                   fontSize: 30),
+                                            ),
+                                            Text(
+                                              'Test your skills\nand track progress',
+                                              style: TextStyle(
+                                                  color: Colors.black,fontFamily: 'Quicksand',fontWeight: FontWeight.bold,
+                                                  fontSize: 18),
                                             )
                                           ],
                                         ),
@@ -560,9 +570,25 @@ class _BodyState extends State<Body> {
                                               shape: BoxShape.circle,
                                               color: Colors.green),
                                         ),
-                                        const Text(
-                                          'AssessTest your skills and track progress',
-                                          style: TextStyle(color: Colors.black),
+                                        Column(
+                                          mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                          children: const [
+                                            Text(
+                                              'Learn',
+                                              style: TextStyle(
+                                                  color: Colors.black,fontFamily: 'Poppins',
+                                                  fontSize: 30),
+                                            ),
+                                            Text(
+                                              'Test your skills\nand track progress',
+                                              style: TextStyle(
+                                                  color: Colors.black,fontFamily: 'Quicksand',fontWeight: FontWeight.bold,
+                                                  fontSize: 18),
+                                            )
+                                          ],
                                         ),
                                       ],
                                     ),
@@ -573,27 +599,76 @@ class _BodyState extends State<Body> {
                                 ),
                                 Row(
                                   children: [
-                                    Container(
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(17.0),
-                                        child: Image.asset('images/apply.png'),
-                                      ),
-                                      decoration: const BoxDecoration(
-                                          shape: BoxShape.circle,
-                                          color: Colors.blue),
+                                    Row(
+                                      children: [
+                                        Column(
+                                          mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                          children: const [
+                                            Text(
+                                              'Assess',
+                                              style: TextStyle(
+                                                  color: Colors.black,fontFamily: 'Poppins',
+                                                  fontSize: 30),
+                                            ),
+                                            Text(
+                                              'Test your skills\nand track progress',
+                                              style: TextStyle(
+                                                  color: Colors.black,fontFamily: 'Quicksand',fontWeight: FontWeight.bold,
+                                                  fontSize: 18),
+                                            )
+                                          ],
+                                        ),
+                                        Container(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(17.0),
+                                            child: Image.asset(
+                                                'images/apply.png'),
+                                          ),
+                                          decoration: const BoxDecoration(
+                                              shape: BoxShape.circle,
+                                              color: Colors.blue),
+                                        ),
+                                      ],
                                     ),
                                     const SizedBox(
                                       width: 150,
                                     ),
-                                    Container(
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(17.0),
-                                        child:
+                                    Row(
+                                      children: [
+                                        Container(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(17.0),
+                                            child:
                                             Image.asset('images/practice.png'),
-                                      ),
-                                      decoration: const BoxDecoration(
-                                          shape: BoxShape.circle,
-                                          color: Colors.green),
+                                          ),
+                                          decoration: const BoxDecoration(
+                                              shape: BoxShape.circle,
+                                              color: Colors.green),
+                                        ),
+                                        Column(
+                                          mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                          children: const [
+                                            Text(
+                                              'Learn',
+                                              style: TextStyle(
+                                                  color: Colors.black,fontFamily: 'Poppins',
+                                                  fontSize: 30),
+                                            ),
+                                            Text(
+                                              'Test your skills\nand track progress',
+                                              style: TextStyle(
+                                                  color: Colors.black,fontFamily: 'Quicksand',fontWeight: FontWeight.bold,
+                                                  fontSize: 18),
+                                            )
+                                          ],
+                                        ),
+                                      ],
                                     ),
                                   ],
                                 ),
