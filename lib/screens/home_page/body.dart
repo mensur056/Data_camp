@@ -481,6 +481,18 @@ class _BodyState extends State<Body> {
                     child: Container(
                       color: kPrColor,
                       height: 450,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Column(
+                            children: const [
+                              Text('We learn best by '),
+                              Text(
+                                  'doing DataCamps proven learning methodology.')
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],
