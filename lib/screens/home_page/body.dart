@@ -6,6 +6,7 @@ import 'package:hovering/hovering.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../Widgets/datacamp_skills.dart';
+import '../../Widgets/first_part_decoration.dart';
 import '../../Widgets/what_is_datacamp.dart';
 import '../../constants.dart';
 
@@ -217,99 +218,7 @@ class _BodyState extends State<Body> {
               const SizedBox(
                 height: 60,
               ),
-              Column(
-                children: [
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Expanded(
-                        flex: 2,
-                        child: Container(
-                          width: 420,
-                          color: Colors.blue,
-                          height: 80,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 3,
-                        child: Container(
-                          width: 420,
-                          color: kPrColor,
-                          height: 80,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          width: 200,
-                          color: Colors.white,
-                          height: 25,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          width: 200,
-                          color: Colors.lightBlueAccent,
-                          height: 40,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 2,
-                        child: Column(
-                          children: [
-                            Container(
-                              color: Colors.purpleAccent,
-                              height: 30,
-                            ),
-                            Container(
-                              color: Colors.blue,
-                              height: 25,
-                            ),
-                            Container(
-                              color: Colors.blue,
-                              height: 25,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        flex: 2,
-                        child: Container(
-                          color: Colors.white,
-                          height: 40,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          color: const Color(0xFF7933ff),
-                          height: 40,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 3,
-                        child: Container(
-                          color: Colors.white,
-                          height: 40,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 3,
-                        child: Container(
-                          color: Colors.blue,
-                          height: 40,
-                        ),
-                      ),
-                    ],
-                  )
-                ],
-              ),
+              const FirstPartDecoration(),
               Row(
                 children: [
                   Expanded(
@@ -763,99 +672,7 @@ class _BodyState extends State<Body> {
                   ),
                 ],
               ),
-              Column(
-                children: [
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Expanded(
-                        flex: 2,
-                        child: Container(
-                          width: 420,
-                          color: Colors.blue,
-                          height: 80,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 3,
-                        child: Container(
-                          width: 420,
-                          color: kPrColor,
-                          height: 80,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          width: 200,
-                          color: Colors.white,
-                          height: 25,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          width: 200,
-                          color: Colors.lightBlueAccent,
-                          height: 40,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 2,
-                        child: Column(
-                          children: [
-                            Container(
-                              color: Colors.purpleAccent,
-                              height: 30,
-                            ),
-                            Container(
-                              color: Colors.blue,
-                              height: 25,
-                            ),
-                            Container(
-                              color: Colors.blue,
-                              height: 25,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        flex: 2,
-                        child: Container(
-                          color: Colors.white,
-                          height: 40,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          color: const Color(0xFF7933ff),
-                          height: 40,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 3,
-                        child: Container(
-                          color: Colors.white,
-                          height: 40,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 3,
-                        child: Container(
-                          color: Colors.blue,
-                          height: 40,
-                        ),
-                      ),
-                    ],
-                  )
-                ],
-              ),
+              const FirstPartDecoration(),
             ],
           ),
         ],
