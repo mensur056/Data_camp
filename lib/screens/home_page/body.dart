@@ -521,25 +521,55 @@ class _BodyState extends State<Body> {
                               children: [
                                 Row(
                                   children: [
-                                    Container(
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(10.0),
-                                        child: Image.asset('images/assess.png'),
-                                      ),
-                                      decoration: const BoxDecoration(
-                                          shape: BoxShape.circle,
-                                          color: Colors.blue),
+                                    Row(
+                                      children: [
+                                        Column(
+                                          children: [
+                                            Text(
+                                              'Assess',
+                                              style: TextStyle(
+                                                  color: Colors.black,
+                                                  fontSize: 30),
+                                            )
+                                          ],
+                                        ),
+                                        Container(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(10.0),
+                                            child: Image.asset(
+                                                'images/assess.png'),
+                                          ),
+                                          decoration: const BoxDecoration(
+                                              shape: BoxShape.circle,
+                                              color: Colors.blue),
+                                        ),
+                                      ],
                                     ),
-                                    Container(
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(10.0),
-                                        child: Image.asset('images/lamp.png'),
-                                      ),
-                                      decoration: const BoxDecoration(
-                                          shape: BoxShape.circle,
-                                          color: Colors.green),
+                                    const SizedBox(
+                                      width: 150,
+                                    ),
+                                    Row(
+                                      children: [
+                                        Container(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(10.0),
+                                            child:
+                                                Image.asset('images/lamp.png'),
+                                          ),
+                                          decoration: const BoxDecoration(
+                                              shape: BoxShape.circle,
+                                              color: Colors.green),
+                                        ),
+                                        const Text(
+                                          'AssessTest your skills and track progress',
+                                          style: TextStyle(color: Colors.black),
+                                        ),
+                                      ],
                                     ),
                                   ],
+                                ),
+                                const SizedBox(
+                                  height: 150,
                                 ),
                                 Row(
                                   children: [
@@ -552,10 +582,14 @@ class _BodyState extends State<Body> {
                                           shape: BoxShape.circle,
                                           color: Colors.blue),
                                     ),
+                                    const SizedBox(
+                                      width: 150,
+                                    ),
                                     Container(
                                       child: Padding(
                                         padding: const EdgeInsets.all(17.0),
-                                        child: Image.asset('images/practice.png'),
+                                        child:
+                                            Image.asset('images/practice.png'),
                                       ),
                                       decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
