@@ -1,3 +1,4 @@
+import 'package:data_camp/Widgets/on_hover_button.dart';
 import 'package:data_camp/Widgets/register_card.dart';
 
 import 'package:flutter/material.dart';
@@ -523,90 +524,96 @@ class _BodyState extends State<Body> {
                                 children: [
                                   Row(
                                     children: [
-                                      Row(
-                                        children: [
-                                          Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.start,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: const [
-                                              Text(
-                                                'Assess >',
-                                                style: TextStyle(
-                                                    color: Colors.blue,
-                                                    fontFamily: 'Poppins',
-                                                    fontSize: 25),
-                                              ),
-                                              Text(
-                                                'Test your skills\nand track progress',
-                                                style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontFamily: 'Quicksand',
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 18),
-                                              )
-                                            ],
-                                          ),
-                                          const SizedBox(
-                                            width: 10,
-                                          ),
-                                          Container(
-                                            child: Padding(
-                                              padding:
-                                                  const EdgeInsets.all(10.0),
-                                              child: Image.asset(
-                                                  'images/assess.png'),
+                                      OnHoverButton(
+                                        child: Row(
+                                          children: [
+                                            Column(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.start,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: const [
+                                                Text(
+                                                  'Assess >',
+                                                  style: TextStyle(
+                                                      color: Colors.blue,
+                                                      fontFamily: 'Poppins',
+                                                      fontSize: 25),
+                                                ),
+                                                Text(
+                                                  'Test your skills\nand track progress',
+                                                  style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontFamily: 'Quicksand',
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontSize: 18),
+                                                )
+                                              ],
                                             ),
-                                            decoration: const BoxDecoration(
-                                                shape: BoxShape.circle,
-                                                color: Colors.blue),
-                                          ),
-                                        ],
+                                            const SizedBox(
+                                              width: 10,
+                                            ),
+                                            Container(
+                                              child: Padding(
+                                                padding:
+                                                    const EdgeInsets.all(10.0),
+                                                child: Image.asset(
+                                                    'images/assess.png'),
+                                              ),
+                                              decoration: const BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  color: Colors.blue),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                       const SizedBox(
                                         width: 150,
                                       ),
-                                      Row(
-                                        children: [
-                                          Container(
-                                            child: Padding(
-                                              padding:
-                                                  const EdgeInsets.all(10.0),
-                                              child: Image.asset(
-                                                  'images/lamp.png'),
-                                            ),
-                                            decoration: const BoxDecoration(
-                                                shape: BoxShape.circle,
-                                                color: Colors.green),
-                                          ),
-                                          const SizedBox(
-                                            width: 10,
-                                          ),
-                                          Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.start,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: const [
-                                              Text(
-                                                'Learn >',
-                                                style: TextStyle(
-                                                    color: Colors.green,
-                                                    fontFamily: 'Poppins',
-                                                    fontSize: 25),
+                                      OnHoverButton(
+                                        child: Row(
+                                          children: [
+                                            Container(
+                                              child: Padding(
+                                                padding:
+                                                    const EdgeInsets.all(10.0),
+                                                child: Image.asset(
+                                                    'images/lamp.png'),
                                               ),
-                                              Text(
-                                                'Test your skills\nand track progress',
-                                                style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontFamily: 'Quicksand',
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 18),
-                                              )
-                                            ],
-                                          ),
-                                        ],
+                                              decoration: const BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  color: Colors.green),
+                                            ),
+                                            const SizedBox(
+                                              width: 10,
+                                            ),
+                                            Column(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.start,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: const [
+                                                Text(
+                                                  'Learn >',
+                                                  style: TextStyle(
+                                                      color: Colors.green,
+                                                      fontFamily: 'Poppins',
+                                                      fontSize: 25),
+                                                ),
+                                                Text(
+                                                  'Test your skills\nand track progress',
+                                                  style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontFamily: 'Quicksand',
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontSize: 18),
+                                                )
+                                              ],
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -615,90 +622,97 @@ class _BodyState extends State<Body> {
                                   ),
                                   Row(
                                     children: [
-                                      Row(
-                                        children: [
-                                          Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.start,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: const [
-                                              Text(
-                                                'Apply >',
-                                                style: TextStyle(
-                                                    color: Color(0xFFff48a5),
-                                                    fontFamily: 'Poppins',
-                                                    fontSize: 25),
-                                              ),
-                                              Text(
-                                                'Test your skills\nand track progress',
-                                                style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontFamily: 'Quicksand',
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 18),
-                                              )
-                                            ],
-                                          ),
-                                          const SizedBox(
-                                            width: 10,
-                                          ),
-                                          Container(
-                                            child: Padding(
-                                              padding:
-                                                  const EdgeInsets.all(17.0),
-                                              child: Image.asset(
-                                                  'images/apply.png'),
+                                      OnHoverButton(
+                                        child: Row(
+                                          children: [
+                                            Column(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.start,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: const [
+                                                Text(
+                                                  'Apply >',
+                                                  style: TextStyle(
+                                                      color: Color(0xFFff48a5),
+                                                      fontFamily: 'Poppins',
+                                                      fontSize: 25),
+                                                ),
+                                                Text(
+                                                  'Test your skills\nand track progress',
+                                                  style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontFamily: 'Quicksand',
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontSize: 18),
+                                                )
+                                              ],
                                             ),
-                                            decoration: const BoxDecoration(
-                                                shape: BoxShape.circle,
-                                                color: Color(0xFFff48a5)),
-                                          ),
-                                        ],
+                                            const SizedBox(
+                                              width: 10,
+                                            ),
+                                            Container(
+                                              child: Padding(
+                                                padding:
+                                                    const EdgeInsets.all(17.0),
+                                                child: Image.asset(
+                                                    'images/apply.png'),
+                                              ),
+                                              decoration: const BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  color: Color(0xFFff48a5)),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                       const SizedBox(
                                         width: 150,
                                       ),
-                                      Row(
-                                        children: [
-                                          Container(
-                                            child: Padding(
-                                              padding:
-                                                  const EdgeInsets.all(17.0),
-                                              child: Image.asset(
-                                                  'images/practice.png'),
-                                            ),
-                                            decoration: const BoxDecoration(
-                                                shape: BoxShape.circle,
-                                                color: Colors.orangeAccent),
-                                          ),
-                                          const SizedBox(
-                                            width: 10,
-                                          ),
-                                          Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.start,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: const [
-                                              Text(
-                                                'Practice >',
-                                                style: TextStyle(
-                                                    color: Colors.orangeAccent,
-                                                    fontFamily: 'Poppins',
-                                                    fontSize: 25),
+                                      OnHoverButton(
+                                        child: Row(
+                                          children: [
+                                            Container(
+                                              child: Padding(
+                                                padding:
+                                                    const EdgeInsets.all(17.0),
+                                                child: Image.asset(
+                                                    'images/practice.png'),
                                               ),
-                                              Text(
-                                                'Test your skills\nand track progress',
-                                                style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontFamily: 'Quicksand',
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 18),
-                                              )
-                                            ],
-                                          ),
-                                        ],
+                                              decoration: const BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  color: Colors.orangeAccent),
+                                            ),
+                                            const SizedBox(
+                                              width: 10,
+                                            ),
+                                            Column(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.start,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: const [
+                                                Text(
+                                                  'Practice >',
+                                                  style: TextStyle(
+                                                      color:
+                                                          Colors.orangeAccent,
+                                                      fontFamily: 'Poppins',
+                                                      fontSize: 25),
+                                                ),
+                                                Text(
+                                                  'Test your skills\nand track progress',
+                                                  style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontFamily: 'Quicksand',
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontSize: 18),
+                                                )
+                                              ],
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ],
                                   ),
