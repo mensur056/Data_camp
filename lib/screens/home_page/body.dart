@@ -568,9 +568,7 @@ class _BodyState extends State<Body> {
                                           ],
                                         ),
                                       ),
-                                      const SizedBox(
-                                        width: 150,
-                                      ),
+                                      Image.asset('image/arrow.png'),
                                       OnHoverButton(
                                         child: Row(
                                           children: [
@@ -588,6 +586,7 @@ class _BodyState extends State<Body> {
                                             const SizedBox(
                                               width: 10,
                                             ),
+
                                             Column(
                                               mainAxisAlignment:
                                                   MainAxisAlignment.start,
