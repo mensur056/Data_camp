@@ -481,7 +481,7 @@ class _BodyState extends State<Body> {
                   Expanded(
                     child: Container(
                       color: kPrColor,
-                      height: 800,
+                      height: 600,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -515,7 +515,7 @@ class _BodyState extends State<Body> {
                             width: 100,
                           ),
                           Container(
-                            color: Colors.red,
+                            color: kPrColor,
                             height: 550,
                             width: 800,
                             child: Padding(
@@ -538,7 +538,7 @@ class _BodyState extends State<Body> {
                                                   style: TextStyle(
                                                       color: Colors.blue,
                                                       fontFamily: 'Poppins',
-                                                      fontSize: 25),
+                                                      fontSize: 35),
                                                 ),
                                                 Text(
                                                   'Test your skills\nand track progress',
@@ -570,11 +570,11 @@ class _BodyState extends State<Body> {
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(
-                                            left: 25.0, right: 25.0),
+                                            left: 20.0, right: 20.0),
                                         child: Image.asset(
                                           'images/arrow.png',
-                                          width: 150,
-                                          height: 120,
+                                          width: 120,
+                                          height: 80,
                                         ),
                                       ),
                                       OnHoverButton(
@@ -605,7 +605,7 @@ class _BodyState extends State<Body> {
                                                   style: TextStyle(
                                                       color: Colors.green,
                                                       fontFamily: 'Poppins',
-                                                      fontSize: 25),
+                                                      fontSize: 35),
                                                 ),
                                                 Text(
                                                   'Test your skills\nand track progress',
@@ -624,19 +624,19 @@ class _BodyState extends State<Body> {
                                     ],
                                   ),
                                   Row(
-                                    children: [SizedBox(width:160,),
+                                    children: [const SizedBox(width:170,),
                                       Padding(
                                         padding: const EdgeInsets.only(
-                                            top: 25.0, bottom: 25),
-                                        child: Image.asset('images/arrow1.png',width: 100,height: 150,),
+                                            top: 20.0, bottom: 20),
+                                        child: Image.asset('images/arrow2.png',width: 80,height: 120,),
                                       ),
                                       const SizedBox(
-                                        width: 190,
+                                        width: 170,
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(
-                                            top: 25.0, bottom: 25),
-                                        child: Image.asset('images/arrow1.png',width: 100,height: 150,),
+                                            top: 20.0, bottom: 20),
+                                        child: Image.asset('images/arrow1.png',width: 80,height: 120,),
                                       ),
                                     ],
                                   ),
@@ -656,7 +656,7 @@ class _BodyState extends State<Body> {
                                                   style: TextStyle(
                                                       color: Color(0xFFff48a5),
                                                       fontFamily: 'Poppins',
-                                                      fontSize: 25),
+                                                      fontSize: 35),
                                                 ),
                                                 Text(
                                                   'Test your skills\nand track progress',
@@ -688,11 +688,11 @@ class _BodyState extends State<Body> {
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(
-                                            left: 25.0, right: 25.0),
+                                            left: 20.0, right: 20.0),
                                         child: Image.asset(
-                                          'images/arrow.png',
-                                          width: 150,
-                                          height: 120,
+                                          'images/arrow3.png',
+                                          width: 120,
+                                          height: 80,
                                         ),
                                       ),
                                       OnHoverButton(
@@ -724,7 +724,7 @@ class _BodyState extends State<Body> {
                                                       color:
                                                           Colors.orangeAccent,
                                                       fontFamily: 'Poppins',
-                                                      fontSize: 25),
+                                                      fontSize: 35),
                                                 ),
                                                 Text(
                                                   'Test your skills\nand track progress',
@@ -745,13 +745,105 @@ class _BodyState extends State<Body> {
                                 ],
                               ),
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ),
                   ),
                 ],
-              )
+              ),Column(
+                children: [
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Expanded(
+                        flex: 2,
+                        child: Container(
+                          width: 420,
+                          color: Colors.blue,
+                          height: 80,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 3,
+                        child: Container(
+                          width: 420,
+                          color: kPrColor,
+                          height: 80,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          width: 200,
+                          color: Colors.white,
+                          height: 25,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          width: 200,
+                          color: Colors.lightBlueAccent,
+                          height: 40,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 2,
+                        child: Column(
+                          children: [
+                            Container(
+                              color: Colors.purpleAccent,
+                              height: 30,
+                            ),
+                            Container(
+                              color: Colors.blue,
+                              height: 25,
+                            ),
+                            Container(
+                              color: Colors.blue,
+                              height: 25,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        flex: 2,
+                        child: Container(
+                          color: Colors.white,
+                          height: 40,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          color: const Color(0xFF7933ff),
+                          height: 40,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 3,
+                        child: Container(
+                          color: Colors.white,
+                          height: 40,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 3,
+                        child: Container(
+                          color: Colors.blue,
+                          height: 40,
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
             ],
           ),
         ],
