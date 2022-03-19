@@ -46,7 +46,8 @@ class _BodyState extends State<Body> {
               ),
               Column(
                 children: [
-                  Row(mainAxisAlignment: MainAxisAlignment.center,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: const [
                       Text(
                         'Hands-on',
@@ -81,12 +82,18 @@ class _BodyState extends State<Body> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: const [
                           Text(
-                            'No installation required —',
-                            style: TextStyle(color: Colors.blue, fontSize: 35),
+                            'No installation required ',
+                            style: TextStyle(
+                                color: Colors.blue,
+                                fontSize: 35,
+                                fontFamily: 'VarelaRound'),
                           ),
                           Text(
-                            ' run code from your browser',
-                            style: TextStyle(color: Colors.white, fontSize: 25),
+                            '— run code from your browser',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                                fontFamily: 'VarelaRound'),
                           )
                         ],
                       )
