@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
-import '../constants.dart';
+import '../../constants.dart';
 
 class WhatIsDataCamp extends StatelessWidget {
   const WhatIsDataCamp({

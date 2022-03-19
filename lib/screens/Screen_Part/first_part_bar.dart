@@ -1,7 +1,7 @@
 import 'package:data_camp/Widgets/register_card.dart';
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
-import '../constants.dart';
+import '../../constants.dart';
 
 class FirstPartBar extends StatelessWidget {
   const FirstPartBar({

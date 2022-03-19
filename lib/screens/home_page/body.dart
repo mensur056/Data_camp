@@ -1,13 +1,13 @@
 import 'package:data_camp/Widgets/on_hover_button.dart';
 import 'package:flutter/material.dart';
-import '../../Widgets/datacamp_skills.dart';
-import '../../Widgets/first_part_bar.dart';
-import '../../Widgets/first_part_decoration.dart';
-import '../../Widgets/fourth_part_bar.dart';
-import '../../Widgets/proqram_language_icons.dart';
-import '../../Widgets/second_part_decoration.dart';
-import '../../Widgets/third_part_decoration.dart';
-import '../../Widgets/what_is_datacamp.dart';
+import '../Screen_Part/datacamp_skills.dart';
+import '../Screen_Part/first_part_bar.dart';
+import '../part_decoration/first_part_decoration.dart';
+import '../Screen_Part/fourth_part_bar.dart';
+import '../Screen_Part/proqram_language_icons.dart';
+import '../part_decoration/second_part_decoration.dart';
+import '../part_decoration/third_part_decoration.dart';
+import '../Screen_Part/what_is_datacamp.dart';
 import '../../constants.dart';
 
 class Body extends StatefulWidget {

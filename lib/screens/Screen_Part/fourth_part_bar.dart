@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
-import 'on_hover_button.dart';
+import '../../constants.dart';
+import '../../Widgets/on_hover_button.dart';
 
 class FourthPartBar extends StatelessWidget {
   const FourthPartBar({
