@@ -106,21 +106,21 @@ class _BodyState extends State<Body> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                        'images/123.png',
+                        'images/1234.png',
                       ),
                       const SizedBox(
-                        width: 70,
+                        width: 150,
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: const [
                           Text(
-                            'No installation required —',
+                            'Learn from the',
                             style: TextStyle(color: Colors.blue, fontSize: 35),
                           ),
                           Text(
-                            ' run code from your browser',
+                            'best instructors',
                             style: TextStyle(color: Colors.white, fontSize: 25),
                           )
                         ],
