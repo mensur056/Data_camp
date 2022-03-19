@@ -517,7 +517,7 @@ class _BodyState extends State<Body> {
                           Container(
                             color: kPrColor,
                             height: 550,
-                            width: 800,
+                            width: 750,
                             child: Padding(
                               padding: const EdgeInsets.only(top: 70.0),
                               child: Column(
@@ -624,11 +624,18 @@ class _BodyState extends State<Body> {
                                     ],
                                   ),
                                   Row(
-                                    children: [const SizedBox(width:170,),
+                                    children: [
+                                      const SizedBox(
+                                        width: 170,
+                                      ),
                                       Padding(
                                         padding: const EdgeInsets.only(
                                             top: 20.0, bottom: 20),
-                                        child: Image.asset('images/arrow2.png',width: 80,height: 120,),
+                                        child: Image.asset(
+                                          'images/arrow2.png',
+                                          width: 80,
+                                          height: 120,
+                                        ),
                                       ),
                                       const SizedBox(
                                         width: 170,
@@ -636,7 +643,11 @@ class _BodyState extends State<Body> {
                                       Padding(
                                         padding: const EdgeInsets.only(
                                             top: 20.0, bottom: 20),
-                                        child: Image.asset('images/arrow1.png',width: 80,height: 120,),
+                                        child: Image.asset(
+                                          'images/arrow1.png',
+                                          width: 80,
+                                          height: 120,
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -751,7 +762,8 @@ class _BodyState extends State<Body> {
                     ),
                   ),
                 ],
-              ),Column(
+              ),
+              Column(
                 children: [
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.end,
