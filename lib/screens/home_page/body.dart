@@ -547,7 +547,7 @@ class _BodyState extends State<Body> {
                                         ),
                                       ),
                                       const SizedBox(
-                                        width: 170,
+                                        width: 160,
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(
