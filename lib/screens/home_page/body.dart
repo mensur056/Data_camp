@@ -532,7 +532,7 @@ class _BodyState extends State<Body> {
                                                 CrossAxisAlignment.start,
                                             children: const [
                                               Text(
-                                                'Assess',
+                                                'Assess >',
                                                 style: TextStyle(
                                                     color: Colors.blue,
                                                     fontFamily: 'Poppins',
@@ -549,7 +549,7 @@ class _BodyState extends State<Body> {
                                             ],
                                           ),
                                           const SizedBox(
-                                            width: 8,
+                                            width: 10,
                                           ),
                                           Container(
                                             child: Padding(
@@ -581,7 +581,7 @@ class _BodyState extends State<Body> {
                                                 color: Colors.green),
                                           ),
                                           const SizedBox(
-                                            width: 8,
+                                            width: 10,
                                           ),
                                           Column(
                                             mainAxisAlignment:
@@ -590,7 +590,7 @@ class _BodyState extends State<Body> {
                                                 CrossAxisAlignment.start,
                                             children: const [
                                               Text(
-                                                'Learn',
+                                                'Learn >',
                                                 style: TextStyle(
                                                     color: Colors.green,
                                                     fontFamily: 'Poppins',
@@ -624,7 +624,7 @@ class _BodyState extends State<Body> {
                                                 CrossAxisAlignment.start,
                                             children: const [
                                               Text(
-                                                'Apply',
+                                                'Apply >',
                                                 style: TextStyle(
                                                     color: Color(0xFFff48a5),
                                                     fontFamily: 'Poppins',
@@ -641,7 +641,7 @@ class _BodyState extends State<Body> {
                                             ],
                                           ),
                                           const SizedBox(
-                                            width: 8,
+                                            width: 10,
                                           ),
                                           Container(
                                             child: Padding(
@@ -673,7 +673,7 @@ class _BodyState extends State<Body> {
                                                 color: Colors.orangeAccent),
                                           ),
                                           const SizedBox(
-                                            width: 8,
+                                            width: 10,
                                           ),
                                           Column(
                                             mainAxisAlignment:
@@ -682,7 +682,7 @@ class _BodyState extends State<Body> {
                                                 CrossAxisAlignment.start,
                                             children: const [
                                               Text(
-                                                'Practice',
+                                                'Practice >',
                                                 style: TextStyle(
                                                     color: Colors.orangeAccent,
                                                     fontFamily: 'Poppins',
