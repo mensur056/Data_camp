@@ -4,6 +4,8 @@ import '../../Widgets/datacamp_skills.dart';
 import '../../Widgets/first_part_bar.dart';
 import '../../Widgets/first_part_decoration.dart';
 import '../../Widgets/proqram_language_icons.dart';
+import '../../Widgets/second_part_decoration.dart';
+import '../../Widgets/third_part_decoration.dart';
 import '../../Widgets/what_is_datacamp.dart';
 import '../../constants.dart';
 
@@ -35,153 +37,9 @@ class _BodyState extends State<Body> {
               ),
               const FirstPartDecoration(),
               const DataCampSkills(),
-              Row(
-                children: [
-                  Expanded(
-                    flex: 2,
-                    child: Container(
-                      color: Colors.blueAccent,
-                      height: 30,
-                    ),
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: Container(
-                      color: const Color(0xFF7933ff),
-                      height: 30,
-                    ),
-                  ),
-                  Expanded(
-                    flex: 6,
-                    child: Container(
-                      color: Colors.white,
-                      height: 30,
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    flex: 2,
-                    child: Container(
-                      color: const Color(0xFF7933ff),
-                      height: 30,
-                    ),
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: Container(
-                      color: Colors.black,
-                      height: 30,
-                    ),
-                  ),
-                  Expanded(
-                    flex: 6,
-                    child: Container(
-                      color: const Color(0xFF7933ff),
-                      height: 30,
-                    ),
-                  ),
-                ],
-              ),
+              const SecondPartDecoration(),
               const WhatIsDataCamp(),
-              Row(
-                children: [
-                  Expanded(
-                    flex: 3,
-                    child: Container(
-                      height: 30,
-                      color: const Color(0xFF7933ff),
-                    ),
-                  ),
-                  Expanded(
-                    flex: 2,
-                    child: Container(
-                      height: 30,
-                      color: Colors.lightBlueAccent,
-                    ),
-                  ),
-                  Expanded(
-                    flex: 5,
-                    child: Container(
-                      height: 30,
-                      color: const Color(0xFF7933ff),
-                    ),
-                  ),
-                  Expanded(
-                    flex: 3,
-                    child: Container(
-                      height: 30,
-                      color: const Color(0xFF7933ff),
-                    ),
-                  )
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    flex: 3,
-                    child: Container(
-                      height: 30,
-                      color: Colors.pinkAccent,
-                    ),
-                  ),
-                  Expanded(
-                    flex: 2,
-                    child: Container(
-                      height: 30,
-                      color: const Color(0xFF213147),
-                    ),
-                  ),
-                  Expanded(
-                    flex: 5,
-                    child: Container(
-                      height: 30,
-                      color: kPrColor,
-                    ),
-                  ),
-                  Expanded(
-                    flex: 3,
-                    child: Container(
-                      height: 30,
-                      color: const Color(0xFF7933ff),
-                    ),
-                  )
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    flex: 3,
-                    child: Container(
-                      height: 30,
-                      color: kPrColor,
-                    ),
-                  ),
-                  Expanded(
-                    flex: 2,
-                    child: Container(
-                      height: 30,
-                      color: const Color(0xFF213147),
-                    ),
-                  ),
-                  Expanded(
-                    flex: 5,
-                    child: Container(
-                      height: 30,
-                      color: kPrColor,
-                    ),
-                  ),
-                  Expanded(
-                    flex: 3,
-                    child: Container(
-                      height: 30,
-                      color: Colors.lightBlueAccent,
-                    ),
-                  )
-                ],
-              ),
+              const ThirdPartDecoration(),
               Row(
                 children: [
                   Expanded(
