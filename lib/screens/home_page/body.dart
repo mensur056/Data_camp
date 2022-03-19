@@ -84,14 +84,14 @@ class _BodyState extends State<Body> {
                           Text(
                             'No installation required ',
                             style: TextStyle(
-                                color: Colors.blue,
+                                color: Colors.blue,fontWeight: FontWeight.bold,
                                 fontSize: 35,
                                 fontFamily: 'VarelaRound'),
                           ),
                           Text(
                             '— run code from your browser',
                             style: TextStyle(
-                                color: Colors.white,
+                                color: Colors.white,fontWeight: FontWeight.bold,
                                 fontSize: 25,
                                 fontFamily: 'VarelaRound'),
                           )
@@ -106,22 +106,22 @@ class _BodyState extends State<Body> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                        'images/1234.png',
+                        'images/Screenshot.png',
                       ),
                       const SizedBox(
-                        width: 150,
+                        width: 100,
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: const [
                           Text(
-                            'Learn from the',
-                            style: TextStyle(color: Colors.blue, fontSize: 35),
+                            'Learn from the                   ',
+                            style: TextStyle(color: Colors.white, fontSize: 35,fontFamily: 'VarelaRound',fontWeight: FontWeight.bold),
                           ),
                           Text(
                             'best instructors',
-                            style: TextStyle(color: Colors.white, fontSize: 25),
+                            style: TextStyle(color: Colors.deepPurpleAccent, fontSize: 25,fontFamily: 'VarelaRound',fontWeight: FontWeight.bold),
                           )
                         ],
                       )
@@ -145,11 +145,11 @@ class _BodyState extends State<Body> {
                         children: const [
                           Text(
                             'No installation required —',
-                            style: TextStyle(color: Colors.blue, fontSize: 35),
+                            style: TextStyle(color: Colors.blue, fontSize: 35,fontFamily: 'VarelaRound'),
                           ),
                           Text(
                             ' run code from your browser',
-                            style: TextStyle(color: Colors.white, fontSize: 25),
+                            style: TextStyle(color: Colors.white, fontSize: 25,fontFamily: 'VarelaRound'),
                           )
                         ],
                       )
