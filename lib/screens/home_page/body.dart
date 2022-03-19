@@ -41,21 +41,115 @@ class _BodyState extends State<Body> {
               const ThirdPartDecoration(),
               const FourthPartBar(),
               const FirstPartDecoration(),
+              const SizedBox(
+                height: 50,
+              ),
               Column(
                 children: [
-                  Text(
-                    'Hands-on learning experience',
-                    style: TextStyle(color: Colors.green, fontSize: 40),
+                  Row(mainAxisAlignment: MainAxisAlignment.center,
+                    children: const [
+                      Text(
+                        'Hands-on',
+                        style: TextStyle(
+                            color: Colors.green,
+                            fontSize: 40,
+                            fontFamily: 'CarterOne'),
+                      ),
+                      Text(
+                        ' learning experience',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 40,
+                            fontFamily: 'CarterOne'),
+                      ),
+                    ],
                   ),
-                  Container(
-                    color: Colors.red,
-                    height: 200,
-                    width: 200,
+                  const SizedBox(
+                    height: 50,
                   ),
-                  Container(
-                    color: Colors.red,
-                    height: 200,
-                    width: 200,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        'images/123.png',
+                      ),
+                      const SizedBox(
+                        width: 70,
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const [
+                          Text(
+                            'No installation required —',
+                            style: TextStyle(color: Colors.blue, fontSize: 35),
+                          ),
+                          Text(
+                            ' run code from your browser',
+                            style: TextStyle(color: Colors.white, fontSize: 25),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 100,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        'images/123.png',
+                      ),
+                      const SizedBox(
+                        width: 70,
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const [
+                          Text(
+                            'No installation required —',
+                            style: TextStyle(color: Colors.blue, fontSize: 35),
+                          ),
+                          Text(
+                            ' run code from your browser',
+                            style: TextStyle(color: Colors.white, fontSize: 25),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 100,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        'images/123.png',
+                      ),
+                      const SizedBox(
+                        width: 70,
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const [
+                          Text(
+                            'No installation required —',
+                            style: TextStyle(color: Colors.blue, fontSize: 35),
+                          ),
+                          Text(
+                            ' run code from your browser',
+                            style: TextStyle(color: Colors.white, fontSize: 25),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 100,
                   )
                 ],
               )
