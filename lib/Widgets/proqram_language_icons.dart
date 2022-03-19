@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
 import '../constants.dart';
+
 class ProqramLanguageIcons extends StatelessWidget {
   const ProqramLanguageIcons({
     Key? key,
@@ -16,9 +16,7 @@ class ProqramLanguageIcons extends StatelessWidget {
         const Text(
           'C++',
           style: TextStyle(
-              color: Colors.grey,
-              fontSize: 20,
-              fontFamily: 'Courgette'),
+              color: Colors.grey, fontSize: 20, fontFamily: 'Courgette'),
         ),
         const SizedBox(
           width: kDefSpace,
@@ -27,9 +25,7 @@ class ProqramLanguageIcons extends StatelessWidget {
         const Text(
           'Figma',
           style: TextStyle(
-              color: Colors.grey,
-              fontSize: 20,
-              fontFamily: 'Pacifico'),
+              color: Colors.grey, fontSize: 20, fontFamily: 'Pacifico'),
         ),
         const SizedBox(
           width: kDefSpace,
@@ -38,9 +34,7 @@ class ProqramLanguageIcons extends StatelessWidget {
         const Text(
           'Flutter',
           style: TextStyle(
-              color: Colors.grey,
-              fontSize: 20,
-              fontFamily: 'Courgette'),
+              color: Colors.grey, fontSize: 20, fontFamily: 'Courgette'),
         ),
         const SizedBox(
           width: kDefSpace,
@@ -49,15 +43,12 @@ class ProqramLanguageIcons extends StatelessWidget {
         const Text(
           'Git',
           style: TextStyle(
-              color: Colors.grey,
-              fontSize: 20,
-              fontFamily: 'Sriracha'),
+              color: Colors.grey, fontSize: 20, fontFamily: 'Sriracha'),
         ),
         const SizedBox(
           width: kDefSpace,
         ),
-        SvgPicture.asset('images/icons8-javascript.svg',
-            width: kWidth),
+        SvgPicture.asset('images/icons8-javascript.svg', width: kWidth),
         const Text(
           'Java Script',
           style: TextStyle(
@@ -72,9 +63,7 @@ class ProqramLanguageIcons extends StatelessWidget {
         const Text(
           'Python',
           style: TextStyle(
-              color: Colors.grey,
-              fontSize: 22,
-              fontFamily: 'Courgette'),
+              color: Colors.grey, fontSize: 22, fontFamily: 'Courgette'),
         ),
         const SizedBox(
           width: kDefSpace,
@@ -83,9 +72,7 @@ class ProqramLanguageIcons extends StatelessWidget {
         const Text(
           'Arduino',
           style: TextStyle(
-              color: Colors.grey,
-              fontSize: 20,
-              fontFamily: 'SansitaSwashed'),
+              color: Colors.grey, fontSize: 20, fontFamily: 'SansitaSwashed'),
         ),
         const SizedBox(
           width: kDefSpace,
@@ -94,9 +81,7 @@ class ProqramLanguageIcons extends StatelessWidget {
         const Text(
           'Java',
           style: TextStyle(
-              color: Colors.grey,
-              fontSize: 20,
-              fontFamily: 'Sriracha'),
+              color: Colors.grey, fontSize: 20, fontFamily: 'Sriracha'),
         ),
       ],
     );

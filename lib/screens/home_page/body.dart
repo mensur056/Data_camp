@@ -1,10 +1,5 @@
 import 'package:data_camp/Widgets/on_hover_button.dart';
-import 'package:data_camp/Widgets/register_card.dart';
-
 import 'package:flutter/material.dart';
-import 'package:hovering/hovering.dart';
-import 'package:flutter_svg/svg.dart';
-
 import '../../Widgets/datacamp_skills.dart';
 import '../../Widgets/first_part_bar.dart';
 import '../../Widgets/first_part_decoration.dart';
@@ -39,25 +34,7 @@ class _BodyState extends State<Body> {
                 height: 60,
               ),
               const FirstPartDecoration(),
-              Row(
-                children: [
-                  Expanded(
-                    flex: 3,
-                    child: Container(
-                      height: 425,
-                      color: Colors.white,
-                    ),
-                  ),
-                  const DataCampSkills(),
-                  Expanded(
-                    flex: 3,
-                    child: Container(
-                      height: 425,
-                      color: Colors.white,
-                    ),
-                  ),
-                ],
-              ),
+              const DataCampSkills(),
               Row(
                 children: [
                   Expanded(

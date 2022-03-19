@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import '../constants.dart';
+
 class FirstPartDecoration extends StatelessWidget {
   const FirstPartDecoration({
     Key? key,
