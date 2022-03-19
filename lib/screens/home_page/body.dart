@@ -545,7 +545,7 @@ class _BodyState extends State<Body> {
                                   children: [
                                     Container(
                                       child: Padding(
-                                        padding: const EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(17.0),
                                         child: Image.asset('images/apply.png'),
                                       ),
                                       decoration: const BoxDecoration(
@@ -554,7 +554,7 @@ class _BodyState extends State<Body> {
                                     ),
                                     Container(
                                       child: Padding(
-                                        padding: const EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(17.0),
                                         child: Image.asset('images/practice.png'),
                                       ),
                                       decoration: const BoxDecoration(
