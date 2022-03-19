@@ -86,7 +86,7 @@ class _BodyState extends State<Body> {
                         onTap: () {},
                         child: HoverContainer(
                           hoverDecoration: const BoxDecoration(
-                              color: Colors.red,
+                              color: Color(0xFF274f77),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(5))),
                           decoration: const BoxDecoration(
@@ -489,7 +489,7 @@ class _BodyState extends State<Body> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: const [
                               SizedBox(
-                                height: 150,
+                                height: 110,
                               ),
                               Text(
                                 'We learn best\nby doing',
