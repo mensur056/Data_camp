@@ -75,7 +75,7 @@ class _BodyState extends State<Body> {
                         'images/123.png',
                       ),
                       const SizedBox(
-                        width: 70,
+                        width: 80,
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
