@@ -485,11 +485,86 @@ class _BodyState extends State<Body> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: const [
-                              Text('We learn best by '),
+                              SizedBox(
+                                height: 150,
+                              ),
                               Text(
-                                  'doing DataCamps proven learning methodology.')
+                                'We learn best\nby doing',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontFamily: 'Poppins',
+                                    fontSize: 35),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                'DataCamps proven learning\nmethodology.',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                    fontFamily: 'Quicksand'),
+                              )
                             ],
+                          ),
+                          const SizedBox(
+                            width: 100,
+                          ),
+                          Container(
+                            color: Colors.white,
+                            height: 450,
+                            width: 650,
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Container(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(10.0),
+                                        child: Image.asset('images/assess.png'),
+                                      ),
+                                      decoration: const BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: Colors.blue),
+                                    ),
+                                    Container(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(10.0),
+                                        child: Image.asset('images/lamp.png'),
+                                      ),
+                                      decoration: const BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: Colors.green),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(10.0),
+                                        child: Image.asset('images/apply.png'),
+                                      ),
+                                      decoration: const BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: Colors.blue),
+                                    ),
+                                    Container(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(10.0),
+                                        child: Image.asset('images/practice.png'),
+                                      ),
+                                      decoration: const BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: Colors.green),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           )
                         ],
                       ),
