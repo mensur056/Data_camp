@@ -518,7 +518,7 @@ class _BodyState extends State<Body> {
                             height: 450,
                             width: 650,
                             child: Padding(
-                              padding: const EdgeInsets.only(top:70.0),
+                              padding: const EdgeInsets.only(top: 70.0),
                               child: Column(
                                 children: [
                                   Row(
@@ -534,20 +534,27 @@ class _BodyState extends State<Body> {
                                               Text(
                                                 'Assess',
                                                 style: TextStyle(
-                                                    color: Colors.white,fontFamily: 'Poppins',
-                                                    fontSize: 30),
+                                                    color: Colors.blue,
+                                                    fontFamily: 'Poppins',
+                                                    fontSize: 25),
                                               ),
                                               Text(
                                                 'Test your skills\nand track progress',
                                                 style: TextStyle(
-                                                    color: Colors.white,fontFamily: 'Quicksand',fontWeight: FontWeight.bold,
+                                                    color: Colors.white,
+                                                    fontFamily: 'Quicksand',
+                                                    fontWeight: FontWeight.bold,
                                                     fontSize: 18),
                                               )
                                             ],
                                           ),
+                                          const SizedBox(
+                                            width: 8,
+                                          ),
                                           Container(
                                             child: Padding(
-                                              padding: const EdgeInsets.all(10.0),
+                                              padding:
+                                                  const EdgeInsets.all(10.0),
                                               child: Image.asset(
                                                   'images/assess.png'),
                                             ),
@@ -564,30 +571,37 @@ class _BodyState extends State<Body> {
                                         children: [
                                           Container(
                                             child: Padding(
-                                              padding: const EdgeInsets.all(10.0),
-                                              child:
-                                                  Image.asset('images/lamp.png'),
+                                              padding:
+                                                  const EdgeInsets.all(10.0),
+                                              child: Image.asset(
+                                                  'images/lamp.png'),
                                             ),
                                             decoration: const BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 color: Colors.green),
                                           ),
+                                          const SizedBox(
+                                            width: 8,
+                                          ),
                                           Column(
                                             mainAxisAlignment:
-                                            MainAxisAlignment.start,
+                                                MainAxisAlignment.start,
                                             crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                                CrossAxisAlignment.start,
                                             children: const [
                                               Text(
                                                 'Learn',
                                                 style: TextStyle(
-                                                    color: Colors.white,fontFamily: 'Poppins',
-                                                    fontSize: 30),
+                                                    color: Colors.green,
+                                                    fontFamily: 'Poppins',
+                                                    fontSize: 25),
                                               ),
                                               Text(
                                                 'Test your skills\nand track progress',
                                                 style: TextStyle(
-                                                    color: Colors.white,fontFamily: 'Quicksand',fontWeight: FontWeight.bold,
+                                                    color: Colors.white,
+                                                    fontFamily: 'Quicksand',
+                                                    fontWeight: FontWeight.bold,
                                                     fontSize: 18),
                                               )
                                             ],
@@ -605,27 +619,34 @@ class _BodyState extends State<Body> {
                                         children: [
                                           Column(
                                             mainAxisAlignment:
-                                            MainAxisAlignment.start,
+                                                MainAxisAlignment.start,
                                             crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                                CrossAxisAlignment.start,
                                             children: const [
                                               Text(
-                                                'Assess',
+                                                'Apply',
                                                 style: TextStyle(
-                                                    color: Colors.white,fontFamily: 'Poppins',
-                                                    fontSize: 30),
+                                                    color: Color(0xFFff48a5),
+                                                    fontFamily: 'Poppins',
+                                                    fontSize: 25),
                                               ),
                                               Text(
                                                 'Test your skills\nand track progress',
                                                 style: TextStyle(
-                                                    color: Colors.white,fontFamily: 'Quicksand',fontWeight: FontWeight.bold,
+                                                    color: Colors.white,
+                                                    fontFamily: 'Quicksand',
+                                                    fontWeight: FontWeight.bold,
                                                     fontSize: 18),
                                               )
                                             ],
                                           ),
+                                          const SizedBox(
+                                            width: 8,
+                                          ),
                                           Container(
                                             child: Padding(
-                                              padding: const EdgeInsets.all(17.0),
+                                              padding:
+                                                  const EdgeInsets.all(17.0),
                                               child: Image.asset(
                                                   'images/apply.png'),
                                             ),
@@ -642,30 +663,37 @@ class _BodyState extends State<Body> {
                                         children: [
                                           Container(
                                             child: Padding(
-                                              padding: const EdgeInsets.all(17.0),
-                                              child:
-                                              Image.asset('images/practice.png'),
+                                              padding:
+                                                  const EdgeInsets.all(17.0),
+                                              child: Image.asset(
+                                                  'images/practice.png'),
                                             ),
                                             decoration: const BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 color: Colors.orangeAccent),
                                           ),
+                                          const SizedBox(
+                                            width: 8,
+                                          ),
                                           Column(
                                             mainAxisAlignment:
-                                            MainAxisAlignment.start,
+                                                MainAxisAlignment.start,
                                             crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                                CrossAxisAlignment.start,
                                             children: const [
                                               Text(
-                                                'Learn',
+                                                'Practice',
                                                 style: TextStyle(
-                                                    color: Colors.white,fontFamily: 'Poppins',
-                                                    fontSize: 30),
+                                                    color: Colors.orangeAccent,
+                                                    fontFamily: 'Poppins',
+                                                    fontSize: 25),
                                               ),
                                               Text(
                                                 'Test your skills\nand track progress',
                                                 style: TextStyle(
-                                                    color: Colors.white,fontFamily: 'Quicksand',fontWeight: FontWeight.bold,
+                                                    color: Colors.white,
+                                                    fontFamily: 'Quicksand',
+                                                    fontWeight: FontWeight.bold,
                                                     fontSize: 18),
                                               )
                                             ],
