@@ -25,22 +25,40 @@ class _BodyState extends State<Body> {
             height: 50,
           ),
           Column(
-            children: const [
-              FirstPartBar(),
-              SizedBox(
+            children: [
+              const FirstPartBar(),
+              const SizedBox(
                 height: 80,
               ),
-              ProqramLanguageIcons(),
-              SizedBox(
+              const ProqramLanguageIcons(),
+              const SizedBox(
                 height: 60,
               ),
-              FirstPartDecoration(),
-              DataCampSkills(),
-              SecondPartDecoration(),
-              WhatIsDataCamp(),
-              ThirdPartDecoration(),
-              FourthPartBar(),
-              FirstPartDecoration(),
+              const FirstPartDecoration(),
+              const DataCampSkills(),
+              const SecondPartDecoration(),
+              const WhatIsDataCamp(),
+              const ThirdPartDecoration(),
+              const FourthPartBar(),
+              const FirstPartDecoration(),
+              Column(
+                children: [
+                  Text(
+                    'Hands-on learning experience',
+                    style: TextStyle(color: Colors.green, fontSize: 40),
+                  ),
+                  Container(
+                    color: Colors.red,
+                    height: 200,
+                    width: 200,
+                  ),
+                  Container(
+                    color: Colors.red,
+                    height: 200,
+                    width: 200,
+                  )
+                ],
+              )
             ],
           ),
         ],
