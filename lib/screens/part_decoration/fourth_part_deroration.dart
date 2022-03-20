@@ -13,11 +13,11 @@ class FourthPartDecoration extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             Expanded(
-              flex: 2,
+              flex: 3,
               child: Container(
                 width: 420,
                 color: Colors.blue,
-                height: 80,
+                height: 60,
               ),
             ),
             Expanded(
@@ -71,12 +71,12 @@ class FourthPartDecoration extends StatelessWidget {
             Expanded(
               flex: 2,
               child: Container(
-                color: Colors.white,
+                color: kPrColor,
                 height: 40,
               ),
             ),
             Expanded(
-              flex: 1,
+              flex: 2,
               child: Container(
                 color: const Color(0xFF7933ff),
                 height: 40,
@@ -92,7 +92,7 @@ class FourthPartDecoration extends StatelessWidget {
             Expanded(
               flex: 3,
               child: Container(
-                color: Colors.blue,
+                color: Colors.deepPurpleAccent,
                 height: 40,
               ),
             ),

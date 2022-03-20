@@ -1,3 +1,5 @@
+import 'package:data_camp/constants.dart';
+import 'package:data_camp/screens/part_decoration/fourth_part_deroration.dart';
 import 'package:flutter/material.dart';
 import '../Screen_Part/DataCamp_skills.dart';
 import '../Screen_Part/first_part_bar.dart';
@@ -40,7 +42,7 @@ class _BodyState extends State<Body> {
               const WhatIsDataCamp(),
               const ThirdPartDecoration(),
               const FourthPartBar(),
-              const FirstPartDecoration(),
+              const FourthPartDecoration(),
               const SizedBox(
                 height: 50,
               ),
@@ -177,12 +179,30 @@ class _BodyState extends State<Body> {
                 ],
               ),
               const FirstPartDecoration(),
-              Container(width: double.infinity,height: 1200,color: const Color(0xFFf7f3eb),
+              Container(
+                width: double.infinity,
+                height: 1200,
+                color: const Color(0xFFf7f3eb),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    const Text('Learning paths designed by experts'),
-                    const Text('Learn a new technology Python'),
+                    Container(
+                      width: double.infinity,
+                      color: kPrColor,
+                      child: Column(
+                        children: const [
+                          Text(
+                            'Learning paths designed by experts',
+                            style: TextStyle(color: Colors.white, fontSize: 30),
+                          ),
+                          Text('Learn a new technology                    ',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 30)),
+                        ],
+                      ),
+                    ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
                           color: Colors.white,
@@ -196,14 +216,16 @@ class _BodyState extends State<Body> {
                           color: Colors.white,
                           height: 100,
                           width: 180,
-                        ),  const SizedBox(
+                        ),
+                        const SizedBox(
                           width: 10,
                         ),
                         Container(
                           color: Colors.white,
                           height: 100,
                           width: 180,
-                        ),  const SizedBox(
+                        ),
+                        const SizedBox(
                           width: 10,
                         ),
                         Container(
