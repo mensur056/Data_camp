@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../Screen_Part/DataCamp_skills.dart';
 import '../Screen_Part/first_part_bar.dart';
 import '../Screen_Part/five_part_bar.dart';
+import '../Screen_Part/six_part_bar.dart';
 import '../part_decoration/first_part_decoration.dart';
 import '../Screen_Part/fourth_part_bar.dart';
 import '../Screen_Part/program_language_icons.dart';
@@ -33,7 +34,7 @@ class _BodyState extends State<Body> {
               SizedBox(
                 height: 80,
               ),
-              ProqramLanguageIcons(),
+              ProgramLanguageIcons(),
               SizedBox(
                 height: 60,
               ),
@@ -49,7 +50,7 @@ class _BodyState extends State<Body> {
               ),
               FivePartBar(),
               FirstPartDecoration(),
-
+              SixPartBar()
             ],
           ),
         ],
