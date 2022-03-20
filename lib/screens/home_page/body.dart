@@ -84,14 +84,16 @@ class _BodyState extends State<Body> {
                           Text(
                             'No installation required ',
                             style: TextStyle(
-                                color: Colors.blue,fontWeight: FontWeight.bold,
+                                color: Colors.blue,
+                                fontWeight: FontWeight.bold,
                                 fontSize: 35,
                                 fontFamily: 'VarelaRound'),
                           ),
                           Text(
                             '— run code from your browser',
                             style: TextStyle(
-                                color: Colors.white,fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
                                 fontSize: 25,
                                 fontFamily: 'VarelaRound'),
                           )
@@ -117,11 +119,19 @@ class _BodyState extends State<Body> {
                         children: const [
                           Text(
                             'Learn from the                   ',
-                            style: TextStyle(color: Colors.white, fontSize: 35,fontFamily: 'VarelaRound',fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 35,
+                                fontFamily: 'VarelaRound',
+                                fontWeight: FontWeight.bold),
                           ),
                           Text(
                             'best instructors',
-                            style: TextStyle(color: Colors.deepPurpleAccent, fontSize: 25,fontFamily: 'VarelaRound',fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                                color: Colors.deepPurpleAccent,
+                                fontSize: 25,
+                                fontFamily: 'VarelaRound',
+                                fontWeight: FontWeight.bold),
                           )
                         ],
                       )
@@ -145,11 +155,17 @@ class _BodyState extends State<Body> {
                         children: const [
                           Text(
                             'No installation required —',
-                            style: TextStyle(color: Colors.blue, fontSize: 35,fontFamily: 'VarelaRound'),
+                            style: TextStyle(
+                                color: Colors.blue,
+                                fontSize: 35,
+                                fontFamily: 'VarelaRound'),
                           ),
                           Text(
                             ' run code from your browser',
-                            style: TextStyle(color: Colors.white, fontSize: 25,fontFamily: 'VarelaRound'),
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                                fontFamily: 'VarelaRound'),
                           )
                         ],
                       )
@@ -159,6 +175,46 @@ class _BodyState extends State<Body> {
                     height: 100,
                   )
                 ],
+              ),
+              const FirstPartDecoration(),
+              Container(width: double.infinity,height: 1200,color: const Color(0xFFf7f3eb),
+                child: Column(
+                  children: [
+                    const Text('Learning paths designed by experts'),
+                    const Text('Learn a new technology Python'),
+                    Row(
+                      children: [
+                        Container(
+                          color: Colors.white,
+                          height: 100,
+                          width: 180,
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Container(
+                          color: Colors.white,
+                          height: 100,
+                          width: 180,
+                        ),  const SizedBox(
+                          width: 10,
+                        ),
+                        Container(
+                          color: Colors.white,
+                          height: 100,
+                          width: 180,
+                        ),  const SizedBox(
+                          width: 10,
+                        ),
+                        Container(
+                          color: Colors.white,
+                          height: 100,
+                          width: 180,
+                        ),
+                      ],
+                    )
+                  ],
+                ),
               )
             ],
           ),
