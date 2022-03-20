@@ -5,6 +5,29 @@ class SixPartBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      height: 800,
+      color: const Color(0xFFf7f3eb),
+      child: Column(
+        children: [
+          Row(
+            children: const [
+              Text(
+                'Learning paths',
+                style: TextStyle(color: Colors.white, fontSize: 40),
+              ),
+              Text(
+                'designed by experts',
+                style: TextStyle(color: Colors.green, fontSize: 40),
+              ),
+            ],
+          ),
+          const Text(
+            'Learn a new technology',
+            style: TextStyle(color: Colors.white),
+          )
+        ],
+      ),
+    );
   }
 }
