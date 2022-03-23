@@ -17,7 +17,9 @@ class _RegisterCardState extends State<RegisterCard> {
   final String title = 'Create Your Free Account';
   final String email = 'Email Address';
   final String password = 'Password';
-  final String about= 'By continuing, you accept our Terms of Use, our Privacy Policy and that your data is stored in the USA. You confirm you are at least 16 years old (13 if you are an authorized Classrooms user).';
+  final String about =
+      'By continuing, you accept our Terms of Use, our Privacy Policy and that your data is stored in the USA. You confirm you are at least 16 years old (13 if you are an authorized Classrooms user).';
+  final String buttonText = 'Start Learning For Free';
 
   void _toggleObscured() {
     setState(() {
@@ -147,9 +149,7 @@ class _RegisterCardState extends State<RegisterCard> {
                           _obscured
                               ? Icons.visibility_rounded
                               : Icons.visibility_off_rounded,
-                          color: Theme
-                              .of(context)
-                              .primaryColorDark,
+                          color: Theme.of(context).primaryColorDark,
                         ),
                         onPressed: _toggleObscured),
                   ),
@@ -170,10 +170,10 @@ class _RegisterCardState extends State<RegisterCard> {
                   hoverDecoration: const BoxDecoration(
                       color: Colors.greenAccent,
                       borderRadius: BorderRadius.all(Radius.circular(5))),
-                  child: const Center(
+                  child: Center(
                     child: Text(
-                      'Start Learning For Free',
-                      style: TextStyle(
+                      buttonText,
+                      style: const TextStyle(
                           color: kPrColor,
                           fontSize: 18,
                           fontWeight: FontWeight.bold),
@@ -189,7 +189,8 @@ class _RegisterCardState extends State<RegisterCard> {
                 left: 19,
                 right: 19,
               ),
-              child: Text(about,
+              child: Text(
+                about,
                 style: const TextStyle(fontSize: 12),
               ),
             ),
