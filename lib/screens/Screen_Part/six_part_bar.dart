@@ -1,6 +1,8 @@
 import 'package:data_camp/constants.dart';
 import 'package:flutter/material.dart';
 
+import '../../Widgets/programming_language.dart';
+
 class SixPartBar extends StatelessWidget {
   const SixPartBar({Key? key}) : super(key: key);
 
@@ -31,188 +33,18 @@ class SixPartBar extends StatelessWidget {
             'Learn a new technology',
             style: TextStyle(color: kPrColor, fontSize: 30),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                height: 80,
-                width: 180,
-                child: const Center(
-                  child: Text(
-                    'Python',
-                    style: TextStyle(color: Colors.blue),
-                  ),
-                ),
-                color: Colors.white,
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              Container(
-                height: 80,
-                width: 180,
-                child: const Center(
-                  child: Text(
-                    'Python',
-                    style: TextStyle(color: Colors.blue),
-                  ),
-                ),
-                color: Colors.white,
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              Container(
-                height: 80,
-                width: 180,
-                child: const Center(
-                  child: Text(
-                    'Python',
-                    style: TextStyle(color: Colors.blue),
-                  ),
-                ),
-                color: Colors.white,
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              Container(
-                height: 80,
-                width: 180,
-                child: const Center(
-                  child: Text(
-                    'Python',
-                    style: TextStyle(color: Colors.blue),
-                  ),
-                ),
-                color: Colors.white,
-              ),
-            ],
-          ),
+          const ProgramingLanguage(),
           const SizedBox(
             height: 20,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                height: 80,
-                width: 180,
-                child: const Center(
-                  child: Text(
-                    'Python',
-                    style: TextStyle(color: Colors.blue),
-                  ),
-                ),
-                color: Colors.white,
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              Container(
-                height: 80,
-                width: 180,
-                child: const Center(
-                  child: Text(
-                    'Python',
-                    style: TextStyle(color: Colors.blue),
-                  ),
-                ),
-                color: Colors.white,
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              Container(
-                height: 80,
-                width: 180,
-                child: const Center(
-                  child: Text(
-                    'Python',
-                    style: TextStyle(color: Colors.blue),
-                  ),
-                ),
-                color: Colors.white,
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              Container(
-                height: 80,
-                width: 180,
-                child: const Center(
-                  child: Text(
-                    'Python',
-                    style: TextStyle(color: Colors.blue),
-                  ),
-                ),
-                color: Colors.white,
-              ),
-            ],
-          ),
+          const ProgramingLanguage(),
           const SizedBox(
             height: 20,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                height: 80,
-                width: 180,
-                child: const Center(
-                  child: Text(
-                    'Python',
-                    style: TextStyle(color: Colors.blue),
-                  ),
-                ),
-                color: Colors.white,
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              Container(
-                height: 80,
-                width: 180,
-                child: const Center(
-                  child: Text(
-                    'Python',
-                    style: TextStyle(color: Colors.blue),
-                  ),
-                ),
-                color: Colors.white,
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              Container(
-                height: 80,
-                width: 180,
-                child: const Center(
-                  child: Text(
-                    'Python',
-                    style: TextStyle(color: Colors.blue),
-                  ),
-                ),
-                color: Colors.white,
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              Container(
-                height: 80,
-                width: 180,
-                child: const Center(
-                  child: Text(
-                    'Python',
-                    style: TextStyle(color: Colors.blue),
-                  ),
-                ),
-                color: Colors.white,
-              ),
-            ],
-          )
+          const ProgramingLanguage(),
         ],
       ),
     );
   }
 }
+
