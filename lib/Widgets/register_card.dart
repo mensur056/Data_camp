@@ -58,31 +58,31 @@ class _RegisterCardState extends State<RegisterCard> {
           const SizedBox(
             height: 15,
           ),
-          Row(
-            children: const [
-
-              Expanded(
-                child: AccountBar(
-                  name: 'Google',
-                  pictureName: 'google.svg',
+          Padding(
+            padding: const EdgeInsets.only(left: 12.0, right: 12),
+            child: Row(
+              children: const [
+                Expanded(
+                  child: AccountBar(
+                    name: 'Google',
+                    pictureName: 'google.svg',
+                  ),
                 ),
-              ),
 
-              Expanded(
-                child: AccountBar(
-                  name: 'Github',
-                  pictureName: 'icons8-github.svg',
+                Expanded(
+                  child: AccountBar(
+                    name: 'Github',
+                    pictureName: 'icons8-github.svg',
+                  ),
                 ),
-              ),
-
-              Expanded(
-                child: AccountBar(
-                  name: 'Facebook',
-                  pictureName: 's.svg',
+                Expanded(
+                  child: AccountBar(
+                    name: 'Facebook',
+                    pictureName: 's.svg',
+                  ),
                 ),
-              ),
-
-            ],
+              ],
+            ),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 19.0, right: 19, top: 10),
