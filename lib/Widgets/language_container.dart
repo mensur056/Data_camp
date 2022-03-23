@@ -26,7 +26,7 @@ class _LanguageBarState extends State<LanguageBar> {
       height: heightSide,
       width: widthSide,
       duration: const Duration(seconds: 1),
-      curve: Curves.easeIn,
+      curve: Curves.decelerate,
       child: Material(
         color: Colors.blue,
         child: InkWell(
