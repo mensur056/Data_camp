@@ -16,6 +16,8 @@ class _RegisterCardState extends State<RegisterCard> {
   bool _obscured = false;
   final String title = 'Create Your Free Account';
   final String email = 'Email Address';
+  final String password = 'Password';
+  final String about= 'By continuing, you accept our Terms of Use, our Privacy Policy and that your data is stored in the USA. You confirm you are at least 16 years old (13 if you are an authorized Classrooms user).';
 
   void _toggleObscured() {
     setState(() {
@@ -110,9 +112,9 @@ class _RegisterCardState extends State<RegisterCard> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'Email Address',
-                  style: TextStyle(
+                Text(
+                  email,
+                  style: const TextStyle(
                       color: Colors.black, fontSize: 16, fontFamily: 'Rowdies'),
                 ),
                 const SizedBox(
@@ -127,9 +129,9 @@ class _RegisterCardState extends State<RegisterCard> {
                 const SizedBox(
                   height: 12,
                 ),
-                const Text(
-                  'Password',
-                  style: TextStyle(
+                Text(
+                  password,
+                  style: const TextStyle(
                       color: Colors.black, fontSize: 16, fontFamily: 'Rowdies'),
                 ),
                 const SizedBox(
@@ -145,7 +147,9 @@ class _RegisterCardState extends State<RegisterCard> {
                           _obscured
                               ? Icons.visibility_rounded
                               : Icons.visibility_off_rounded,
-                          color: Theme.of(context).primaryColorDark,
+                          color: Theme
+                              .of(context)
+                              .primaryColorDark,
                         ),
                         onPressed: _toggleObscured),
                   ),
@@ -179,15 +183,14 @@ class _RegisterCardState extends State<RegisterCard> {
               ),
             ),
           ),
-          const Expanded(
+          Expanded(
             child: Padding(
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 left: 19,
                 right: 19,
               ),
-              child: Text(
-                'By continuing, you accept our Terms of Use, our Privacy Policy and that your data is stored in the USA. You confirm you are at least 16 years old (13 if you are an authorized Classrooms user).',
-                style: TextStyle(fontSize: 12),
+              child: Text(about,
+                style: const TextStyle(fontSize: 12),
               ),
             ),
           )
