@@ -14,6 +14,8 @@ class RegisterCard extends StatefulWidget {
 class _RegisterCardState extends State<RegisterCard> {
   final textFieldFocusNode = FocusNode();
   bool _obscured = false;
+  final String title = 'Create Your Free Account';
+  final String email = 'Email Address';
 
   void _toggleObscured() {
     setState(() {
@@ -39,10 +41,10 @@ class _RegisterCardState extends State<RegisterCard> {
           const SizedBox(
             height: 15,
           ),
-          const Center(
+          Center(
             child: Text(
-              'Create Your Free Account',
-              style: TextStyle(
+              title,
+              style: const TextStyle(
                   color: kPrColor,
                   fontSize: 18,
                   fontFamily: 'ShipporiAntiqueB1',
