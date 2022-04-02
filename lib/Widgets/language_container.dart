@@ -1,6 +1,7 @@
 import 'dart:core';
 
 import 'package:flutter/material.dart';
+import 'package:hovering/hovering.dart';
 
 class LanguageBar extends StatefulWidget {
   const LanguageBar({
@@ -22,21 +23,17 @@ class _LanguageBarState extends State<LanguageBar> {
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedContainer(
+    return HoverContainer(
+      decoration: const BoxDecoration(
+        color: Colors.amberAccent,
+        borderRadius: BorderRadius.all(
+          Radius.circular(5),
+        ),
+      ),
       height: heightSide,
       width: widthSide,
-      duration: const Duration(seconds: 1),
-      curve: Curves.decelerate,
-      child: Material(
-        color: Colors.blue,
-        child: InkWell(
-          onTap: () {
-            setState(() {
-              heightSide == 100 ? heightSide = 50 : heightSide = 100;
-            });
-          },
-          child: const Center(child: Text('python')),
-        ),
+      child: const Center(
+        child: Text('Python'),
       ),
     );
   }

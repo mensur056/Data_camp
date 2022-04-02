@@ -1,4 +1,6 @@
+import 'package:data_camp/Widgets/on_hover_button.dart';
 import 'package:flutter/material.dart';
+
 class FivePartBar extends StatelessWidget {
   const FivePartBar({
     Key? key,
@@ -14,16 +16,12 @@ class FivePartBar extends StatelessWidget {
             Text(
               'Hands-on',
               style: TextStyle(
-                  color: Colors.green,
-                  fontSize: 40,
-                  fontFamily: 'CarterOne'),
+                  color: Colors.green, fontSize: 40, fontFamily: 'CarterOne'),
             ),
             Text(
               ' learning experience',
               style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 40,
-                  fontFamily: 'CarterOne'),
+                  color: Colors.white, fontSize: 40, fontFamily: 'CarterOne'),
             ),
           ],
         ),
@@ -33,8 +31,10 @@ class FivePartBar extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              'images/123.png',
+            OnHoverButton(
+              child: Image.asset(
+                'images/123.png',
+              ),
             ),
             const SizedBox(
               width: 80,
@@ -69,8 +69,10 @@ class FivePartBar extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              'images/Screenshot.png',
+            OnHoverButton(
+              child: Image.asset(
+                'images/Screenshot.png',
+              ),
             ),
             const SizedBox(
               width: 100,
@@ -105,8 +107,10 @@ class FivePartBar extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              'images/123.png',
+            OnHoverButton(
+              child: Image.asset(
+                'images/123.png',
+              ),
             ),
             const SizedBox(
               width: 70,

@@ -62,10 +62,9 @@ class FourthPartBar extends StatelessWidget {
                               child: Row(
                                 children: [
                                   Column(
-                                    mainAxisAlignment:
-                                    MainAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
-                                    CrossAxisAlignment.start,
+                                        CrossAxisAlignment.start,
                                     children: const [
                                       Text(
                                         'Assess >',
@@ -79,8 +78,7 @@ class FourthPartBar extends StatelessWidget {
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontFamily: 'Quicksand',
-                                            fontWeight:
-                                            FontWeight.bold,
+                                            fontWeight: FontWeight.bold,
                                             fontSize: 18),
                                       )
                                     ],
@@ -90,10 +88,8 @@ class FourthPartBar extends StatelessWidget {
                                   ),
                                   Container(
                                     child: Padding(
-                                      padding:
-                                      const EdgeInsets.all(10.0),
-                                      child: Image.asset(
-                                          'images/assess.png'),
+                                      padding: const EdgeInsets.all(10.0),
+                                      child: Image.asset('images/assess.png'),
                                     ),
                                     decoration: const BoxDecoration(
                                         shape: BoxShape.circle,
@@ -101,25 +97,16 @@ class FourthPartBar extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                  left: 20.0, right: 20.0),
-                              child: Image.asset(
-                                'images/arrow.png',
-                                width: 120,
-                                height: 80,
-                              ),
+                            ),const SizedBox(
+                              width: 80,
                             ),
                             OnHoverButton(
                               child: Row(
                                 children: [
                                   Container(
                                     child: Padding(
-                                      padding:
-                                      const EdgeInsets.all(10.0),
-                                      child: Image.asset(
-                                          'images/lamp.png'),
+                                      padding: const EdgeInsets.all(10.0),
+                                      child: Image.asset('images/lamp.png'),
                                     ),
                                     decoration: const BoxDecoration(
                                         shape: BoxShape.circle,
@@ -129,10 +116,9 @@ class FourthPartBar extends StatelessWidget {
                                     width: 10,
                                   ),
                                   Column(
-                                    mainAxisAlignment:
-                                    MainAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
-                                    CrossAxisAlignment.start,
+                                        CrossAxisAlignment.start,
                                     children: const [
                                       Text(
                                         'Learn >',
@@ -146,8 +132,7 @@ class FourthPartBar extends StatelessWidget {
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontFamily: 'Quicksand',
-                                            fontWeight:
-                                            FontWeight.bold,
+                                            fontWeight: FontWeight.bold,
                                             fontSize: 18),
                                       )
                                     ],
@@ -156,34 +141,8 @@ class FourthPartBar extends StatelessWidget {
                               ),
                             ),
                           ],
-                        ),
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 170,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                  top: 20.0, bottom: 20),
-                              child: Image.asset(
-                                'images/arrow2.png',
-                                width: 80,
-                                height: 120,
-                              ),
-                            ),
-                            const SizedBox(
-                              width: 160,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                  top: 20.0, bottom: 20),
-                              child: Image.asset(
-                                'images/arrow1.png',
-                                width: 80,
-                                height: 120,
-                              ),
-                            ),
-                          ],
+                        ),const SizedBox(
+                         height: 80,
                         ),
                         Row(
                           children: [
@@ -191,10 +150,9 @@ class FourthPartBar extends StatelessWidget {
                               child: Row(
                                 children: [
                                   Column(
-                                    mainAxisAlignment:
-                                    MainAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
-                                    CrossAxisAlignment.start,
+                                        CrossAxisAlignment.start,
                                     children: const [
                                       Text(
                                         'Apply >',
@@ -208,8 +166,7 @@ class FourthPartBar extends StatelessWidget {
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontFamily: 'Quicksand',
-                                            fontWeight:
-                                            FontWeight.bold,
+                                            fontWeight: FontWeight.bold,
                                             fontSize: 18),
                                       )
                                     ],
@@ -219,10 +176,8 @@ class FourthPartBar extends StatelessWidget {
                                   ),
                                   Container(
                                     child: Padding(
-                                      padding:
-                                      const EdgeInsets.all(17.0),
-                                      child: Image.asset(
-                                          'images/apply.png'),
+                                      padding: const EdgeInsets.all(17.0),
+                                      child: Image.asset('images/apply.png'),
                                     ),
                                     decoration: const BoxDecoration(
                                         shape: BoxShape.circle,
@@ -231,24 +186,16 @@ class FourthPartBar extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                  left: 20.0, right: 20.0),
-                              child: Image.asset(
-                                'images/arrow3.png',
-                                width: 120,
-                                height: 80,
-                              ),
+                            const SizedBox(
+                              width: 80,
                             ),
                             OnHoverButton(
                               child: Row(
                                 children: [
                                   Container(
                                     child: Padding(
-                                      padding:
-                                      const EdgeInsets.all(17.0),
-                                      child: Image.asset(
-                                          'images/practice.png'),
+                                      padding: const EdgeInsets.all(17.0),
+                                      child: Image.asset('images/practice.png'),
                                     ),
                                     decoration: const BoxDecoration(
                                         shape: BoxShape.circle,
@@ -258,16 +205,14 @@ class FourthPartBar extends StatelessWidget {
                                     width: 10,
                                   ),
                                   Column(
-                                    mainAxisAlignment:
-                                    MainAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
-                                    CrossAxisAlignment.start,
+                                        CrossAxisAlignment.start,
                                     children: const [
                                       Text(
                                         'Practice >',
                                         style: TextStyle(
-                                            color:
-                                            Colors.orangeAccent,
+                                            color: Colors.orangeAccent,
                                             fontFamily: 'Poppins',
                                             fontSize: 35),
                                       ),
@@ -276,8 +221,7 @@ class FourthPartBar extends StatelessWidget {
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontFamily: 'Quicksand',
-                                            fontWeight:
-                                            FontWeight.bold,
+                                            fontWeight: FontWeight.bold,
                                             fontSize: 18),
                                       )
                                     ],
