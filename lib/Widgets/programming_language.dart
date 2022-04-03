@@ -16,15 +16,15 @@ class ProgramingLanguage extends StatelessWidget {
       children: [
         LanguageBar(barHeight: barHeight, barWidth: barWidth),
         const SizedBox(
-          width: 10,
+          width: 20,
         ),
         LanguageBar(barHeight: barHeight, barWidth: barWidth),
         const SizedBox(
-          width: 10,
+          width: 20,
         ),
         LanguageBar(barHeight: barHeight, barWidth: barWidth),
         const SizedBox(
-          width: 10,
+          width: 20,
         ),
         LanguageBar(barHeight: barHeight, barWidth: barWidth),
       ],

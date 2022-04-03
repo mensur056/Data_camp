@@ -1,5 +1,4 @@
 import 'dart:core';
-
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 
@@ -24,6 +23,12 @@ class _LanguageBarState extends State<LanguageBar> {
   @override
   Widget build(BuildContext context) {
     return HoverContainer(
+      hoverDecoration: const BoxDecoration(
+        borderRadius: BorderRadius.all(
+          Radius.circular(5),
+        ),
+        color: Colors.blue,
+      ),
       decoration: const BoxDecoration(
         color: Colors.amberAccent,
         borderRadius: BorderRadius.all(

@@ -33,6 +33,9 @@ class SixPartBar extends StatelessWidget {
             'Learn a new technology',
             style: TextStyle(color: kPrColor, fontSize: 30),
           ),
+          const SizedBox(
+            height: 30,
+          ),
           const ProgramingLanguage(),
           const SizedBox(
             height: 20,
@@ -47,4 +50,3 @@ class SixPartBar extends StatelessWidget {
     );
   }
 }
-
